@@ -1,0 +1,473 @@
+.form-verification {
+   max-width: 950px;
+   width: 100%;
+   margin: 0 auto;
+   background-color: $background;
+   h3 {
+      line-height: 1.31;
+      margin-bottom: 20px;
+   }
+}
+
+.verification-status {
+   display: inline-block;
+   border: 1px solid $verification-stroke;
+   border-radius: 3px;
+   height: 32px;
+   padding: 6px 10px;
+   font-size: 1rem;
+   font-weight: 400;
+   margin-left: 30px;
+
+   &__under-consideration {
+      color: $verification;
+   }
+   &__verification-failed {
+      color: $errors;
+   }
+   &__verified {
+      color: $accent;
+   }
+}
+
+.form-description {
+   max-width: 705px;
+   font-size: 1.25rem;
+   font-weight: 400;
+   line-height: 1.7;
+}
+
+.form-head {
+   margin-bottom: 60px;
+}
+
+fieldset {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-bottom: 60px;
+
+   > h5 {
+      font-weight: 400;
+      line-height: 1.7;
+      color: $stroke;
+      border-bottom: 1px solid $stroke;
+      padding-bottom: 12px;
+      margin-bottom: 10px;
+
+      &:nth-of-type(2) {
+         color: $stroke-focus;
+      }
+   }
+
+}
+
+[data-display] {
+   display: none;
+}
+
+input {
+   width: 100%;
+   font-size: 1.25rem;
+   line-height: 1.16;
+   color: $title;
+   background-color: $system;
+   border: 1px solid $stroke;
+   border-radius: 8px;
+   padding: 30px;
+   cursor: pointer;
+   transition: 0.4s;
+
+   &::placeholder {
+      font-size: 1.25rem;
+      color: $title;
+      transition: 0.4s;
+   }
+
+   &:hover {
+      border: 1px solid $stroke-focus;
+   }
+
+   &:active {
+      border: 1px solid $accent-hover;
+   }
+
+   &:focus {
+      font-size: 1.25rem;
+      line-height: 1.15;
+      color: $title;
+      border: 1px solid $stroke-focus;
+
+      &::placeholder {
+         font-size: 1rem;
+         color: $text;
+      }
+   }
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.calendar-container {
+   position: relative;
+   img {
+      position: absolute;
+      right: 33px;
+      top: 33px;
+      width: 18px;
+      height: 19px;
+   }
+}
+
+.ui-datepicker {
+   width: 328px;
+}
+
+.ui-datepicker.ui-widget.ui-widget-content {
+   border: 2px solid $stroke;
+}
+
+.ui-datepicker table {
+   font-size: 1rem;
+}
+
+.ui-datepicker .ui-datepicker-header {
+   padding: 18px 0 5px;
+   font-weight: 400;
+   background: $system;
+   color: $title;
+   border: none;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+   top: 18px;
+}
+
+.ui-datepicker-prev, .ui-datepicker-prev:hover {
+   background: url(assets/img/calendar-prev.svg) center no-repeat;
+}
+
+.ui-datepicker-next, .ui-datepicker-next:hover {
+   background: url(assets/img/calendar-next.svg) center no-repeat;
+}
+
+.ui-datepicker th {
+   color: $stroke;
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+.ui-widget-content {
+   background: $system;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+   border: none;
+   background: $system;
+   color: $title;
+   text-align: center;
+
+   &:hover {
+      color: $accent-hover;
+   }
+}
+
+.ui-state-hover:hover {
+   border: 1px solid $accent-hover;
+ } 
+
+.nice-select {
+   @extend input;
+   font-family: $font-primary;
+   font-size: 1.25rem;
+   color: $title;
+   padding: 27px 30px 56px;
+
+   .list {
+      width: 100%;
+      background-color: $system;
+      border: 1px solid $stroke;
+      border-radius: 8px;
+      color: $title;
+
+      .option {
+         position: relative;
+         text-align: center;
+         line-height: 48px;
+         min-height: 48px;
+         border-radius: 8px;
+
+         &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50px; /* Отступ для границы */
+            right: 50px; /* Отступ для границы */
+            height: 1px; /* Толщина границы */
+            background-color: $stroke;
+         }
+   
+         &:last-child::after {
+            display: none; /* Убираем границу у последнего элемента */
+         }
+         
+         &:hover {
+            border: 1px solid $stroke-focus;
+         }
+
+         &.selected {
+            color: $accent-hover;
+         }
+
+         &:focus {
+            border: 1px solid $stroke-focus;
+         }
+      }
+   }
+
+   &:hover {
+      border: 1px solid $stroke-focus;
+   }
+
+   &::after {
+      border-bottom: 2px solid $title;
+      border-right: 2px solid $title;
+      width: 8px;
+      height: 8px;
+      right: 40px;
+   }
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+   background-color: $verification-stroke;
+}
+
+.control-box-title {
+   width: 100%;
+   color: $text;
+   line-height: 1.7;
+   margin: 0 0 20px;
+   font-weight: 400;
+}
+
+.form-row {
+   display: flex;
+   gap: 30px;
+}
+
+[type="radio"], [type="checkbox"] {
+   display: none;
+
+   & + label {
+      font-size: 1.25rem;
+      color: $title;
+      padding-left: 42px;
+      cursor: pointer;
+
+      span {
+         font-size: 1rem;
+         color: $text;
+      }
+
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 25px;
+         height: 25px;
+         border: 1px solid $stroke;
+         border-radius: 50%;
+         background-position: center;
+         transition: 0.4s;
+      }
+
+      &:hover::before {
+         border: 1px solid $accent;
+         border-radius: 50%;
+         background-color: $radio-button;
+      }
+   }
+   
+   &:checked + label::before {
+      background: url(assets/img/check-circle.svg) center no-repeat $radio-button;
+   }
+
+   &:not([type="radio"]) + label {
+      &::before {
+         border-radius: 4px;
+      }
+   }
+
+   &:checked:not([type="radio"]) + label::before {
+         background: url(assets/img/check-mark.svg) center no-repeat $radio-button;
+      }
+}
+
+.radio-box {
+   position: relative;
+   display: inline-block;
+   margin-right: 50px;
+}
+
+.large-radio {
+   display: flex;
+   flex-wrap: wrap;
+
+   .form-row {
+      width: 100%;
+   }
+
+   .radio-box {
+      width: 100%;
+      margin: 0;
+   }
+
+   [type="radio"] + label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 104px;
+      padding: 24px 40px;
+      font-size: 1.125rem;
+      border: 1px solid #4F4F4F;
+      border-radius: 12px;
+      transition: 0.3s;
+
+      &::before {
+         inset: 0;
+         width: auto;
+         height: auto;
+         border-radius: 12px;
+         z-index: -1;
+      }
+
+   }
+
+   [type=radio]:hover + label {
+      border: 1px solid $accent;
+      background-color: $system;
+   }
+
+   [type=radio]:checked + label {
+      background-color: $radio-button;
+      border-color: $accent;
+  }
+   
+}
+
+.toggle-checkbox .radio-box{
+   [type="checkbox"] {
+      + label {
+         padding-left: 77px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         font-size: 1.125rem;
+         color: $title;
+
+         &::before {
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 54px;
+            height: 30px;
+            border-radius: 50px;
+         }
+
+         &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            left: 6px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+            border-radius: 50%;
+            background-color: $title;
+         }
+      }
+      &:checked {
+         + label {
+            &::before {
+               background: none;
+            }
+
+            &::after {
+               content: "";
+               left: 30px;
+               background-color: $accent;
+               transition: 0.4s;
+            }
+         }
+      }
+   }
+}
+
+#drop-zone {
+   margin-bottom: 10px;
+}
+
+input#file-input {
+   display: none;
+}
+
+#drop-zone {
+   label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 171px;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%234F4F4FFF' stroke-width='3' stroke-dasharray='15%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+      border-radius: 12px;
+      border-radius: 12px;
+      padding: 24px;
+      transition: 0.4s;
+      cursor: pointer;
+
+      &:hover {
+         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%239AF03CFF' stroke-width='3' stroke-dasharray='15%2c 15' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 12px;
+      }
+
+      > span {
+         color: $stroke;
+         font-size: 1rem;
+         font-weight: 400;
+
+         &:first-child {
+            font-size: 1.125rem;
+            line-height: 1.28;
+            font-weight: 500;
+            color: $title;
+         }
+         
+      span.color-accent {
+            color: $accent;
+         }
+      }
+   }
+}
+
+.btn-large {
+   font-size: 1.125rem;
+   font-weight: 500;
+   color: $system;
+   padding: 31.38px;
+   background-color: $accent;
+   border: 1px solid $stroke;
+   border-radius: 8px;
+
+   &:hover {
+      background-color: $accent-hover;
+   }
+}
+
+input[data-calendar][name="validity-period"] {
+   margin-bottom: 30px;
+}
