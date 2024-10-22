@@ -12,17 +12,10 @@ Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, feat
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import 'sass/variables';
-@import 'sass/fonts';
-@import 'sass/global';
-@import 'sass/media/media';
-@import 'sass/header';
-@import 'sass/footer';
-@import 'sass/form';
 
-// @use 'variables';
-// @use 'fonts';
-// @use 'global';
-// @use 'media/media';
-// @use 'header';
-// @use 'footer';
+@use 'sass/variables';
+@use 'sass/fonts';
+@use 'sass/global';
+@use 'sass/media/media';
+@use 'sass/header';
+@use 'sass/footer';

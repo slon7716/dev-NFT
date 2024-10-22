@@ -1,75 +1,93 @@
-* {
-  box-sizing: border-box;
-}
+@use 'sass/variables' as *;
 
+html {
+  font-size: 16px; /* 1rem = 16px */
+  box-sizing: border-box;
+  }
+  
 body {
   font-family: $font-primary;
-  font-size: $font-size;
-  color: $text;
-  background-color: $background;
-  line-height: 1.4;
-  // letter-spacing: -0.2px; увеличивает/уменьшает расстояние между буквами
+  color: #000;
+}
+ 
+a {
+  transition: 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  color: $title;
-  line-height: 1.25;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1.125rem;
-}
-
-.wrapper {
-  padding: 40px;
+input {
+  transition: 0.3s;
+  
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .container {
-  max-width: 1442px;
   width: 100%;
-  padding: 0 12px;
+  max-width: 1248px + 24px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
-.map {
-  width: 100vh;
-  height: 600px;
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 16px;
+  color: #000;
+  border: 2px solid; /* border наследует значение свойства color */
+  padding: 18px 23px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &.btn-primery {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: #fff;
+    color: #000;
+  
+    &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+  }
 }
 
-.page-title {
-  text-transform: lowercase; 
-  margin-bottom: 60px;
-}
-
-::selection {
-  background-color: $accent-hover;
-  color: $background;
-}
-
-[disabled] {
-   &::selection {
-     background-color: transparent;
-     color: $background;
-   }
-}
+//  h1, h2, h3, h4, h5, h6 {
+//    font-weight: 600;
+//    line-height: 1.25;
+//  }
+ 
+//  h1 {
+//    font-size: 3rem;
+//  }
+ 
+//  h2 {
+//    font-size: 2.5rem;
+//  }
+ 
+//  h3 {
+//    font-size: 2rem;
+//  }
+ 
+//  h4 {
+//    font-size: 1.5rem;
+//  }
+ 
+//  h5 {
+//    font-size: 1.25rem;
+//  }
+ 
+//  h6 {
+//    font-size: 1.125rem;
+//  }
