@@ -1,11 +1,19 @@
-@use 'sass/variables' as *;
-
 header {
 	padding: 45px 0;
    .container {
 	display: flex;
 	align-items: center;
 	}
+
+	button {
+		white-space: nowrap;
+	}
+}
+
+.mobile-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
 .nav-list {
@@ -37,6 +45,7 @@ form.header-search {
 
 	input[type='search'] {
 		box-sizing: border-box;
+		line-height: 18px;
 		width: 100%;
 		border: none;
 		border-radius: 16px;
@@ -50,6 +59,43 @@ form.header-search {
 	
 		&:focus {
 			outline: 2px solid #000;
+		}
+	}
+}
+
+.btn-burger {
+	display: none;
+	margin-left: auto;
+
+	&:active {
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+.btn.btn-burger {
+	position: relative;
+
+	span {
+		display: block;
+		width: 32px;
+		height: 2px;
+		background-color: #000;
+
+		&::before,
+		&::after  {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 32px;
+			height: 2px;
+			background-color: #000;
+		}
+
+		&::after {
+			top: initial;
+			bottom: 0;
 		}
 	}
 }

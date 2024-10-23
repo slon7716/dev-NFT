@@ -1,19 +1,25 @@
 <header>
     <div class="container">
         <a href="index.html">
-            <img src="assets/img/logo.svg" alt="logo">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="assets/img/logo-mobile.svg">
+                <img src="assets/img/logo.svg" alt="logo">
+            </picture>
         </a>
-        <nav class="header-nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#">discover</a></li>
-                <li class="nav-item"><a href="#">creators</a></li>
-                <li class="nav-item"><a href="#">sell</a></li>
-                <li class="nav-item"><a href="#">stats</a></li>
-            <ul>
-        </nav>
-        <form class="header-search">
-            <input type="search" placeholder="Search Art Work / Creator">
-        </form>
-        <button type="button" class="btn btn-primery">Connect Wallet</button>
+        <div class="mobile-container">
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">discover</a></li>
+                    <li class="nav-item"><a href="#">creators</a></li>
+                    <li class="nav-item"><a href="#">sell</a></li>
+                    <li class="nav-item"><a href="#">stats</a></li>
+                <ul>
+            </nav>
+            <form class="header-search">
+                <input type="search" placeholder="Search Art Work / Creator">
+            </form>
+            <button type="button" class="btn btn-primery">Connect Wallet</button>
+        </div>
+        <button type="button" class="btn btn-burger"><span></span></button>
     </div>
 </header>

@@ -1,5 +1,3 @@
-@use 'sass/variables' as *;
-
 html {
   box-sizing: border-box;
   font-size: 16px; /* 1rem = 16px */
@@ -14,6 +12,14 @@ body {
   color: #000;
 }
  
+button,
+input,
+select,
+textarea {
+  font-family: inherit; /* Наследовать шрифт от body */
+  color: inherit; /* Наследовать цвет от body */
+}
+
 a {
   transition: 0.3s;
 }
@@ -35,7 +41,7 @@ input {
 
 .btn {
   display: inline-block;
-  font-family: inherit;
+  // font-family: inherit;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
