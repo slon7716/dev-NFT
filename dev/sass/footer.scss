@@ -4,33 +4,38 @@ footer {
 
 .footer-top {
     display: flex;
-    padding: 91px 96px 25px;
+    padding: 91px 84px 25px;
     border-bottom: 1px solid #818181;
-}
-
-.foter-bottom {
-    display: flex;
-    height: 163px;
 }
 
 .footer-nav {
     margin-left: auto;
     display: flex;
     align-items: center;
-
+    
     .footer-nav-list {
         display: flex;
         gap: 70px;
-
+        
         .footer-nav-item {
             a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.125rem;
-            font-weight: 500;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.125rem;
+                font-weight: 500;
             }
         }
     }
 }
 
- 
+.foter-bottom {
+    display: flex;
+    padding: 57px 0 81px;
+}
+
+.copywrite {
+    color: #999999;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 25px;
+}
