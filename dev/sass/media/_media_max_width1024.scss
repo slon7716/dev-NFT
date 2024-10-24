@@ -1,11 +1,54 @@
 @media screen and (max-width: 1024.9px) {
+   header {
+      padding: 30px 0;
+   }
+   
    .mobile-container {
       display: none;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 106px;
+      gap: 24px;
+      padding: 36px;
+      background-color: #000;
    }
+   
+   .mobile-container.show {
+      display: flex;
+
+      .header-nav {
+         max-width: 348px;
+         width: 100%;
+               
+         .nav-list {
+            flex-direction: column;
+            padding: 0;
+
+            .nav-item {
+               margin: 12px 0;
+
+               a {
+                  &:hover {
+                     color: #fff;
+                  }
+               }
+            }
+         }
+      }
+
+      form.header-search {
+         margin: 0;
+
+         + .btn {
+            max-width: 348px;
+            width: 100%;
+         }
+      }  
+   }   
 
    .btn-burger {
       display: block;
    }
 }
-
 

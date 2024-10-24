@@ -1,6 +1,36 @@
-footer{
-    height: 100px;
-    margin-top: auto;
+footer {
+    background-color: $footer-bg;
+}
+
+.footer-top {
+    display: flex;
+    padding: 91px 96px 25px;
+    border-bottom: 1px solid #818181;
+}
+
+.foter-bottom {
+    display: flex;
+    height: 163px;
+}
+
+.footer-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    .footer-nav-list {
+        display: flex;
+        gap: 70px;
+
+        .footer-nav-item {
+            a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 500;
+            }
+        }
+    }
 }
 
  
