@@ -1,8 +1,9 @@
 header {
 	padding: 45px 0;
-   .container {
-	display: flex;
-	align-items: center;
+
+	.container {
+		display: flex;
+		align-items: center;
 	}
 
 	button {
@@ -21,14 +22,14 @@ header {
 
 		.nav-item {
 			margin: 0 27px;
-			
+
 			a {
 				font-size: 1.125rem;
 				font-weight: 500;
 				text-decoration: none;
 				text-transform: uppercase;
-				color: #606060;
-		
+				color: $header-color;
+
 				&:hover {
 					color: #000;
 					font-weight: 600;
@@ -54,9 +55,9 @@ form.header-search {
 		background: url(assets/img/loupe.svg) 22px center no-repeat #EDEDED;
 
 		&:hover {
-			outline: 1px solid #606060;
+			outline: 1px solid $header-color;
 		}
-	
+
 		&:focus {
 			outline: 2px solid #000;
 		}
@@ -81,7 +82,7 @@ form.header-search {
 		transition: 0.3s;
 
 		&::before,
-		&::after  {
+		&::after {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -105,9 +106,9 @@ form.header-search {
 			height: 2px;
 			background-color: #000;
 			transform: rotate(45deg);
-	
+
 			&::before,
-			&::after  {
+			&::after {
 				content: '';
 				position: absolute;
 				left: 0;
@@ -117,7 +118,7 @@ form.header-search {
 				background-color: #000;
 				transform: rotate(90deg);
 			}
-	
+
 			&::after {
 				opacity: 0;
 			}

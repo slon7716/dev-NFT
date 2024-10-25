@@ -50,5 +50,49 @@
    .btn-burger {
       display: block;
    }
-}
 
+   footer .container {
+      position: relative;
+      padding: 0 27px;
+   }
+   
+   .footer-top {
+      flex-direction: column;
+      padding-top: 52px;
+   
+      .footer-nav {
+         margin-top: 50px;
+         margin-left: initial;
+   
+         .footer-nav-list {
+            flex-direction: column;
+            gap: 30px;
+
+            .footer-nav-item {
+               font-size: 0.875rem;
+            }
+         }
+      }
+   }
+   
+   .footer-bottom {
+      padding: 26px 0 36px;
+      justify-content: center;
+
+      .copywrite {
+         font-size: 0.875rem;
+      }
+   }
+
+   .footer-social {
+      gap: 20px;
+      position: absolute;
+      top: 66px;
+      right: 30px;
+
+      a {
+         width: 16px;
+         height: 16px;
+      }
+   }
+}

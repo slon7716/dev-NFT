@@ -1,10 +1,11 @@
 footer {
     background-color: $footer-bg;
+    margin-top: auto;
 }
 
 .footer-top {
     display: flex;
-    padding: 91px 84px 25px;
+    padding: 91px 0 25px;
     border-bottom: 1px solid #818181;
 }
 
@@ -28,7 +29,7 @@ footer {
     }
 }
 
-.foter-bottom {
+.footer-bottom {
     display: flex;
     padding: 57px 0 81px;
 }
@@ -39,3 +40,20 @@ footer {
     font-weight: 500;
     line-height: 25px;
 }
+
+
+.footer-social {
+    display: flex;
+    margin-left: auto;
+    gap: 48px;
+  
+    a {
+      display: flex;
+      width: 22px;
+      height: 22px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
