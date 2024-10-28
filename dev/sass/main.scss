@@ -1,0 +1,146 @@
+.banner {
+    padding: 66px 0 149px 0;
+
+    >.container {
+        display: flex;
+    }
+
+    &-content {
+        max-width: 510px;
+        width: 100%;
+        margin-right: 48px;
+    }
+
+    &-overtitle {
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+        border: 1px solid $text-grey;
+        width: 195px;
+        color: $text-grey;
+    }
+
+    &-title {
+        margin-bottom: 16px;
+    }
+
+    &-description {
+        font-size: 1.125rem;
+        line-height: 1.556;
+        margin-bottom: 44px;
+        color: $footer-color;
+
+        strong,
+        b {
+            font-weight: 600;
+            color: $footer-bg;
+        }
+    }
+
+    &-btns-row {
+        margin: 0 -12px 80px;
+
+        >a,
+        .btn {
+            margin: 0 12px;
+        }
+    }
+
+    &-advantages {
+        display: flex;
+        margin: 0 -32px;
+    }
+
+    &-advantage {
+        margin: 0 32px;
+
+        h3 {
+            line-height: 1.278;
+            margin-bottom: 6px;
+            color: $footer-bg;
+        }
+
+        small {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 500;
+            line-height: 1.5;
+            color: $footer-color;
+        }
+    }
+
+    &-slider-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 391px;
+        height: 394px;
+        margin-bottom: 72px;
+    }
+
+    .swiper-slide {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.banner-slider-navigation {
+    position: relative;
+    width: 166px;
+    height: 69px;
+    background-color: #fff;
+    border-radius: 17px;
+    box-shadow: 0 43px 34px 0px rgba(15, 15, 15, 0.12);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 26px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $light-grey;
+        border-radius: 2px;
+    }
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    width: 82px;
+    height: 69px;
+    top: 0;
+    margin: 0;
+    color: $text-grey;
+
+    &:hover {
+        color: $footer-bg;
+    }
+
+    &::after {
+        display: none;
+    }
+
+    svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+// .swiper-wrapper {
+//     filter: blur(83.7px);
+// }

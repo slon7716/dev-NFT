@@ -6,7 +6,7 @@ footer {
 .footer-top {
     display: flex;
     padding: 91px 0 25px;
-    border-bottom: 1px solid #818181;
+    border-bottom: 1px solid $footer-color;
 }
 
 .footer-nav {
@@ -35,12 +35,11 @@ footer {
 }
 
 .copywrite {
-    color: #999999;
+    color: $footer-color;
     font-size: 1.125rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 1.333;
 }
-
 
 .footer-social {
     display: flex;
