@@ -7,10 +7,12 @@ const toggleMobileMenu = () => {
 btnburger.addEventListener('click', toggleMobileMenu);
 
 const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
   loop: true,
-  spaceBetween:20,
-   navigation: {
+  speed: 700,
+  spaceBetween:15,
+  navigation: {
      nextEl: '.swiper-button-next',
      prevEl: '.swiper-button-prev',
-   },
+  },
  });

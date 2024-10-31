@@ -3,12 +3,12 @@
 
     >.container {
         display: flex;
+        gap: 48px;
     }
 
     &-content {
         max-width: 510px;
         width: 100%;
-        margin-right: 48px;
     }
 
     &-overtitle {
@@ -73,19 +73,64 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 60px;
+            top: 0;
+            height: 402px;
+            width: 174px;
+            background: url(assets/img/banner-dot.svg);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 413px;
+            top: 60px;
+            height:124px;
+            width: 129px;
+            background: url(assets/img/twisted-arrow.svg);
+        }
     }
 
     .swiper {
-        width: 391px;
-        height: 394px;
-        margin-bottom: 72px;
+        width: 797px;
+        height: 554px;
     }
 
     .swiper-slide {
+        transition: 1s;
+        padding-top: 25px;
+
         img {
+            transition: 1s;
             width: 100%;
-            height: 100%;
+            padding: 0 10px;
+
+            &:first-child {
+                filter: blur(10px);
+                opacity: 0.4;
+            }
+
+            &:last-child {
+                opacity: .99;
+                margin-top: calc(-100% - 51px);
+            }
+        }
+
+        &.swiper-slide-next {
+            margin-top: 181px;
+
+            img {
+                height: auto;
+                max-width: 319px;
+
+                &:last-child {
+                    margin-top: calc(-100% + 24px);
+                }
+            }
         }
     }
 }
@@ -97,6 +142,8 @@
     background-color: #fff;
     border-radius: 17px;
     box-shadow: 0 43px 34px 0px rgba(15, 15, 15, 0.12);
+    margin-left: 112px;
+    margin-top: -78px;
 
     &::after {
         content: '';
@@ -140,6 +187,16 @@
 .swiper-button-next {
     right: 0;
 }
+
+// .swiper-slide.swiper-slide-active {
+//     width: 391px !important;
+//     padding-top: 20px;
+// }
+
+// .swiper-slide.swiper-slide-next {
+//     width: 320px !important;
+//     padding-top: 203px;
+// }
 
 // .swiper-wrapper {
 //     filter: blur(83.7px);
