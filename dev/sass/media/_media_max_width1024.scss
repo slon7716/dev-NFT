@@ -1,6 +1,18 @@
 @media screen and (max-width: 1024.9px) {
    header {
+      position: relative;
       padding: 30px 0;
+      margin-bottom: 74px;
+      
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 12px;
+         right: 12px;
+         height: 1px;
+         background-color: $light-grey;
+      }
    }
    
    .mobile-container {
@@ -12,6 +24,7 @@
       gap: 24px;
       padding: 36px;
       background-color: #000;
+      z-index: 2;
    }
    
    .mobile-container.show {
@@ -49,6 +62,39 @@
 
    .btn-burger {
       display: block;
+   }
+
+   .banner {
+      padding-top: 0;
+
+      >.container {
+         flex-direction: column;
+         gap: 60px;
+         align-items: center;
+         justify-content: center;
+      }
+
+      &-content {
+       text-align: center;
+      }
+
+      &-title {
+         font-size: 3rem;
+         margin-bottom: 10px;
+      }
+
+      &-description {
+         font-size: 0.75rem;
+         margin-bottom: 42px;
+      }
+
+      &-btns-row {
+         margin-bottom: 20px;
+      }
+
+      &-advantages {
+       margin: 0;
+      }
    }
 
    footer .container {
@@ -95,4 +141,19 @@
          height: 16px;
       }
    }
+
+   .banner-overtitle {
+      justify-content: center;
+
+      &-line {
+      width: 34px;
+      }
+
+      &-text {
+         font-size: 0.625rem;
+         line-height: 1.2;
+         margin-left: 12px; 
+      }
+   }
 }
+

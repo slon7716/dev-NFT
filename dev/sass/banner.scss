@@ -1,9 +1,9 @@
 .banner {
-    padding: 66px 0 149px 0;
+    padding: 64px 0 150px 0;
 
     >.container {
         display: flex;
-        gap: 48px;
+        gap: 106px;
     }
 
     &-content {
@@ -12,12 +12,21 @@
     }
 
     &-overtitle {
-        position: relative;
-        display: inline-block;
-        font-size: 0;
-        border: 1px solid $text-grey;
-        width: 195px;
-        color: $text-grey;
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+
+        &-line {
+            width: 195px;
+            height: 2px;
+            background-color: $text-grey;
+        }
+
+        &-text {
+            color: $text-grey;
+            font-size: 0;
+        }
+
     }
 
     &-title {
@@ -27,7 +36,7 @@
     &-description {
         font-size: 1.125rem;
         line-height: 1.556;
-        margin-bottom: 44px;
+        margin-bottom: 17px;
         color: $footer-color;
 
         strong,
@@ -87,7 +96,7 @@
         &::after {
             content: "";
             position: absolute;
-            left: 413px;
+            left: 423px;
             top: 60px;
             height:124px;
             width: 129px;
@@ -96,13 +105,12 @@
     }
 
     .swiper {
-        width: 797px;
+        width: 802px;
         height: 554px;
     }
 
     .swiper-slide {
         transition: 1s;
-        padding-top: 25px;
 
         img {
             transition: 1s;
@@ -112,11 +120,12 @@
             &:first-child {
                 filter: blur(10px);
                 opacity: 0.4;
+                margin-top: 29px;
             }
 
             &:last-child {
                 opacity: .99;
-                margin-top: calc(-100% - 51px);
+                margin-top: calc(-100% - 63px);
             }
         }
 
@@ -128,7 +137,7 @@
                 max-width: 319px;
 
                 &:last-child {
-                    margin-top: calc(-100% + 24px);
+                    margin-top: calc(-100% + 19px);
                 }
             }
         }

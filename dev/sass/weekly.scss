@@ -1,0 +1,10 @@
+.weekly {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   .weekly-title {
+      font-weight: 600;
+      color: $light-grey;
+   }
+}
