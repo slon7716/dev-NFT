@@ -15,6 +15,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 6px;
+        letter-spacing: 1.23px;
 
         &-line {
             width: 195px;
@@ -88,18 +89,18 @@
             position: absolute;
             right: 60px;
             top: 0;
-            height: 402px;
             width: 174px;
+            height: 402px;
             background: url(assets/img/banner-dot.svg);
         }
 
         &::after {
             content: "";
             position: absolute;
-            left: 423px;
+            left: 413px;
             top: 60px;
-            height:124px;
             width: 129px;
+            height: 124px;
             background: url(assets/img/twisted-arrow.svg);
         }
     }
@@ -150,7 +151,7 @@
     height: 69px;
     background-color: #fff;
     border-radius: 17px;
-    box-shadow: 0 43px 34px 0px rgba(15, 15, 15, 0.12);
+    box-shadow: 0 43px 24px 0 rgba(15, 15, 15, 0.12);
     margin-left: 112px;
     margin-top: -78px;
 
@@ -196,17 +197,3 @@
 .swiper-button-next {
     right: 0;
 }
-
-// .swiper-slide.swiper-slide-active {
-//     width: 391px !important;
-//     padding-top: 20px;
-// }
-
-// .swiper-slide.swiper-slide-next {
-//     width: 320px !important;
-//     padding-top: 203px;
-// }
-
-// .swiper-wrapper {
-//     filter: blur(83.7px);
-// }

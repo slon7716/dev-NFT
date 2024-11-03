@@ -81,6 +81,7 @@
       &-title {
          font-size: 3rem;
          margin-bottom: 10px;
+         letter-spacing: -2px;
       }
 
       &-description {
@@ -94,6 +95,85 @@
 
       &-advantages {
        margin: 0;
+      }
+
+      &-slider-container {
+ 
+         &::before {
+            right: 10px;
+            width: 92px;
+            height: 213px;
+            background: url(assets/img/banner-dot-mobile.svg);
+         }
+
+         &::after {
+            left: 224px;
+            top: 40px;
+            width: 59px;
+            height: 57px;
+            background: url(assets/img/twisted-arrow-mobile.svg);
+         }
+      }
+
+      .swiper {
+         width: 436px;
+         height: 295px;
+      }
+
+      .swiper-slide {
+         
+         img {
+
+            &:first-child {
+               margin-top: 20px;
+            }
+
+            &:last-child {
+               margin-top: calc(-100% - 39px);
+            }
+         }
+
+         &.swiper-slide-next {
+            margin-top: 107px;
+
+            img {
+               max-width: 170px;
+
+               &:first-child {
+                  margin-top: 5px;
+               }
+
+               &:last-child {
+                  margin-top: calc(-100% + 10px);
+               }
+            }
+         }
+      }
+
+      .banner-slider-navigation {
+         width: 88px;
+         height: 37px;
+         border-radius: 9px;
+         box-shadow: 0 23px 18px 0px rgba(15, 15, 15, 0.12);
+         margin-left: 70px;
+         margin-top: -37px;     
+
+         &::after {
+            width: 1.5px;
+            height: 14px;
+            border-radius: 1.5px;
+         }
+      }
+
+      .swiper-button-prev, 
+      .swiper-button-next {
+         width: 44px;
+         height: 37px;
+      
+         svg {
+            width: 14px;
+            height: 14px;
+         }
       }
    }
 
