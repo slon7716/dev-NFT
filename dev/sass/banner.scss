@@ -50,6 +50,14 @@
     &-btns-row {
         margin: 0 -12px 80px;
 
+        .btn-primery {
+            padding: 16px 28.5px;
+        }
+
+        .btn-secondary {
+            padding: 16px 20px;
+        }
+
         >a,
         .btn {
             margin: 0 12px;
@@ -59,23 +67,23 @@
     &-advantages {
         display: flex;
         margin: 0 -32px;
-    }
 
-    &-advantage {
-        margin: 0 32px;
-
-        h3 {
-            line-height: 1.278;
-            margin-bottom: 6px;
-            color: $footer-bg;
-        }
-
-        small {
-            display: inline-block;
-            font-size: 0.75rem;
-            font-weight: 500;
-            line-height: 1.5;
-            color: $footer-color;
+        .banner-advantage {
+            margin: 0 32px;
+    
+            h3 {
+                line-height: 1.278;
+                margin-bottom: 6px;
+                color: $footer-bg;
+            }
+    
+            small {
+                display: inline-block;
+                font-size: 0.75rem;
+                font-weight: 500;
+                line-height: 1.5;
+                color: $footer-color;
+            }    
         }
     }
 
@@ -138,7 +146,7 @@
                 max-width: 319px;
 
                 &:last-child {
-                    margin-top: calc(-100% + 19px);
+                    margin-top: calc(-100% + 40px);
                 }
             }
         }

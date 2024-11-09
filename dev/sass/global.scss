@@ -16,6 +16,7 @@ body {
   font-family: $font-primary;
   color: #000;
   background-color: $background;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,7 +29,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.875rem;
 }
 
 h3 {
@@ -79,7 +80,7 @@ input {
 
 .container {
   width: 100%;
-  max-width: 1248px; /* +24px */
+  max-width: 1248px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -93,10 +94,15 @@ input {
   line-height: 1.5;
   border-radius: 16px;
   color: #000;
-  border: 2px solid;  /* border наследует значение свойства color */
+  border: 2px solid #000;
   padding: 15px 26.5px;
   cursor: pointer;
   transition: 0.3s;
+
+  &:focus, 
+  &:active:focus {
+    box-shadow: none;
+  }
 
   &.btn-primery {
     background-color: #000;
@@ -121,4 +127,40 @@ input {
 
 .d-none {
   display: none;
+}
+
+.section-title {
+  @include sectitle;
+  @include flex-centered;
+}
+
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-etherium {
+  background-image: url(assets/img/icon-etherium.svg);
+}
+
+.icon-xs {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-sm {
+  width: 21px;
+  height: 21px;
+}
+
+.icon-md {
+  width: 31px;
+  height: 31px;
+}
+
+.icon-lg {
+  width: 44px;
+  height: 44px;
 }

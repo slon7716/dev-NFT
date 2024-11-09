@@ -1,9 +1,17 @@
 @media screen and (max-width: 1024.9px) {
+   .btn {
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.42;
+      border-radius: 9px;
+      border: 1px solid #000;
+   }
+
    header {
       position: relative;
       padding: 30px 0;
       margin-bottom: 74px;
-      
+
       &::after {
          content: "";
          position: absolute;
@@ -14,26 +22,29 @@
          background-color: $light-grey;
       }
    }
-   
-   .mobile-container {
-      display: none;
-      flex-direction: column;
-      position: absolute;
+
+   .mobile-container.show {
       left: 0;
+   }
+
+   .mobile-container {
+      position: absolute;
+      flex-direction: column;
       top: 106px;
+      left: 100%;
       gap: 24px;
       padding: 36px;
-      background-color: #000;
+      background-color: $header-color;
       z-index: 2;
-   }
-   
-   .mobile-container.show {
-      display: flex;
+      transition: 0.7s;
 
       .header-nav {
+         display: flex;
+         justify-content: center;
+         text-align: center;
          max-width: 348px;
          width: 100%;
-               
+
          .nav-list {
             flex-direction: column;
             padding: 0;
@@ -42,6 +53,8 @@
                margin: 12px 0;
 
                a {
+                  color: #000;
+
                   &:hover {
                      color: #fff;
                   }
@@ -51,16 +64,28 @@
       }
 
       form.header-search {
-         margin: 0;
+         margin: initial;
 
-         + .btn {
-            max-width: 348px;
-            width: 100%;
+         input[type='search'] {
+   
+            &:hover {
+               outline: 1px solid #000;
+            }
+   
+            &:focus {
+               outline: 2px solid #000;
+            }
+   
+   
+            +.btn {
+               max-width: 348px;
+               width: 100%;
+            }
          }
-      }  
-   }   
+      }
+   }
 
-   .btn-burger {
+   .burger {
       display: block;
    }
 
@@ -75,7 +100,7 @@
       }
 
       &-content {
-       text-align: center;
+         text-align: center;
       }
 
       &-title {
@@ -91,14 +116,27 @@
 
       &-btns-row {
          margin-bottom: 20px;
+
+         .btn-primery {
+            padding: 14px 19.5px;
+         }
+
+         .btn-secondary {
+            padding: 14px;
+         }
       }
 
       &-advantages {
-       margin: 0;
+         justify-content: center;
+         margin: 0;
+
+         h3 {
+            font-size: 1.5rem;
+         }
       }
 
       &-slider-container {
- 
+
          &::before {
             right: 10px;
             width: 92px;
@@ -121,7 +159,7 @@
       }
 
       .swiper-slide {
-         
+
          img {
 
             &:first-child {
@@ -156,7 +194,7 @@
          border-radius: 9px;
          box-shadow: 0 23px 18px 0px rgba(15, 15, 15, 0.12);
          margin-left: 70px;
-         margin-top: -37px;     
+         margin-top: -37px;
 
          &::after {
             width: 1.5px;
@@ -165,11 +203,11 @@
          }
       }
 
-      .swiper-button-prev, 
+      .swiper-button-prev,
       .swiper-button-next {
          width: 44px;
          height: 37px;
-      
+
          svg {
             width: 14px;
             height: 14px;
@@ -181,15 +219,15 @@
       position: relative;
       padding: 0 27px;
    }
-   
+
    .footer-top {
       flex-direction: column;
       padding-top: 52px;
-   
+
       .footer-nav {
          margin-top: 50px;
          margin-left: initial;
-   
+
          .footer-nav-list {
             flex-direction: column;
             gap: 30px;
@@ -200,7 +238,7 @@
          }
       }
    }
-   
+
    .footer-bottom {
       padding: 26px 0 36px;
       justify-content: center;
@@ -226,14 +264,13 @@
       justify-content: center;
 
       &-line {
-      width: 34px;
+         width: 34px;
       }
 
       &-text {
          font-size: 0.625rem;
          line-height: 1.2;
-         margin-left: 12px; 
+         margin-left: 12px;
       }
    }
 }
-

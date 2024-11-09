@@ -4,10 +4,10 @@ header {
 	.container {
 		display: flex;
 		align-items: center;
-	}
 
-	button {
-		white-space: nowrap;
+		button {
+			white-space: nowrap;
+		}
 	}
 }
 
@@ -43,6 +43,7 @@ form.header-search {
 	width: 100%;
 	max-width: 348px;
 	margin-right: 30px;
+	margin-left: auto;
 
 	input[type='search'] {
 		box-sizing: border-box;
@@ -50,7 +51,7 @@ form.header-search {
 		line-height: 1.125;
 		width: 100%;
 		border: none;
-		border-radius: 16px;
+		border-radius: 15px;
 		padding: 20px 12px 20px 70px;
 		margin-left: auto;
 		background: url(assets/img/loupe.svg) 22px center no-repeat $light-grey;
@@ -65,7 +66,7 @@ form.header-search {
 	}
 }
 
-.btn-burger {
+.burger {
 	position: relative;
 	display: none;
 	width: 32px;

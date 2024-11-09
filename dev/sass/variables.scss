@@ -4,9 +4,19 @@ $font-secondary: 'monospace';
 
 ///colors///
 $background: #eeeeee;
-$footer-bg: #141416;
 $header-color: #606060;
+$footer-bg: #141416;
 $footer-color: #707070;
 $text-grey: #929292;
 $light-grey: #c5c5c5;
-// $color:      #c8c8c8;
+$color:      #94a3b8;
+
+@mixin sectitle {
+   margin-bottom: 90px;
+   color: $text-grey;
+}
+
+@mixin flex-centered {
+   display: flex;
+   justify-content: center;
+}
