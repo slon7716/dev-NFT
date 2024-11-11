@@ -7,10 +7,10 @@ const toggleMobileMenu = () => {
 btnburger.addEventListener('click', toggleMobileMenu);
 
 const bannerSlider = new Swiper('.banner-slider', {
+  speed: 900,
   slidesPerView: 2,
-  loop: true,
-  speed: 1000,
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -18,9 +18,20 @@ const bannerSlider = new Swiper('.banner-slider', {
 });
 
 const carouselWeekly = new Swiper('.carousel-weekly', {
-  slidesPerView: 3,
-  loop: true,
-  speed: 1000,
-  spaceBetween: 20,
+  speed: 900,
+  slidesPerView: 5,
+  slidesPerView: 'auto',
+  spaceBetween: 28,
+  slidesPerGroup: 1,
   centeredSlides: true,
+  loop: true,
+  navigation: {
+    nextEl: '.weekly-button-next',
+    prevEl: '.weekly-button-prev',
+  },
+  breakpoints: {
+    1025: {
+      spaceBetween: 40,
+    }
+  }
 });

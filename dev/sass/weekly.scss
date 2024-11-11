@@ -1,19 +1,42 @@
 .weekly {
-   background-color: $light-grey;
+   background-color: $weekly-bg;
 
    .container {
       max-width: 1440px;
       overflow: hidden;
    }
-}
-   
-.carousel-weekly {
-   max-width: 923px;
-   width: 100%;
-   overflow: visible;
 
-   .swiper-slide {
-      min-width: 281px;
+   .icon-xs {
+      display: none;
+   }
+
+   &-slider-navigation {
+      @include slider-nav;
+      margin-top: 0;
+      margin-bottom: 103px;
+      margin-left: calc(50% - 83px);
+      box-shadow: 0 43px 24px 0 rgba(15, 15, 15, 0.15);
+
+      &::after {
+         @include slider-nav-separator;
+      }
+   }
+
+   .weekly-button-prev,
+   .weekly-button-next {
+      @include slider-nav-half;
    }
 }
+
+.carousel-weekly {
+   width: 100%;
+   overflow: visible;
+   margin: 0 0 115px;
+
+   .swiper-slide
+   {
+      width: 281px;
+   }
+}
+
 

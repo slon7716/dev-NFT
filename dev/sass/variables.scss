@@ -3,13 +3,13 @@ $font-primary: 'Poppins';
 $font-secondary: 'monospace';
 
 ///colors///
-$background: #eeeeee;
+$background: #f5f5f5;
+$weekly-bg: #e1e1e1;
+$light-grey: #c5c5c5;
+$text-grey: #929292;
+$footer-color: #707070;
 $header-color: #606060;
 $footer-bg: #141416;
-$footer-color: #707070;
-$text-grey: #929292;
-$light-grey: #c5c5c5;
-$color:      #94a3b8;
 
 @mixin sectitle {
    margin-bottom: 90px;
@@ -19,4 +19,49 @@ $color:      #94a3b8;
 @mixin flex-centered {
    display: flex;
    justify-content: center;
+}
+
+@mixin slider-nav {
+   display: flex;
+   position: relative;
+   width: 166px;
+   height: 69px;
+   background-color: #fff;
+   border-radius: 17px;
+   box-shadow: 0 43px 24px 0 rgba(15, 15, 15, 0.12);
+   cursor: pointer;
+}
+
+@mixin slider-nav-separator {
+   content: '';
+   position: absolute;
+   width: 2px;
+   height: 26px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   background-color: $light-grey;
+   border-radius: 2px;
+}
+
+@mixin slider-nav-half {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 82px;
+   height: 69px;
+   color: $text-grey;
+
+   &:hover {
+      color: $footer-bg;
+   }
+
+   &::after {
+      display: none;
+   }
+
+   svg {
+      width: 26px;
+      height: 26px;
+   }
 }

@@ -1,3 +1,9 @@
 @media (min-width: 1025px) {
-
+   .icon-sm {
+      display: inline-block;
+   }
+  
+   .icon-xs {
+      display: none; // Скрываем .icon-xs на экранах более 1024px
+   }
 }
