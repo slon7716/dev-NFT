@@ -11,16 +11,6 @@ $footer-color: #707070;
 $header-color: #606060;
 $footer-bg: #141416;
 
-@mixin sectitle {
-   margin-bottom: 90px;
-   color: $text-grey;
-}
-
-@mixin flex-centered {
-   display: flex;
-   justify-content: center;
-}
-
 @mixin slider-nav {
    display: flex;
    position: relative;
@@ -37,7 +27,7 @@ $footer-bg: #141416;
    position: absolute;
    width: 2px;
    height: 26px;
-   left: 50%;
+   left: calc(50% - 1px);
    top: 50%;
    transform: translate(-50%, -50%);
    background-color: $light-grey;
@@ -45,9 +35,6 @@ $footer-bg: #141416;
 }
 
 @mixin slider-nav-half {
-   display: flex;
-   align-items: center;
-   justify-content: center;
    width: 82px;
    height: 69px;
    color: $text-grey;

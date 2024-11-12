@@ -90,7 +90,7 @@
    }
 
    .banner {
-      padding-top: 0;
+      padding: 0 0 114px;
 
       >.container {
          flex-direction: column;
@@ -189,7 +189,7 @@
       }
 
       .banner-slider-navigation {
-         width: 88px;
+         width: 89px;
          height: 37px;
          border-radius: 9px;
          box-shadow: 0 23px 18px 0px rgba(15, 15, 15, 0.12);
@@ -207,7 +207,7 @@
       .swiper-button-next {
          width: 44px;
          height: 37px;
-         margin: -18px -11px;
+         margin: -18px -13px;
 
          svg {
             width: 14px;
@@ -215,6 +215,45 @@
          }
       }
    }
+
+   .weekly {
+
+      .section-title {
+         font-size: 1.875rem;
+         line-height: 0.9;
+         margin-bottom: 63px;
+      }
+
+      &-slider-navigation {
+         width: 102px;
+         height: 42px;
+         border-radius: 11px;
+         box-shadow: 0 26px 21px 0px rgba(15, 15, 15, 0.15);
+         margin-left: calc(50% - 51px);
+         margin-top: -37px;
+         
+         &::after {
+            width: 1.5px;
+            height: 16px;
+            border-radius: 1.5px;
+         }
+
+         .weekly-button-prev,
+         .weekly-button-next {
+            margin: 13px;
+            
+            svg {
+               width: 16px;
+               height: 16px;
+            }
+         }
+         
+         .weekly-button-next {
+            margin-left: 29px;
+         }
+      }
+   }
+
 
    .carousel-weekly {
       .swiper-slide {

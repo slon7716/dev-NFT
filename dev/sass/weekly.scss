@@ -6,6 +6,11 @@
       overflow: hidden;
    }
 
+   .section-title {
+      line-height: 0.6;
+      margin-top: 57px;
+   }
+
    .icon-xs {
       display: none;
    }
@@ -22,9 +27,14 @@
       }
    }
 
-   .weekly-button-prev,
-   .weekly-button-next {
+   &-button-prev,
+   &-button-next {
       @include slider-nav-half;
+      margin: 22px;
+   }
+
+   &-button-next {
+      margin-left: 48px;
    }
 }
 

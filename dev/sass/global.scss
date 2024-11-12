@@ -142,8 +142,10 @@ img {
 }
 
 .section-title {
-  @include sectitle;
-  @include flex-centered;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  color: $text-grey;
 }
 
 .icon {
