@@ -1,0 +1,136 @@
+.widjet {
+   position: absolute;
+   right: 60px;
+   bottom: -100px;
+   width: 365px;
+   background-color: #fff;
+   color: $widjet-color;
+   border-radius: 16px;
+   padding: 24px 26px 21px;
+
+   &__title {
+      display: flex;
+      padding-right: 36px;
+      margin-bottom: 34px;
+
+      h4 {
+         line-height: 1.333;
+      }
+   }
+}
+
+.layout-menu {
+   position: absolute;
+   top: 28px;
+   right: 33px;
+}
+
+.layout-case__button {
+   width: 24px;
+   height: 11px;
+   font-size: 0;
+   line-height: 0;
+   border: none;
+   background-color: inherit;
+   color: $text-grey;
+
+   &:hover {
+      color: $widjet-color;
+   }
+
+   svg {
+      width: inherit;
+      height: inherit;
+   }
+}
+
+.layout-case {
+   display: none;
+   gap: 12px;
+   padding: 0;
+
+   &__item svg {
+      width: 48px;
+      height: 48px;
+   }
+}
+
+.widjet-users-list {
+   max-height: 213px;
+   padding: 0 12px 0 0;
+   overflow: auto;
+   counter-reset: widjetcount;
+}
+
+.widjet-users-list__item {
+   margin-bottom: 33px;
+   position: relative;
+
+   &::before {
+      counter-increment: widjetcount;
+      content: counter(widjetcount);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 28px;
+      left: 31px;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: $background;
+      font-size: 0.72rem;
+      font-weight: 700;
+   }
+}
+
+.widjet-user {
+   display: flex;
+}
+
+.widjet-user__avatar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 49px;
+   height: 49px;
+   margin-right: 15px;
+
+   img {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+   }
+}
+
+.widjet-user__name {
+   font-size: 0.96rem;
+   font-weight: 600;
+   line-height: 1.4;
+   margin-bottom: 8px;
+}
+
+.widjet-user__nickname {
+   font-size: 0.78rem;
+   line-height: 1.5;
+   color: $footer-color;
+}
+
+.widjet-user__volume {
+   margin-left: auto;
+}
+
+.widjet-user__price {
+   display: flex;
+   align-items: center;
+   font-size: 0.96rem;
+   font-weight: 600;
+   line-height: 1.4;
+   margin-bottom: 7px;
+}
+
+.widjet-user__percent {
+   font-size: 0.84rem;
+   line-height: 1.5;
+   text-align: right;
+}

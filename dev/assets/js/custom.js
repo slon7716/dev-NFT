@@ -19,10 +19,8 @@ const bannerSlider = new Swiper('.banner-slider', {
 
 const carouselWeekly = new Swiper('.carousel-weekly', {
   speed: 900,
-  slidesPerView: 5,
   slidesPerView: 'auto',
   spaceBetween: 28,
-  slidesPerGroup: 1,
   centeredSlides: true,
   loop: true,
   navigation: {

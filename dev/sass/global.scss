@@ -43,7 +43,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.3125rem;
 }
 
 h5 {
@@ -58,10 +58,8 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  /* Наследовать шрифт от body */
-  color: inherit;
-  /* Наследовать цвет от body */
+  font-family: inherit; /* Наследовать шрифт от body */
+  color: inherit; /* Наследовать цвет от body */
 }
 
 a {
@@ -159,9 +157,14 @@ img {
   background-image: url(assets/img/icon-etherium.svg);
 }
 
-.icon-xs {
+.icon-xxs {
   width: 15px;
   height: 15px;
+}
+
+.icon-xs {
+  width: 17px;
+  height: 17px;
 }
 
 .icon-sm {
@@ -177,4 +180,32 @@ img {
 .icon-lg {
   width: 44px;
   height: 44px;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-green {
+  color: green;
+}
+
+.widjet-user__percent-totop {
+  @extend .color-green;
+}
+
+.widjet-user__percent-tobottom {
+  @extend .color-red;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Задаем желаемую ширину скрола*/
+
+  &-track {
+    background-color: $weekly-bg;
+  }
+
+  &-thumb {
+    background-color: $light-grey;
+  }
 }

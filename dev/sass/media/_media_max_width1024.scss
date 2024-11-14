@@ -231,7 +231,7 @@
          box-shadow: 0 26px 21px 0px rgba(15, 15, 15, 0.15);
          margin-left: calc(50% - 51px);
          margin-top: -37px;
-         
+
          &::after {
             width: 1.5px;
             height: 16px;
@@ -241,13 +241,13 @@
          .weekly-button-prev,
          .weekly-button-next {
             margin: 13px;
-            
+
             svg {
                width: 16px;
                height: 16px;
             }
          }
-         
+
          .weekly-button-next {
             margin-left: 29px;
          }
@@ -303,10 +303,14 @@
       .icon-sm {
          display: none; // Скрываем .icon-sm на экранах менее 1024px
       }
-     
-      .icon-xs {
-         display: inline-block; // Показываем .icon-xs на экранах менее 1024px
+
+      .icon-xxs {
+         display: inline-block; // Показываем .icon-xxs на экранах менее 1024px
       }
+   }
+
+   .weekly .widjet {
+      display: none;
    }
 
    footer .container {

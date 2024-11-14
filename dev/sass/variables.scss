@@ -9,7 +9,9 @@ $light-grey: #c5c5c5;
 $text-grey: #929292;
 $footer-color: #707070;
 $header-color: #606060;
-$footer-bg: #141416;
+// $widjet-color: #141416;
+$widjet-color: #1A202C;
+// $color: ;
 
 @mixin slider-nav {
    display: flex;
@@ -40,7 +42,7 @@ $footer-bg: #141416;
    color: $text-grey;
 
    &:hover {
-      color: $footer-bg;
+      color: $widjet-color;
    }
 
    &::after {

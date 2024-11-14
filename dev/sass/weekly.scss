@@ -1,6 +1,7 @@
 .weekly {
+   position: relative;
    background-color: $weekly-bg;
-
+   
    .container {
       max-width: 1440px;
       overflow: hidden;
@@ -9,10 +10,6 @@
    .section-title {
       line-height: 0.6;
       margin-top: 57px;
-   }
-
-   .icon-xs {
-      display: none;
    }
 
    &-slider-navigation {
@@ -43,10 +40,11 @@
    overflow: visible;
    margin: 0 0 115px;
 
-   .swiper-slide
-   {
+   .swiper-slide {
       width: 281px;
    }
 }
 
-
+.product .icon-xxs {
+   display: none;
+}
