@@ -3,8 +3,9 @@
    background-color: $weekly-bg;
    
    .container {
+      position: relative;
       max-width: 1440px;
-      overflow: hidden;
+      padding: 0;
    }
 
    .section-title {
@@ -37,7 +38,7 @@
 
 .carousel-weekly {
    width: 100%;
-   overflow: visible;
+   overflow: hidden;
    margin: 0 0 115px;
 
    .swiper-slide {
