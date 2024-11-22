@@ -58,8 +58,10 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit; /* Наследовать шрифт от body */
-  color: inherit; /* Наследовать цвет от body */
+  font-family: inherit;
+  /* Наследовать шрифт от body */
+  color: inherit;
+  /* Наследовать цвет от body */
 }
 
 a {
@@ -190,16 +192,17 @@ img {
   color: green;
 }
 
-.widjet-user__percent-totop {
+.widget-user__percent-totop {
   @extend .color-green;
 }
 
-.widjet-user__percent-tobottom {
+.widget-user__percent-tobottom {
   @extend .color-red;
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Задаем желаемую ширину скрола*/
+  width: 12px;
+  /* Задаем желаемую ширину скрола*/
 
   &-track {
     background-color: $weekly-bg;

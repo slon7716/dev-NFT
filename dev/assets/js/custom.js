@@ -34,73 +34,11 @@ const carouselWeekly = new Swiper('.carousel-weekly', {
   }
 });
 
-const btnLayout = document.querySelectorAll('.layout-case__button');
-const widjet = document.querySelector('.widjet');
-const layoutItem = document.querySelectorAll('[data-layout]');
-const customWidjet = document.querySelectorAll('.layout-menu');
-
-btnLayout.forEach(btn => {
-  btn.addEventListener('click', function () {
-    btn.closest('.layout-menu').classList.toggle('show');
-  });
-});
-
-function checkLayOutCookie(dataLayout) {
-  if (widjet) {
-    widjet.classList.remove('list', 'grid');
-    widjet.classList.add(dataLayout);
-  } else {
-    console.warn('Элемент widjet не найден!');
-  }
-
-  if (document.cookie === 'layoutCase=grid') {
-    widjet.classList.remove('list');
-    widjet.classList.add('grid');
-  } else {
-    widjet.classList.add('list');
-    widjet.classList.remove('grid');
-  }
+if (document.querySelector('.widget')) {
+  installwidget();
 }
+//другой вариант: document.querySelector('widget') ? installwidget() : null;
 
-checkLayOutCookie('list');
-
-layoutItem.forEach(item => {
-  item.addEventListener('click', function () {
-    let dataLayout = item.getAttribute('data-layout');
-    document.cookie = 'layoutCase=' + dataLayout;
-
-    checkLayOutCookie(dataLayout);
-    
-    const thisNavigation = item.closest('.layout-case');
-    if (thisNavigation) {
-      const thisNavigationItems = thisNavigation.querySelectorAll('layout-case__item');
-      thisNavigationItems.forEach(li => {
-        li.classList.remove('active');
-      })
-      item.classList.add('active');
-    } else {
-      console.warn('Элемент .layout-case не найден для:', item);
-    }
-    });
-});
-
-function closeAllWidjet() {
-  customWidjet.forEach(item => {
-    document.addEventListener('click', function (event) {
-      const inRoundarries = event.composedPath().includes(item);
-      if (!inRoundarries) {
-        item.classList.remove('show');
-      }
-    });
-  });
+if (document.querySelector('.tab')) {
+  installtab();
 }
-
-closeAllWidjet();
-
-// const openButton = document.querySelectorAll('[data-custom-widjet="open-button"]');
-// openButton.forEach(btn => {
-  //   btn.addEventListener('click', function(e) {
-    //     btn.closest('.layout-menu').classList.toggle('show')
-    //   })
-    // });
-    

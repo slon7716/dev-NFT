@@ -1,0 +1,37 @@
+.tabs {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #000;
+   padding: 24px;
+
+   &__nav,
+   &__content,
+   &__button {
+      border: 1px solid #401fb9;
+      padding: 12px;
+   }
+
+   &__nav {
+      display: flex;
+   }
+
+   // &__content {
+   //    display: flex;
+   // }
+}
+
+.tabs {
+   &__button {
+      &.active {
+         background-color: #71f8c4;
+      }
+   }
+}
+
+.tabs__content {
+   display: none;
+
+   &.active {
+      display: block;
+   }
+}

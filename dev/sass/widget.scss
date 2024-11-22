@@ -1,10 +1,10 @@
-.widjet {
+.widget {
    position: absolute;
    right: 60px;
    bottom: -200px;
    width: 365px;
    background-color: #fff;
-   color: $widjet-color;
+   color: $widget-color;
    border-radius: 16px;
    padding: 24px 26px 21px;
 
@@ -17,69 +17,27 @@
          line-height: 1.333;
       }
    }
+}
 
-   .layout-menu {
-      position: absolute;
-      top: 28px;
-      right: 33px;
-      display: flex;
-      flex-direction: column;
-   
-      &.show {
-         
-         .layout-case {
-            display: flex;
-         }
-      }
+.layout-menu {
+   position: absolute;
+   top: 19px;
+   right: 26px;
+   display: flex;
+   flex-direction: column;
+
+   .layout-case {
+      display: none;
    }
 
-   &.grid {
-      .widjet-users-list {
+   &.show .layout-case {
       display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-      }
-
-      .widjet-users-list__item {
-         width: calc(50% - 12px);
-
-         .widjet-user__avatar {
-            margin: 0;
-         }
-
-         &::before {
-            left: 72px;
-         }
-      }
-
-      .widjet-user {
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         text-align: center;
-
-         .widjet-user__data {
-            margin-bottom: 8px;
-         }
-
-         .widjet-user__name {
-            margin: 0;
-         }
-      }
-
-      .widjet-user__volume {
-         margin: 0;
-
-         .widjet-user__percent {
-            text-align: center;
-         }
-      }
    }
 }
 
 .layout-case__button {
    width: 36px;
-   height: 13px;
+   height: 20px;
    font-size: 0;
    line-height: 0;
    border: none;
@@ -88,7 +46,7 @@
    align-self: flex-end;
 
    &:hover {
-      color: $widjet-color;
+      color: $widget-color;
    }
 
    svg {
@@ -102,25 +60,39 @@
    gap: 12px;
    padding: 0;
 
-   &__item svg {
-      width: 48px;
-      height: 48px;
+   &.show {
+      display: flex;
+   }
+
+   &__item {
+      .icon-svg {
+         width: 48px;
+         height: 48px;
+
+         use {
+            stroke: $footer-color;
+         }
+      }
+
+      &.active .icon-svg use {
+         stroke: #000;
+      }
    }
 }
 
-.widjet-users-list {
+.widget-users-list {
    max-height: 213px;
    padding: 0 12px 0 0;
    overflow: auto;
-   counter-reset: widjetcount;
+   counter-reset: widgetcount;
 
    &__item {
       margin-bottom: 33px;
       position: relative;
-   
+
       &::before {
-         counter-increment: widjetcount;
-         content: counter(widjetcount) ".";
+         counter-increment: widgetcount;
+         content: counter(widgetcount) ".";
          position: absolute;
          display: flex;
          align-items: center;
@@ -135,7 +107,7 @@
          font-weight: 700;
       }
 
-      .widjet-user {
+      .widget-user {
          display: flex;
 
          &__avatar {
@@ -145,10 +117,10 @@
             width: 49px;
             height: 49px;
             margin-right: 15px;
-         
+
             img {
-               width: 43px;
-               height: 43px;
+               width: 45px;
+               height: 45px;
                border-radius: 50%;
             }
          }
@@ -156,7 +128,7 @@
          &__volume {
             margin-left: auto;
 
-            .widjet-user__price {
+            .widget-user__price {
                display: flex;
                align-items: center;
                font-size: 0.96rem;
@@ -164,30 +136,73 @@
                line-height: 1.4;
                margin-bottom: 7px;
             }
-            
-            .widjet-user__percent {
+
+            .widget-user__percent {
                font-size: 0.84rem;
                line-height: 1.5;
                text-align: right;
             }
-         }         
-      }      
+         }
+      }
    }
 }
 
-.widjet-user__data {
+.widget-user__data {
 
-   .widjet-user__name {
+   .widget-user__name {
       font-size: 0.96rem;
       font-weight: 600;
       line-height: 1.4;
       margin-bottom: 8px;
    }
-   
-   .widjet-user__nickname {
+
+   .widget-user__nickname {
       font-size: 0.78rem;
       line-height: 1.5;
       color: $footer-color;
    }
 }
 
+.widget.grid {
+   .widget-users-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+   }
+   
+   .widget-users-list__item {
+      width: calc(50% - 12px);
+      margin: 0;
+
+      .widget-user__avatar {
+         margin: 0;
+      }
+
+      &::before {
+         left: 72px;
+      }
+   }
+
+   .widget-user {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .widget-user__data {
+         margin-bottom: 8px;
+      }
+
+      .widget-user__name {
+         margin: 0;
+      }
+   }
+
+   .widget-user__volume {
+      margin: 0;
+
+      .widget-user__percent {
+         text-align: center;
+      }
+   }
+}
