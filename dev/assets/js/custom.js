@@ -39,6 +39,32 @@ if (document.querySelector('.widget')) {
 }
 //другой вариант: document.querySelector('widget') ? installwidget() : null;
 
-if (document.querySelector('.tab')) {
+if (document.querySelector('.tabs')) {
   installtab();
 }
+
+//   Присваиваем классы с индексами для управления кнопками и контентом:
+// const tabs = document.querySelectorAll('.tabs');
+// const tabsNav = document.querySelectorAll('.tabs__nav');
+// tabs.forEach((item, index) => {
+//    item.classList.add('tabs-' + index);
+// })
+// tabsNav.forEach((item, index) => {
+//    item.classList.add('tabs__nav-' + index);
+// })
+// tabsComtent.forEach((item, index) => {
+//    item.classList.add('tabs__content-' + index);
+// })
+// tabsButton.forEach((item, index) => {
+//    item.classList.add('tabs__button-' + index);
+// })
+//        Более оптимальный вариант:
+// function addClass(selectors, className) {
+//    selectors.forEach((item, index) => {
+//       item.classList.add(className + index);
+//    })
+// }
+// addClass(tabs, 'tabs-');
+// addClass(tabsNav, 'tabs__nav-');
+// addClass(tabsComtent, 'tabs__content-');
+// addClass(tabsButton, 'tabs____button-')
