@@ -10,7 +10,8 @@ $text-grey: #929292;
 $footer-color: #707070;
 $header-color: #606060;
 $widget-color: #1A202C;
-// $color: ;
+$percent: #10C352;
+// $color: #EBE9E9;
 
 @mixin slider-nav {
    display: flex;
@@ -23,7 +24,7 @@ $widget-color: #1A202C;
    cursor: pointer;
 }
 
-@mixin slider-nav-separator {
+@mixin slider-nav-separator { 
    content: '';
    position: absolute;
    width: 2px;
@@ -37,7 +38,7 @@ $widget-color: #1A202C;
 
 @mixin slider-nav-half {
    width: 82px;
-   height: 69px;
+   height: 69px; 
    color: $text-grey;
 
    &:hover {

@@ -6,13 +6,26 @@
       position: relative;
       max-width: 1440px;
       padding: 0;
-   }
 
-   .section-title {
-      line-height: 0.6;
-      margin-top: 57px;
+      .section-title {
+         line-height: 0.6;
+         color: $text-grey;    
+         margin: 57px 0 100px;
+      }   
    }
+}
 
+.weekly {
+   .carousel-weekly {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 0 65px;
+   
+      .swiper-slide {
+         width: 281px;
+      }
+   }
+   
    .swiper-wrapper {
       padding-bottom: 50px;
    }
@@ -39,13 +52,4 @@
    }
 }
 
-.carousel-weekly {
-   width: 100%;
-   overflow: hidden;
-   margin: 0 0 65px;
-
-   .swiper-slide {
-      width: 281px;
-   }
-}
 
