@@ -1,5 +1,6 @@
 const btnburger = document.querySelector('.burger');
 const mobileContainer = document.querySelector('.mobile-container');
+
 const toggleMobileMenu = () => {
   mobileContainer.classList.toggle('show');
   btnburger.classList.toggle('active');
@@ -33,6 +34,15 @@ const carouselWeekly = new Swiper('.carousel-weekly', {
     }
   }
 });
+
+const linkBack = document.querySelector('.history-back');
+
+function historyBack() {
+  linkBack.addEventListener('click', function () {
+    window.historyBack();
+  })
+}
+linkBack ? historyBack : null;
 
 if (document.querySelector('.widget')) {
   installwidget();

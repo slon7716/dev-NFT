@@ -1,0 +1,160 @@
+.creators {
+   color: $widget-color;
+   margin: 54px 0 180px 0;
+   
+   .cap {
+      width: 100%;
+      height: 355px;
+      border-radius: 22px;
+      box-shadow: 15px 15px 53px 0 rgba(0, 0, 0, 0.12);
+      margin-bottom: 73px;
+      position: relative;
+   }
+   
+   .foto {
+      width: 165px;
+      height: 165px;
+      margin: -140px 0 30px 71px;
+      position: relative;
+   }
+
+   .all-info {
+      display: flex;
+   }
+   
+   .tab {
+      flex-grow: 1; /* Адаптивный блок, занимающий оставшуюся ширину */
+   }
+}
+
+.creator {
+   width: 367px;
+   height: 112px;
+   display: flex;
+   margin: 0 0 43px 75px;
+   border-bottom: 1px solid $text-grey;
+
+   .user {
+      width: 139px;
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+
+      .name {
+         font-size: 2.1875rem;
+         font-weight: 600;
+         line-height: 1.3;
+      }
+
+      .handle {
+         font-size: 1.125rem;
+         line-height: 1.3;
+         color: $text-grey;
+      }
+   }
+
+   button {
+      width: 121px;
+      height: 46px;
+      padding: 0;
+      font-size: 0.925rem;
+   }
+}
+
+.bio-foll {
+   width: 367px;
+   height: 302px;
+   margin: 0 0 85px 75px;
+   display: flex;
+   flex-direction: column;
+   
+   .follow {
+      width: 100%;
+      height: 62px;
+      display: flex;
+      justify-content: space-between;
+      margin-right: auto;
+      margin-bottom: 117px;
+
+      .sales {
+         .ethirium {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.25;
+         }
+         
+         .total-sales {
+            font-size: 0.7rem;
+            color: $text-grey;
+         }
+      }
+      
+      .thousands {
+         .thousand {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.25;
+         }
+         
+         .followers {
+            font-size: 0.7rem;
+            color: $text-grey;
+         }
+      }
+      
+      .following {
+         
+         .numeric {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.25;
+         }
+         
+         .followings {
+            font-size: 0.7rem;
+            color: $text-grey;
+         }
+      }
+   }
+   
+   .bio-text {
+      .bio {
+         font-size: 1.57rem;
+         font-weight: 700;
+         line-height: 1.6;
+         color: $light-grey;
+      }
+      
+      .text {
+         font-size: 0.88rem;
+         line-height: 1.77;
+         color: $text-grey;
+      }
+   }
+}
+
+.border {
+   display: block;
+   width: 367px;
+   height: 1px;
+   background-color: $text-grey;
+   margin: 0 0 33px 75px;
+}
+
+.creator__social {
+   width: 255px;
+   margin-left: 75px;
+   display: flex;
+   justify-content: space-between;
+
+   a {
+      display: flex;
+      width: 16px;
+      height: 16px;
+      color: #000;
+
+      &:hover {
+         color: $text-grey;
+      }
+   }
+}

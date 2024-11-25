@@ -30,6 +30,7 @@
 
    &-bid {
       display: flex;
+      align-items: center;
       font-size: 1rem;
       font-weight: 500;
       line-height: 1.5625;
@@ -44,8 +45,8 @@
       margin: -52px 0 0 auto;
       padding: 15.5px 25px;
    }
-}
 
-.product .icon-xxs {
-   display: none;
+   .icon-xxs {
+      display: none;
+   }
 }
