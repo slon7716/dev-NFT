@@ -57,10 +57,8 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  /* Наследовать шрифт от body */
-  color: inherit;
-  /* Наследовать цвет от body */
+  font-family: inherit;  /* Наследовать шрифт от body */
+  color: inherit;  /* Наследовать цвет от body */
 }
 
 a {
@@ -198,14 +196,13 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
-  /* Задаем желаемую ширину скрола*/
-
-  &-track {
-    background-color: $weekly-bg;
-  }
+  width: 12px; // Задаем ширину скрола
 
   &-thumb {
-    background-color: $light-grey;
+    background-color: $light-grey; // цвет ползунка
+  }
+
+  &-track {
+    background-color: $weekly-bg; // цвет полосы прокрутки
   }
 }

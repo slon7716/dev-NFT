@@ -1,0 +1,52 @@
+.explore-marketplace {
+   color: $widget-color;
+   margin-bottom: 264px;
+
+   .container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .section-title {
+      margin-bottom: 65px;
+   }
+
+   .explore-btns-row {
+      color: $widget-color;
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin: 0 0 100px;
+   }
+
+   .btn {
+      font-size: 0.97rem;
+      border-radius: 17px;
+      padding: 16px;
+
+      .btn-content {
+         display: inline-flex; /* Выравниваем иконку и текст */
+         vertical-align: middle; /* Выравниваем иконку и текст в кнопке по вертикали */
+         align-items: center; /* Центрируем по вертикали */
+         gap: 11px; /* Отступ между иконкой и текстом */
+      }
+   }
+}
+
+.explore-product-row {
+   display: flex;
+   flex-direction: column;
+   gap: 68px;
+   
+   .mobile-four,
+   .desktop-four {
+      display: flex;
+      justify-content: space-between;
+
+      .product {
+         max-width: 282px;
+         width: 282px;
+         height: 404px;
+      }
+   }
+}

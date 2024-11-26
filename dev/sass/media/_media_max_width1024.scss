@@ -101,6 +101,20 @@
 
       &-content {
          text-align: center;
+         
+         .banner-overtitle {
+            justify-content: center;
+      
+            &-line {
+               width: 34px;
+            }
+      
+            &-text {
+               font-size: 0.625rem;
+               line-height: 1.2;
+               margin-left: 12px;
+            }
+         }
       }
 
       &-title {
@@ -217,11 +231,58 @@
    }
 
    .weekly {
-
       .section-title {
          font-size: 1.875rem;
          line-height: 0.9;
          margin-bottom: 63px;
+      }
+
+      .product {
+         max-width: 178px;
+         border-radius: 17px;
+         padding: 10px 10px 15px;
+   
+         &-img {
+            margin-bottom: 13px;
+         }
+   
+         &-title {
+            font-size: 0.9375rem;
+            line-height: 1.4;
+            margin-bottom: 10px;
+         }
+   
+         &-bid-title {
+            font-size: 0.625rem;
+            margin-bottom: 3px;
+         }
+   
+         &-bid {
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.417;
+   
+            i {
+               margin-right: 2px;
+            }
+         }
+   
+         .btn {
+            font-size: 0.625rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin: -35px 0 0 auto;
+            padding: 11px 18px;
+            border: none;
+         }
+   
+         .icon-sm {
+            display: none; // Скрываем .icon-sm на экранах менее 1024px
+         }
+   
+         .icon-xxs {
+            display: inline-block; // Показываем .icon-xxs на экранах менее 1024px
+         }
       }
 
       &-slider-navigation {
@@ -254,58 +315,9 @@
       }
    }
 
-
    .carousel-weekly {
       .swiper-slide {
          width: 198px;
-      }
-   }
-
-   .product {
-      max-width: 178px;
-      border-radius: 17px;
-      padding: 10px 10px 15px;
-
-      &-img {
-         margin-bottom: 13px;
-      }
-
-      &-title {
-         font-size: 0.9375rem;
-         line-height: 1.4;
-         margin-bottom: 10px;
-      }
-
-      &-bid-title {
-         font-size: 0.625rem;
-         margin-bottom: 3px;
-      }
-
-      &-bid {
-         font-size: 0.75rem;
-         font-weight: 400;
-         line-height: 1.417;
-
-         i {
-            margin-right: 2px;
-         }
-      }
-
-      .btn {
-         font-size: 0.625rem;
-         font-weight: 700;
-         line-height: 1.5;
-         margin: -35px 0 0 auto;
-         padding: 11px 18px;
-         border: none;
-      }
-
-      .icon-sm {
-         display: none; // Скрываем .icon-sm на экранах менее 1024px
-      }
-
-      .icon-xxs {
-         display: inline-block; // Показываем .icon-xxs на экранах менее 1024px
       }
    }
 
@@ -358,17 +370,14 @@
       }
    }
 
-   .banner-overtitle {
-      justify-content: center;
+   .explore-product-row {
+      .mobile-four,
+      .desktop-four {
+         justify-content: space-evenly;
 
-      &-line {
-         width: 34px;
-      }
-
-      &-text {
-         font-size: 0.625rem;
-         line-height: 1.2;
-         margin-left: 12px;
+         .product:nth-child(n+3) { /* Скрыть все, начиная с 3-го элемента */
+         display: none;
+         }   
       }
    }
 }

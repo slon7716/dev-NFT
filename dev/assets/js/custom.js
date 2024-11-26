@@ -15,7 +15,7 @@ const bannerSlider = new Swiper('.banner-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }
 });
 
 const carouselWeekly = new Swiper('.carousel-weekly', {
