@@ -231,10 +231,16 @@
    }
 
    .weekly {
+      margin-bottom: 77px;
+      
       .section-title {
          font-size: 1.875rem;
          line-height: 0.9;
          margin-bottom: 63px;
+      }
+
+      .swiper-wrapper {
+         padding-bottom: 60px;
       }
 
       .product {
@@ -291,7 +297,6 @@
          border-radius: 11px;
          box-shadow: 0 26px 21px 0px rgba(15, 15, 15, 0.15);
          margin-left: calc(50% - 51px);
-         margin-top: -37px;
 
          &::after {
             width: 1.5px;
@@ -315,7 +320,7 @@
       }
    }
 
-   .carousel-weekly {
+   .weekly .carousel-weekly {
       .swiper-slide {
          width: 198px;
       }

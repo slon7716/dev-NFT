@@ -39,6 +39,111 @@
       }
    }
 
+   .top-collection {
+      margin-bottom: 177px;
+
+      .section-title {
+         font-size: 1.875rem;
+         line-height: 1.5;
+         margin-bottom: 40px;
+      }
+
+      .header-tab {
+         position: relative;
+         font-size: 0.875rem;
+      }
+
+      .volume {
+         position: absolute;
+         right: 80px;
+      }
+
+      .percent {
+         position: absolute;
+         right: 0;
+      }
+      
+      td {
+         padding: 16px 0;
+      }
+
+      .user {
+         position: relative;
+         border-bottom: 1px solid $light-grey;
+         
+         .user-info {         
+            img {
+               width: 44px;
+               height: 44px;
+               margin-right: 22px;
+            }
+            
+            .user-data {
+               .user-name {
+                  font-size: 0.9625rem;
+               }
+               
+               .user-nickname {
+                  font-size: 0.7825rem;
+               }
+            }
+         }
+         
+         .volume {
+            position: absolute;
+            top: 12px;
+            right: 80px;
+            font-size: 0.9625rem;
+
+            .icon-md {
+               display: none;
+            }
+
+            .icon-xs {
+               display: block;
+            }
+      
+            .icon {
+               position: absolute;
+               top: 18px;
+               left: -18px;
+            }
+         }
+
+         .percent {
+            top: 13px;
+            font-size: 0.85rem;
+         }
+      }
+      
+      .header-tab th:nth-child(4), // "Floor Price"
+      .header-tab th:nth-child(5), // "Owners"
+      .header-tab th:nth-child(6), // "Items"
+      .user td:nth-child(4),
+      .user td:nth-child(5),
+      .user td:nth-child(6) {
+         display: none;
+      }
+      
+      // .volume {
+      //    position: absolute; /* Убираем из визуального отображения, но сохраняем в DOM */
+      //    right: 0;
+      //    top: 40px;
+      // }
+
+      // .header-tab th:nth-child(3),
+      // .user td:nth-child(3) {
+      //    display: flex;
+      //    flex-direction: row;
+      //    gap: 2px;
+     
+      //    &::after {
+      //      content: attr(data-percent); // Используем атрибут для добавления данных
+      //      font-size: 0.875rem;
+      //    }
+      // }
+   }
+   
    .explore-product-row {
       gap: 35px;
       align-items: center;
@@ -50,3 +155,4 @@
       }
    }
 }
+

@@ -1,6 +1,7 @@
 .weekly {
    position: relative;
    background-color: $weekly-bg;
+   margin-bottom: 224px;
    
    .container {
       position: relative;
@@ -12,13 +13,26 @@
          color: $text-grey;    
          margin: 57px 0 100px;
       }   
+
+      .widget {
+         position: absolute;
+         right: 60px;
+         bottom: -100px;
+      }
    }
 }
 
 .weekly {
+   .carousel-weekly {
+      width: 100%;
+   
+      .swiper-slide {
+         width: 281px;
+      }
+   }
    
    .swiper-wrapper {
-      padding-bottom: 50px;
+      padding-bottom: 115px;
    }
 
    &-slider-navigation {
@@ -42,13 +56,3 @@
       margin-left: 48px;
    }
 }
-
-.carousel-weekly {
-   width: 100%;
-   margin: 0 0 65px;
-
-   .swiper-slide {
-      width: 281px;
-   }
-}
-

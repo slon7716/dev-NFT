@@ -53,6 +53,26 @@ if (document.querySelector('.tabs')) {
   installtab();
 }
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Находим все строки таблицы
+//   const rows = document.querySelectorAll(".user");
+
+//   rows.forEach(row => {
+//     const volumeCell = row.querySelector(".volume");
+//     const percentCell = row.querySelector(".percent");
+
+//     if (volumeCell && percentCell) {
+//       // Переносим содержимое "24h %" внутрь "Volume"
+//       const percentContent = percentCell.textContent.trim();
+//       const percentElement = document.createElement("span");
+//       percentElement.className = "percent";
+//       percentElement.textContent = percentContent;
+
+//       volumeCell.appendChild(percentElement); // Добавляем к "Volume"
+//     }
+//   });
+// });
+
 //   Присваиваем классы с индексами для управления кнопками и контентом:
 // const tabs = document.querySelectorAll('.tabs');
 // const tabsNav = document.querySelectorAll('.tabs__nav');
