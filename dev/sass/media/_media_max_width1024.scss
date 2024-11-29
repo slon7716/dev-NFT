@@ -4,7 +4,6 @@
       font-weight: 500;
       line-height: 1.42;
       border-radius: 9px;
-      border: 1px solid #000;
    }
 
    header {
@@ -330,6 +329,44 @@
       display: none;
    }
 
+   .explore-marketplace {
+      .explore-product-row {
+         .mobile-four,
+         .desktop-four {
+            justify-content: space-evenly;
+            
+            .product:nth-child(n+3) { /* Скрыть все, начиная с 3-го элемента */
+            display: none;
+            }   
+         }
+      }
+
+      .explore-all {
+         @include explore-all;
+         position: absolute;
+         right: calc(50% - 44px);
+         bottom: -28px;
+         font-size: 0.79rem;
+         
+         :nth-child(1) {
+            margin-right: 12px;
+         }
+   
+         .arrow-container {
+            bottom: 3px;
+            left: -3px;
+            width: 10px;
+            height: 2px;
+          
+            &::after {
+              border-top: 4px solid transparent;
+              border-bottom: 4px solid transparent;
+              border-left: 6px solid $text-grey; // Цвет стрелки
+            }
+         }
+      }
+   }
+
    footer .container {
       position: relative;
       padding: 0 27px;
@@ -372,17 +409,6 @@
       a {
          width: 16px;
          height: 16px;
-      }
-   }
-
-   .explore-product-row {
-      .mobile-four,
-      .desktop-four {
-         justify-content: space-evenly;
-
-         .product:nth-child(n+3) { /* Скрыть все, начиная с 3-го элемента */
-         display: none;
-         }   
       }
    }
 }

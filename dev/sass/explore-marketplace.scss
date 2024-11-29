@@ -1,8 +1,9 @@
 .explore-marketplace {
    color: $widget-color;
    margin-bottom: 264px;
-
+   
    .container {
+      position: relative;
       display: flex;
       flex-direction: column;
    }
@@ -12,24 +13,15 @@
    }
 
    .explore-btns-row {
-      color: $widget-color;
-      display: flex;
-      justify-content: center;
-      gap: 22px;
+      @include btns-row;
       margin: 0 0 100px;
    }
 
-   .btn {
-      font-size: 0.97rem;
-      border-radius: 17px;
-      padding: 16px;
-
-      .btn-content {
-         display: inline-flex; /* Выравниваем иконку и текст */
-         vertical-align: middle; /* Выравниваем иконку и текст в кнопке по вертикали */
-         align-items: center; /* Центрируем по вертикали */
-         gap: 11px; /* Отступ между иконкой и текстом */
-      }
+   .explore-all {
+      @include explore-all;
+      position: absolute;
+      right: 12px;
+      bottom: -28px;   
    }
 }
 
@@ -37,6 +29,7 @@
    display: flex;
    flex-direction: column;
    gap: 68px;
+   margin-bottom: 74px;
    
    .mobile-four,
    .desktop-four {

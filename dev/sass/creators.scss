@@ -24,6 +24,13 @@
       .info {
          position: relative;
       }
+
+      .spinner {
+         @include spinner;
+         position: absolute;
+         bottom: 43px;
+         right: -460px;
+      }
    }
    
    .tab {
@@ -163,26 +170,3 @@
    }
 }
 
-.spinner {
-   position: absolute;
-   bottom: 43px;
-   right: -460px;
-   height: 35px;
-   width: 35px;
-   border-radius: 50%;
-   border: 7px solid transparent;
-   animation: spin 1s linear infinite;
-   
-   background: linear-gradient(white, white), conic-gradient(from 0.15turn, white, #999999);
-   background-origin: border-box;
-   background-clip: content-box, border-box;
-}
- 
-@keyframes spin {
-   0% {
-     transform: rotate(0deg);
-   }
-   100% {
-     transform: rotate(360deg);
-   }
-}

@@ -18,8 +18,6 @@
    .explore-product-row {
       .mobile-four,
       .desktop-four {
-         justify-content: space-evenly;
-   
          .product:nth-child(n+4) { /* Скрыть все, начиная с 4-го элемента */
             display: none;
          }   

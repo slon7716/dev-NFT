@@ -63,6 +63,7 @@ textarea {
 
 a {
   color: $footer-color;
+  text-decoration: none;
   transition: 0.3s;
 
   &:hover {
@@ -76,12 +77,6 @@ input {
   &:focus-visible {
     outline: none;
   }
-}
-
-.icon-svg,
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -141,6 +136,12 @@ img {
 .section-title {
   display: flex;
   justify-content: center;
+}
+
+img,
+.icon-svg {
+  max-width: 100%;
+  height: auto;
 }
 
 .icon {
