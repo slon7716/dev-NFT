@@ -7,6 +7,7 @@
    color: $widget-color;
    border-radius: 16px;
    padding: 24px 26px 21px;
+   z-index: 2;
 
    &__title {
       display: flex;

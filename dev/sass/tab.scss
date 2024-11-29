@@ -98,3 +98,128 @@
       }   
    }
 }
+
+.activity {
+   flex-wrap: wrap;
+   gap: 42px;
+
+   .user {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 19px 12px 64px 0 rgb(97, 97, 97, 0.25);
+      padding: 15px 15px 20px;
+
+      .first-row,
+      .second-row {
+         display: flex;
+         justify-content: space-between;
+      }
+      
+   }
+}
+
+.first-row {
+   padding-bottom: 17px;
+   border-bottom: 1px solid $text-grey;
+
+   .user-info {
+      display: flex;
+      align-items: center;
+
+      img {
+         width: 68px;
+         height: 68px;
+         border-radius: 12px;
+         margin-right: 12px;
+      }
+
+      .user-name {
+         font-size: 1.0625rem;
+         font-weight: 600;
+         line-height: 1.59;
+      }
+
+      .user-nickname {
+         font-size: 0.755rem;
+         line-height: 1.5;
+
+         i {
+            padding-right: 6px;
+         }
+
+         img {
+            width: 13px;
+            height: 13px;
+            margin-bottom: 2px;
+         }
+      }
+   }
+
+   .sales {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-right: 26px;
+
+      .sale {
+         font-size: 0.755rem;
+         line-height: 1.5;
+         color: $percent;
+      }
+
+      .price {
+         display: flex;
+         align-items: center;
+
+         .icon-etherium {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-right: 7px;
+         }
+      }
+
+      .time-ago {
+         font-size: 0.755rem;
+         line-height: 1.5;
+         color: $light-grey;
+      }
+   }
+}
+
+.second-row {
+   padding-top: 18px;
+
+   .usd-price,
+   .quantity,
+   .floor-price,
+   .traded {
+      text-align: center;
+
+      .title {
+         font-size: 0.71rem;
+         line-height: 1.23;
+         color: $text-grey;
+      }
+         
+      .numbers {
+         font-size: 1rem;
+         font-weight: 500;
+         line-height: 1.44;
+         color: $widget-color;
+      }
+   }
+
+   .floor,
+   .trade {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .icon-etherium {
+         margin-right: 4px;
+      }
+   }
+}
