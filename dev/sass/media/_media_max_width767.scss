@@ -1,4 +1,15 @@
 @media screen and (max-width: 767.9px) {
+   .icon-lg,
+   .icon-md,
+   .icon-sm {
+      display: none;
+   }
+
+   .icon-xs,
+   .icon-xxs {
+      display: inline-block;
+   }
+
    .top-collection {
       margin-bottom: 177px;
 
@@ -55,14 +66,6 @@
             right: 80px;
             font-size: 0.9625rem;
 
-            .icon-md {
-               display: none;
-            }
-
-            .icon-xs {
-               display: block;
-            }
-      
             .icon {
                position: absolute;
                top: 18px;
@@ -84,24 +87,6 @@
       .user td:nth-child(6) {
          display: none;
       }
-      
-      // .volume {
-      //    position: absolute; /* Убираем из визуального отображения, но сохраняем в DOM */
-      //    right: 0;
-      //    top: 40px;
-      // }
-
-      // .header-tab th:nth-child(3),
-      // .user td:nth-child(3) {
-      //    display: flex;
-      //    flex-direction: row;
-      //    gap: 2px;
-     
-      //    &::after {
-      //      content: attr(data-percent); // Используем атрибут для добавления данных
-      //      font-size: 0.875rem;
-      //    }
-      // }
    }
    
    .explore-product-row {

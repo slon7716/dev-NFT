@@ -1,22 +1,22 @@
 .explore-marketplace {
    color: $widget-color;
    margin-bottom: 264px;
-   
+
    .container {
       position: relative;
       display: flex;
       flex-direction: column;
    }
-
+   
    .section-title {
       margin-bottom: 65px;
    }
-
+   
    .explore-btns-row {
       @include btns-row;
       margin: 0 0 100px;
    }
-
+   
    .explore-all {
       @include explore-all;
       position: absolute;
@@ -40,6 +40,10 @@
          max-width: 282px;
          width: 282px;
          height: 404px;
+         
+         .icon-sm {
+            display: inline-block;   
+         }
       }
    }
 }

@@ -367,6 +367,16 @@
       }
    }
 
+   .tabs {
+      .icon-xs {
+         display: none;
+      }
+
+      .icon-xxs {
+         display: inline-block;
+      }
+   }
+
    footer .container {
       position: relative;
       padding: 0 27px;

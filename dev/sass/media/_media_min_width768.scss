@@ -1,2 +1,12 @@
 @media screen and (min-width: 768px) {
+   .icon-lg,
+   .icon-md,
+   .icon-sm {
+      display: inline-block;
+   }
+
+   .icon-xs,
+   .icon-xxs {
+      display: none;
+   }
 }

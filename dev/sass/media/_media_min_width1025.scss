@@ -1,9 +1,11 @@
 @media (min-width: 1025px) {
-   .icon-sm {
-      display: inline-block;
-   }
-
-   .icon-xxs {
-      display: none; // Скрываем .icon-xxs на экранах более 1024px
+   .weekly {
+      .icon-sm {
+         display: inline-block;
+      }
+   
+      .icon-xxs {
+         display: none; // Скрываем .icon-xxs на экранах более 1024px
+      }
    }
 }
