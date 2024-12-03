@@ -1,0 +1,77 @@
+.asked-questions {
+   margin-bottom: 214px;
+
+   .section-title {
+      flex-direction: column;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 48px;
+
+      span {
+         color: $light-grey;
+      }
+   }
+}
+
+.accordion {
+   padding: 0 12px;
+
+   &-item {
+      border-bottom: 1.2px solid $text-grey;
+      padding: 31px 14px 17px;
+
+      &__button {
+         position: relative;
+         width: 100%;
+         font-size: 1.59rem;
+         font-weight: 600;
+         line-height: 2.53;
+         text-align: left;
+         background-color: $background;
+         border: none;
+         padding: 0 60px 0 0;
+
+         &::after {
+            content: "";
+            background: url(../assets/img/icon-plus.svg);
+            position: absolute;
+            width: 33px;
+            height: 34px;
+            left: calc(100% - 33px);
+            top: 17px;
+         }
+      }
+
+      &__content {
+         padding: 12px;
+         display: none;
+
+         ul {
+            list-style-type: square;
+            padding: 20px;
+         }
+         
+         ol {
+            list-style-type: upper-alpha;
+            padding: 20px;
+         }
+      }
+
+      &.active {
+         .accordion-item__button { // Применяем стили только к кнопке внутри активного .accordion-item
+            background-color: $weekly-bg;
+         }
+
+         .accordion-item__content { // Применяем стили только к контенту внутри активного .accordion-item
+            display: block;
+         }
+      }
+   }
+}
+
+
+
+.active button.accordion-item__button::after {
+   content: "";
+   background: url(../assets/img/icon-plus.svg);
+}

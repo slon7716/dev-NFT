@@ -1,6 +1,20 @@
+// Получаем текущий URL
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+// Находим все ссылки в навигации
+const navLinks = document.querySelectorAll('.header-nav a, .container > a');
+
+// Проверяем каждую ссылку
+navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href');
+
+    if (linkHref === currentPage) {
+        link.classList.add('active'); // Добавляем класс активной ссылке
+    }
+})
+
 const btnburger = document.querySelector('.burger');
 const mobileContainer = document.querySelector('.mobile-container');
-
 const toggleMobileMenu = () => {
   mobileContainer.classList.toggle('show');
   btnburger.classList.toggle('active');
@@ -35,8 +49,42 @@ const carouselWeekly = new Swiper('.carousel-weekly', {
   }
 });
 
-const linkBack = document.querySelector('.history-back');
+// const widgetUserPercent = document.querySelectorAll('.widget-user__percent') // выбор всех элементов с классом .wiget-user__percent
+// widgetUserPercent.forEach(item => {
+//   let string = item.textContent // Получаем текстовое содержимое элемента
+//   let stringComa = /,/g; // Замена запятых на точки
+//   let stringPercent = /%/gi; // Удаление знака процента
+//   let refactoringString = string.replace(stringComa, '.').replace(stringPercent, '');
+//   let val = Number(refactoringString); // Преобразуем обработанную строку в число
+//   if (val > 0) {
+//     item.classList.add('percent_totop');
+//   } else if (val < 0) {
+//     item.classList.add('percent_tobottom');
+//   } else {
+//     item.classList.add('percent_zero');
+//   }
+// })
 
+const percent = document.querySelectorAll('[class*="__percent"]'); // выбор всех элементов где есть __percent
+percent.forEach(item => {
+  let string = item.textContent // Получаем текстовое содержимое элемента
+  let stringComa = /,/g; // Замена запятых на точки
+  let stringPercent = /%/gi; // Удаление знака процента
+  let refactoringString = string
+    .replace(stringComa, '.') // Заменяем , на .
+    .replace(stringPercent, '') // Удаляем знак %
+    .replace(/\s/g, ''); // Удаляем все пробелы
+  let val = Number(refactoringString); // Преобразуем обработанную строку в число
+  if (val > 0) {
+    item.classList.add('percent-totop');
+  } else if (val < 0) {
+    item.classList.add('percent-tobottom');
+  } else {
+    item.classList.add('percent-zero');
+  }
+})
+
+const linkBack = document.querySelector('.history-back');
 function historyBack() {
   linkBack.addEventListener('click', function () {
     window.historyBack();
@@ -45,56 +93,14 @@ function historyBack() {
 linkBack ? historyBack : null;
 
 if (document.querySelector('.widget')) {
-  installwidget();
+  installWidget();
 }
 //другой вариант: document.querySelector('widget') ? installwidget() : null;
 
 if (document.querySelector('.tabs')) {
-  installtab();
+  installTab();
 }
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   // Находим все строки таблицы
-//   const rows = document.querySelectorAll(".user");
-
-//   rows.forEach(row => {
-//     const volumeCell = row.querySelector(".volume");
-//     const percentCell = row.querySelector(".percent");
-
-//     if (volumeCell && percentCell) {
-//       // Переносим содержимое "24h %" внутрь "Volume"
-//       const percentContent = percentCell.textContent.trim();
-//       const percentElement = document.createElement("span");
-//       percentElement.className = "percent";
-//       percentElement.textContent = percentContent;
-
-//       volumeCell.appendChild(percentElement); // Добавляем к "Volume"
-//     }
-//   });
-// });
-
-//   Присваиваем классы с индексами для управления кнопками и контентом:
-// const tabs = document.querySelectorAll('.tabs');
-// const tabsNav = document.querySelectorAll('.tabs__nav');
-// tabs.forEach((item, index) => {
-//    item.classList.add('tabs-' + index);
-// })
-// tabsNav.forEach((item, index) => {
-//    item.classList.add('tabs__nav-' + index);
-// })
-// tabsComtent.forEach((item, index) => {
-//    item.classList.add('tabs__content-' + index);
-// })
-// tabsButton.forEach((item, index) => {
-//    item.classList.add('tabs__button-' + index);
-// })
-//        Более оптимальный вариант:
-// function addClass(selectors, className) {
-//    selectors.forEach((item, index) => {
-//       item.classList.add(className + index);
-//    })
-// }
-// addClass(tabs, 'tabs-');
-// addClass(tabsNav, 'tabs__nav-');
-// addClass(tabsComtent, 'tabs__content-');
-// addClass(tabsButton, 'tabs____button-')
+if (document.querySelector('.accordion')) {
+  installAccordion();
+}

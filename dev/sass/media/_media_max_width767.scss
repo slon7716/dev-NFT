@@ -1,4 +1,5 @@
 @media screen and (max-width: 767.9px) {
+
    .icon-lg,
    .icon-md,
    .icon-sm {
@@ -29,11 +30,11 @@
          right: 80px;
       }
 
-      .percent {
+      .top-collection__percent {
          position: absolute;
          right: 0;
       }
-      
+
       td {
          padding: 16px 0;
       }
@@ -41,25 +42,25 @@
       .user {
          position: relative;
          border-bottom: 1px solid $light-grey;
-         
-         .user-info {         
+
+         .user-info {
             img {
                width: 44px;
                height: 44px;
                margin-right: 22px;
             }
-            
+
             .user-data {
                .user-name {
                   font-size: 0.9625rem;
                }
-               
+
                .user-nickname {
                   font-size: 0.7825rem;
                }
             }
          }
-         
+
          .volume {
             position: absolute;
             top: 12px;
@@ -73,22 +74,25 @@
             }
          }
 
-         .percent {
+         .top-collection__percent {
             top: 13px;
             font-size: 0.85rem;
          }
       }
-      
-      .header-tab th:nth-child(4), // "Floor Price"
-      .header-tab th:nth-child(5), // "Owners"
-      .header-tab th:nth-child(6), // "Items"
+
+      .header-tab th:nth-child(4),
+      // "Floor Price"
+      .header-tab th:nth-child(5),
+      // "Owners"
+      .header-tab th:nth-child(6),
+      // "Items"
       .user td:nth-child(4),
       .user td:nth-child(5),
       .user td:nth-child(6) {
          display: none;
       }
    }
-   
+
    .explore-product-row {
       gap: 35px;
       align-items: center;
@@ -113,8 +117,9 @@
       .explore-btns-row {
          gap: 14px;
          margin: 0 0 75px;
-   
-         button:first-child { /* Скрыть 1-й элемент */
+
+         button:first-child {
+            /* Скрыть 1-й элемент */
             display: none;
          }
 
@@ -122,22 +127,49 @@
             width: 12px;
             height: 14px;
          }
-        
+
          button:nth-child(n+3) svg {
             width: 14px;
             height: 14px;
-          }
-   
+         }
+
          .btn {
             font-size: 0.62rem;
             border-radius: 9px;
             padding: 10px;
 
             .btn-content {
-               gap: 7px; /* Отступ между иконкой и текстом */
+               gap: 7px;
+               /* Отступ между иконкой и текстом */
             }
+         }
+      }
+
+      .explore-all {
+         bottom: -64px;
+      }
+   }
+
+   .explore-all {
+      right: calc(50% - 44px);
+      bottom: -55px;
+      font-size: 0.79rem;
+
+      :nth-child(1) {
+         margin-right: 12px;
+      }
+
+      .arrow-container {
+         bottom: 3px;
+         left: -3px;
+         width: 10px;
+         height: 2px;
+
+         &::after {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid $text-grey; // Цвет стрелки
          }
       }
    }
 }
-

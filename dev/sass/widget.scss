@@ -4,10 +4,13 @@
    bottom: -100px;
    width: 365px;
    background-color: #fff;
-   color: $widget-color;
    border-radius: 16px;
    padding: 24px 26px 21px;
    z-index: 2;
+
+   .icon-xs {
+      display: inline-block;
+   }
 
    &__title {
       display: flex;

@@ -1,4 +1,4 @@
-function installtab() {
+function installTab() {
    const tabsComtent = document.querySelectorAll('.tabs__content');
    const tabsButton = document.querySelectorAll('.tabs__button');
 
@@ -31,28 +31,19 @@ function installtab() {
    })
 }
 
-// function installtab() {
-//    const tabsComtent = document.querySelectorAll('.tabs__content');
-//    const tabsButton = document.querySelectorAll('.tabs__button');
-
-//    const addAttr = (selectors, attrName, attrValue) => {
-//       selectors.forEach((item, index) => {
-//          item.setAttribute(attrName, attrValue + index);
-//       })
-//    }   
-
-//    addAttr(tabsButton, 'data-content', 'content-');
-//    addAttr(tabsComtent, 'id', 'content-');
-
-//    tabsButton.forEach(btn => {
-//       btn.addEventListener('click', () => {
-//          const dataContent = btn.getAttribute('data-content');
-//          const thisTabs = btn.closest('.tabs');
-//          const thisContents = thisTabs.querySelector('#' + dataContent);
-//          thisTabs.querySelector('.tabs__content.active').classList.remove('active');
-//          thisTabs.querySelector('.tabs__button.active').classList.remove('active');
-//          thisContents.classList.add('active');
-//          btn.classList.add('active');
-//       })
+//           ещё один вариант Tabs:
+//   Присваиваем классы с индексами для управления кнопками и контентом:
+// const tabs = document.querySelectorAll('.tabs');
+// const tabsNav = document.querySelectorAll('.tabs__nav');
+// tabs.forEach((item, index) => {
+//    item.classList.add('tabs-' + index);
+// })
+// function addClass(selectors, className) {
+//    selectors.forEach((item, index) => {
+//       item.classList.add(className + index);
 //    })
 // }
+// addClass(tabs, 'tabs-');
+// addClass(tabsNav, 'tabs__nav-');
+// addClass(tabsComtent, 'tabs__content-');
+// addClass(tabsButton, 'tabs__button-')

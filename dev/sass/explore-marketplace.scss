@@ -1,6 +1,5 @@
 .explore-marketplace {
-   color: $widget-color;
-   margin-bottom: 264px;
+   margin-bottom: 246px;
 
    .container {
       position: relative;
@@ -16,12 +15,9 @@
       @include btns-row;
       margin: 0 0 100px;
    }
-   
+
    .explore-all {
-      @include explore-all;
-      position: absolute;
-      right: 12px;
-      bottom: -28px;   
+      bottom: -123px;
    }
 }
 
@@ -29,7 +25,6 @@
    display: flex;
    flex-direction: column;
    gap: 68px;
-   margin-bottom: 74px;
    
    .mobile-four,
    .desktop-four {
@@ -47,3 +42,4 @@
       }
    }
 }
+

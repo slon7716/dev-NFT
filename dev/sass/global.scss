@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;    /* 1rem = 16px */
+  font-size: 16px;
+  /* 1rem = 16px */
 }
 
 *,
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
-  color: #000;
+  color: $widget-color;
   background-color: $background;
   overflow-x: hidden;
 }
@@ -57,8 +58,10 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;  /* Наследовать шрифт от body */
-  color: inherit;  /* Наследовать цвет от body */
+  font-family: inherit;
+  /* Наследовать шрифт от body */
+  color: inherit;
+  /* Наследовать цвет от body */
 }
 
 a {
@@ -68,6 +71,14 @@ a {
 
   &:hover {
     color: #000;
+
+    .arrow-container {
+      background-color: #000;
+
+      &::after {
+        border-left-color: #000; // Цвет стрелки
+      }
+    }
   }
 }
 
@@ -180,20 +191,20 @@ img,
   height: 44px;
 }
 
-.color-red {
-  color: red;
+.percent-totop {
+  color: #10C352;
 }
 
-.color-green {
-  color: green;
+.percent-tobottom {
+  color: #E23333;
 }
 
-.widget-user__percent-totop {
-  @extend .color-green;
+.percent-zero {
+  color: blue;
 }
 
-.widget-user__percent-tobottom {
-  @extend .color-red;
+.explore-all {
+  @include explore-all;
 }
 
 ::-webkit-scrollbar {

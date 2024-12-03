@@ -1,6 +1,5 @@
 .creators {
-   color: $widget-color;
-   margin: 54px 0 180px 0;
+   margin: 54px 0 228px 0;
    
    .cap {
       width: 100%;
@@ -26,20 +25,12 @@
       gap: 12px;
       
       .info {
-         position: relative;
          width: 100%;
          max-width: 367px;
       }
 
       .tab {
          max-width: 673px;
-      }
-
-      .spinner {
-         @include spinner;
-         position: absolute;
-         bottom: 43px;
-         right: -460px;
       }
    }
 }
@@ -168,4 +159,3 @@
       }
    }
 }
-

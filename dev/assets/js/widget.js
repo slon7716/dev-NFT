@@ -1,4 +1,4 @@
-function installwidget() {
+function installWidget() {
    const openButtons = document.querySelectorAll('[data-custom-widget="open-button"]'); // Обработчик клика на кнопку
    const customWidgetsMenu = document.querySelectorAll('[data-custom-widget="menu"]'); // Обработчик клика на .layout-menu
    

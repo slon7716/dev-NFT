@@ -49,7 +49,7 @@
    &-button-prev,
    &-button-next {
       @include slider-nav-half;
-      margin: 22px;
+      padding: 19px;
    }
 
    &-button-next {
