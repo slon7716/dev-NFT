@@ -1,11 +1,7 @@
 .widget {
-   position: absolute;
-   right: 60px;
-   bottom: -100px;
-   width: 365px;
    background-color: #fff;
    border-radius: 16px;
-   padding: 24px 26px 21px;
+   padding: 24px 24px 21px;
    z-index: 2;
 
    .icon-xs {
@@ -15,71 +11,69 @@
    &__title {
       display: flex;
       padding-right: 36px;
-      margin-bottom: 34px;
+      margin-bottom: 24px;
 
       h4 {
          line-height: 1.333;
       }
-   }
-}
 
-.layout-menu {
-   position: absolute;
-   top: 19px;
-   right: 26px;
-   display: flex;
-   flex-direction: column;
-
-   .layout-case {
-      display: none;
-   }
-
-   &.show .layout-case {
-      display: flex;
-   }
-}
-
-.layout-case__button {
-   width: 36px;
-   height: 20px;
-   font-size: 0;
-   line-height: 0;
-   border: none;
-   background-color: inherit;
-   color: $text-grey;
-   align-self: flex-end;
-
-   &:hover {
-      color: $widget-color;
-   }
-
-   svg {
-      width: inherit;
-      height: inherit;
-   }
-}
-
-.layout-case {
-   display: none;
-   gap: 12px;
-   padding: 0;
-
-   &.show {
-      display: flex;
-   }
-
-   &__item {
-      .icon-svg {
-         width: 48px;
-         height: 48px;
-
-         use {
-            stroke: $footer-color;
+      .layout-menu {
+         position: absolute;
+         top: 19px;
+         right: 26px;
+         display: flex;
+         flex-direction: column;
+      
+         .layout-case {
+            display: none;
+         }
+      
+         &.show .layout-case {
+            display: flex;
          }
       }
-
-      &.active .icon-svg use {
-         stroke: #000;
+      
+      .layout-case__button {
+         width: 36px;
+         height: 20px;
+         border: none;
+         background-color: inherit;
+         color: $text-grey;
+         align-self: flex-end;
+      
+         &:hover {
+            color: $widget-color;
+         }
+      
+         svg {
+            width: inherit;
+            height: inherit;
+         }
+      }
+      
+      .layout-case {
+         display: none;
+         gap: 12px;
+         padding: 0;
+      
+         &.show {
+            display: flex;
+         }
+      
+         &__item {
+            .icon-svg {
+               width: 32px;
+               height: 32px;
+      
+               use {
+                  stroke: $footer-color;
+               }
+            }
+      
+            &.active .icon-svg use {
+               stroke: #000;
+            }
+         }
       }
    }
 }

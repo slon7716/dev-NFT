@@ -1,5 +1,132 @@
 <section class="your-inner-collector">
    <div class="container">
-      <h2 class="section-title">Your Inner Collector</h2>
+      <div class="collector">
+         <h2 class="section-title"><span>Just Unleash -</span>Your Inner Collector</h2>
+         <ul class="seller">
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">Best Seller All Around World</li>
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">$2M+ Transections Every Day</li>
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">Secure Transactions</li>
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">Exclusive Collections From Sellers</li>
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">Easy Buying and Selling</li>
+            <li><img src="../assets/img/seller-check-mark.svg" alt="check-mark">Join Our Community</li>
+         </ul>
+         <a href="stats.html" class="btn btn-primary">Explore More</a>
+      </div>
+      <div class="widgets">
+         @@include('widget__recent-viewed.html')
+         <div class="best-sellers">
+            <div class="section-title">
+               <h6>Best Sellers</h6>
+               <button class="layout-case__button">
+                  <svg class="icon-svg">
+                     <use href="#icon-widget-menu"></use>
+                  </svg>
+               </button>   
+            </div>
+            <ul class="best-seller-list">
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/slide1.svg" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Alex Ca.</div>
+                        <div class="best-seller-user__nickname">@Alexy</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/slide5.svg" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Juliya Sa.</div>
+                        <div class="best-seller-user__nickname">@JuliyaS</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/slide4.svg" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Duckly Dk.</div>
+                        <div class="best-seller-user__nickname">@DucklyD</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/slide2.svg" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Trevor Pu</div>
+                        <div class="best-seller-user__nickname">@TrevorP</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn unfollow" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/avatar2.png" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Zeno Ka.</div>
+                        <div class="best-seller-user__nickname">@ZenoK</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+               <li class="best-seller-list__item">
+                  <div class="best-seller-user">
+                     <div class="best-seller-user__avatar">
+                        <img src="assets/img/avatar1.png" alt="user__avatar">
+                     </div>
+                     <div class="best-seller-user__data">
+                        <div class="best-seller-user__name">Dura Gx.</div>
+                        <div class="best-seller-user__nickname">@DuraG</div>
+                     </div>
+                  </div>
+                  <div class="best-seller-follow">
+                     <button class="btn unfollow" onclick="toggleFollow(this)">Follow</button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="rotation">
+            <div class="rotation-everything">
+               <div class="circle-avatar">
+                  <div class="circle-wrapper">
+                     <div class="circle"></div>
+                  </div>
+                  <img class="user-avatar-round" src="assets/img/slide1.svg" alt="slide">
+                  <img class="verified" src="assets/img/verified-artist.svg" alt="check-mark">   
+               </div>
+               <div class="section-info">
+                  <p class="new-bid"><span>New bid</span> Rotation</p>
+                  <p class="fluctuation">0.002 ETH</p>
+                  <p class="date">6 Oct 2022, 11:44 PM</p>
+               </div>   
+            </div>
+            <img class="user-avatar-rectangular" src="assets/img/slide1.svg" alt="slide">
+         </div>
+      </div>
    </div>
 </section>

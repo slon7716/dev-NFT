@@ -22,7 +22,7 @@ const toggleMobileMenu = () => {
 btnburger.addEventListener('click', toggleMobileMenu);
 
 const bannerSlider = new Swiper('.banner-slider', {
-  speed: 900,
+  speed: 700,
   slidesPerView: 2,
   spaceBetween: 20,
   loop: true,
@@ -33,7 +33,7 @@ const bannerSlider = new Swiper('.banner-slider', {
 });
 
 const carouselWeekly = new Swiper('.carousel-weekly', {
-  speed: 900,
+  speed: 700,
   slidesPerView: 'auto',
   spaceBetween: 28,
   centeredSlides: true,
@@ -83,6 +83,33 @@ percent.forEach(item => {
     item.classList.add('percent-zero');
   }
 })
+
+// Функция для переключения состояния кнопки
+function toggleFollow(button) {
+  if (button.classList.contains('unfollow')) {
+      button.classList.remove('unfollow');
+      button.textContent = 'Follow';
+  } else {
+      button.classList.add('unfollow');
+      button.textContent = 'Unfollow';
+  }
+}
+// Функция для инициализации кнопок внутри конкретного виджета
+function initializeButtonsInWidget(widgetSelector) {
+  const widget = document.querySelector(widgetSelector);
+  if (!widget) return; // Если виджет не найден, выходим
+
+  const buttons = widget.querySelectorAll('.btn');
+  buttons.forEach(button => {
+    if (button.classList.contains('unfollow')) {
+      button.textContent = 'Unfollow';
+    } else {
+      button.textContent = 'Follow';
+    }
+  });
+}
+// Инициализация кнопок внутри виджета "Best Sellers"
+initializeButtonsInWidget('.best-sellers');
 
 const linkBack = document.querySelector('.history-back');
 function historyBack() {
