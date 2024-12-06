@@ -2,10 +2,10 @@
    position: relative;
 
    .spinner {
-      @include spinner;
       position: absolute;
       bottom: 0;
       left: calc(50% - 18px);
+      @include spinner;
    }
 }
 

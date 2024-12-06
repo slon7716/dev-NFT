@@ -1,9 +1,7 @@
 // Получаем текущий URL
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
 // Находим все ссылки в навигации
 const navLinks = document.querySelectorAll('.header-nav a, .container > a');
-
 // Проверяем каждую ссылку
 navLinks.forEach(link => {
     const linkHref = link.getAttribute('href');
