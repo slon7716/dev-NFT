@@ -69,9 +69,7 @@
    }
 }
 
-
-
-.active button.accordion-item__button::after {
+button.accordion-item__button::after {
    content: "";
-   background: url(../assets/img/icon-plus.svg);
+   background: url(assets/img/icon-plus.svg);
 }

@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;  /* 1rem = 16px */
+  font-size: 16px;  // 1rem = 16px
 }
 
 *,
@@ -57,10 +57,16 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  /* Наследовать шрифт от body */
-  color: inherit;
-  /* Наследовать цвет от body */
+  font-family: inherit; // Наследовать шрифт от body
+  color: inherit; // Наследовать цвет от body
+}
+
+input {
+  transition: 0.3s;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 a {
@@ -78,14 +84,6 @@ a {
         border-left-color: #000; // Цвет стрелки
       }
     }
-  }
-}
-
-input {
-  transition: 0.3s;
-
-  &:focus-visible {
-    outline: none;
   }
 }
 
@@ -143,11 +141,6 @@ input {
   display: none;
 }
 
-.section-title {
-  display: flex;
-  justify-content: center;
-}
-
 img,
 .icon-svg {
   max-width: 100%;
@@ -190,6 +183,15 @@ img,
   height: 44px;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
 .percent-totop {
   color: #10C352;
 }
@@ -207,7 +209,8 @@ img,
 }
 
 ::-webkit-scrollbar {
-  width: 12px; // Задаем ширину скрола
+  width: 12px; // ширина вертикального скрола
+  height: 12px; // ширина горизонтального скрола
 
   &-thumb {
     background-color: $light-grey; // цвет ползунка

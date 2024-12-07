@@ -1,5 +1,4 @@
 @media screen and (max-width: 767.9px) {
-
    .icon-lg,
    .icon-md,
    .icon-sm {
@@ -28,19 +27,12 @@
          margin-bottom: 40px;
       }
 
+      table {
+         min-width: 540px;
+      }
+
       .header-tab {
-         position: relative;
          font-size: 0.875rem;
-      }
-
-      .volume {
-         position: absolute;
-         right: 80px;
-      }
-
-      .top-collection__percent {
-         position: absolute;
-         right: 0;
       }
 
       td {
@@ -48,7 +40,6 @@
       }
 
       .user {
-         position: relative;
          border-bottom: 1px solid $light-grey;
 
          .user-info {
@@ -69,17 +60,11 @@
             }
          }
 
-         .volume {
-            position: absolute;
-            top: 12px;
-            right: 80px;
+         .volume,
+         .price,
+         .owners,
+         .items {
             font-size: 0.9625rem;
-
-            .icon {
-               position: absolute;
-               top: 18px;
-               left: -18px;
-            }
          }
 
          .top-collection__percent {
@@ -87,36 +72,13 @@
             font-size: 0.85rem;
          }
       }
-
-      .header-tab th:nth-child(4),
-      // "Floor Price"
-      .header-tab th:nth-child(5),
-      // "Owners"
-      .header-tab th:nth-child(6),
-      // "Items"
-      .user td:nth-child(4),
-      .user td:nth-child(5),
-      .user td:nth-child(6) {
-         display: none;
-      }
-   }
-
-   .explore-product-row {
-      gap: 35px;
-      align-items: center;
-
-      .mobile-four,
-      .desktop-four {
-         flex-direction: column;
-         gap: 35px;
-      }
    }
 
    .explore-marketplace {
       margin-bottom: 242px;
 
       .section-title {
-         font-size: 1.875;
+         font-size: 1.875rem;
          line-height: 1.25;
          text-align: center;
          margin-bottom: 30px;
@@ -127,7 +89,6 @@
          margin: 0 0 75px;
 
          button:first-child {
-            /* Скрыть 1-й элемент */
             display: none;
          }
 
@@ -147,14 +108,24 @@
             padding: 10px;
 
             .btn-content {
-               gap: 7px;
-               /* Отступ между иконкой и текстом */
+               gap: 7px; // Отступ между иконкой и текстом //
             }
          }
       }
 
       .explore-all {
          bottom: -64px;
+      }
+   }
+   
+   .explore-product-row {
+      gap: 35px;
+      align-items: center;
+
+      .mobile-four,
+      .desktop-four {
+         flex-direction: column;
+         gap: 35px;
       }
    }
 

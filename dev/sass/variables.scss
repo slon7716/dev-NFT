@@ -10,10 +10,8 @@ $text-grey: #929292;
 $footer-color: #707070;
 $header-color: #606060;
 $widget-color: #1A202C;
-// $color:      #d2d2d2;
-// $percent: #10C352;
+$color:      #1C1D20;
 
-//
 @mixin slider-nav {
    display: flex;
    position: relative;
@@ -64,6 +62,7 @@ $widget-color: #1A202C;
       font-size: 0.97rem;
       border-radius: 17px;
       padding: 16px;
+      min-width: 72px;
    
       .btn-content {
          display: inline-flex; /* Выравниваем иконку и текст */
@@ -114,8 +113,9 @@ $widget-color: #1A202C;
       left: -4px;
       width: 14px;
       height: 2px;
-      background-color: $text-grey; // Линия стрелки
-    
+      background-color: $text-grey; // центральная линия стрелки
+      transition: 0.3s;
+
       &::after {
          content: '';
          position: absolute;
@@ -126,7 +126,8 @@ $widget-color: #1A202C;
          height: 0;
          border-top: 6px solid transparent;
          border-bottom: 6px solid transparent;
-         border-left: 8px solid $text-grey; // Цвет стрелки
+         border-left: 8px solid $text-grey; // острие стрелки
+         transition: 0.3s;
       }
    }
 }

@@ -12,8 +12,8 @@
    }
    
    .explore-btns-row {
-      @include btns-row;
       margin: 0 0 100px;
+      @include btns-row;
    }
 
    .explore-all {

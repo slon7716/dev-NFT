@@ -11,6 +11,7 @@
    &-img {
       width: 100%;
       margin-bottom: 19px;
+      position: relative;
    }
 
    &-title {
@@ -47,5 +48,21 @@
 
    .icon-xxs {
       display: none;
+   }
+
+   .product-timer {
+      font-size: 0.885rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #fff;
+      background-color: $footer-color;
+      padding: 7px 10px;
+      border: 1px solid $header-color;
+      border-radius: 10px;
+      opacity: 0.7;
+      box-shadow: 0 5px 14px 0 rgba(28, 29, 32, 0.15);
+      position: absolute;
+      top: 14px;
+      right: 9px;
    }
 }
