@@ -14,8 +14,6 @@
 }
 
 .accordion {
-   padding: 0 12px;
-
    &-item {
       border-bottom: 1.2px solid $text-grey;
       padding: 31px 14px 17px;
@@ -33,16 +31,17 @@
 
          &::after {
             content: "";
-            background: url(../assets/img/icon-plus.svg);
+            background: url(assets/img/icon-plus.svg);
             position: absolute;
             width: 33px;
             height: 34px;
-            left: calc(100% - 33px);
+            right: 0;
             top: 17px;
          }
       }
 
       &__content {
+         font-size: 1.125rem;
          padding: 12px;
          display: none;
 
@@ -58,18 +57,13 @@
       }
 
       &.active {
-         .accordion-item__button { // Применяем стили только к кнопке внутри активного .accordion-item
+         .accordion-item__button { // стили только к кнопке внутри активного .accordion-item
             background-color: $weekly-bg;
          }
 
-         .accordion-item__content { // Применяем стили только к контенту внутри активного .accordion-item
+         .accordion-item__content { //стили только к контенту внутри активного .accordion-item
             display: block;
          }
       }
    }
-}
-
-button.accordion-item__button::after {
-   content: "";
-   background: url(assets/img/icon-plus.svg);
 }

@@ -10,12 +10,27 @@
       display: inline-block;
    }
 
-   .d-small {
-      display: block;
-   }
+   .explore-all {
+      right: calc(50% - 44px);
+      bottom: -55px;
+      font-size: 0.79rem;
 
-   .d-big {
-      display: none;
+      :nth-child(1) {
+         margin-right: 12px;
+      }
+
+      .arrow-container {
+         bottom: 3px;
+         left: -3px;
+         width: 10px;
+         height: 2px;
+
+         &::after {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 6px solid $text-grey; // Цвет стрелки
+         }
+      }
    }
 
    .top-collection {
@@ -129,26 +144,158 @@
       }
    }
 
-   .explore-all {
-      right: calc(50% - 44px);
-      bottom: -55px;
-      font-size: 0.79rem;
+   .join-the-community {
+      .community {
+         left: calc(50% - 148px);
+         top: calc(50% - 98px);
 
-      :nth-child(1) {
-         margin-right: 12px;
-      }
-
-      .arrow-container {
-         bottom: 3px;
-         left: -3px;
-         width: 10px;
-         height: 2px;
-
-         &::after {
-            border-top: 4px solid transparent;
-            border-bottom: 4px solid transparent;
-            border-left: 6px solid $text-grey; // Цвет стрелки
+         .section-title {
+            font-size: 1.6875rem;
+            font-weight: 600;
+            margin-bottom: 14px;
          }
+
+         .community-text {
+            margin-bottom: 49px;
+            
+            h6 {
+               font-size: 0.5625rem;
+            }
+         }
+   
+         .btn {
+            padding: 12px 10.5px;
+         }
+   
+         .btn-primary {
+            font-size: 0.5625rem;
+         }
+      }
+   }
+
+   .asked-questions {
+      margin-bottom: 112px;
+   
+      .section-title {
+         font-size: 1.4775rem;
+         line-height: 1.2;
+         margin-bottom: 52px;
+      }
+   }
+
+   .accordion {
+      &-item {
+         border-bottom: 0.6px solid $text-grey;
+         padding: 15px 6px 8px 0;
+   
+         &__button {
+            font-size: 0.77rem;
+            font-weight: 600;
+            padding: 0 60px 0 0;
+   
+            &::after {
+               background: url(assets/img/icon-plus-sm.svg);
+               width: 16px;
+               height: 16px;
+               top: 7px;
+            }
+         }
+   
+         &__content {
+            font-size: 0.65rem;
+            padding: 12px;
+            display: none;
+   
+            ul {
+               list-style-type: square;
+               padding: 20px;
+            }
+            
+            ol {
+               list-style-type: upper-alpha;
+               padding: 20px;
+            }
+         }
+   
+         &.active {
+            .accordion-item__button { // стили только к кнопке внутри активного .accordion-item
+               background-color: $weekly-bg;
+            }
+   
+            .accordion-item__content { //стили только к контенту внутри активного .accordion-item
+               display: block;
+            }
+         }
+      }
+   }
+
+   .create-and-sell {
+      margin-bottom: 191px;
+
+      .create-box {
+         height: 211px;
+         flex-direction: column;
+         gap: 36px;
+         padding: 0;
+         border-radius: 15px;
+
+         .create-slide {
+            width: 267px;
+            height: 129px;
+            margin: 0 auto;
+   
+            img {
+               &:first-child {
+                  width: 253px;
+                  height: 129px;
+                  margin-left: 7px;
+               }
+               
+               &:last-child {
+                  width: 267px;
+                  height: 129px;
+                  margin-top: calc(-100% + 105px);
+                  margin-left: 0;
+               }
+            }
+         }
+
+         .create {
+            padding: 22px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+   
+            .title {
+               font-size: 1.4rem;
+               margin-bottom: 6px;
+            }
+         
+            .place {
+               font-size: 0.625rem;
+               margin-bottom: 25px;
+            }
+   
+            .create-btns-row {
+               > a {
+                  margin-right: 15px;
+
+                  &:hover {
+                     outline: 1px solid;
+                  }
+               }
+               
+               .btn {
+                  font-size: 0.66rem;
+                  border-radius: 10px;
+                  padding: 10px 14.5px;
+                  
+                  &-primary {
+                     outline: 1px solid;
+                  }
+               }
+            }
+         }   
       }
    }
 }
