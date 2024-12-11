@@ -1,9 +1,17 @@
 @media screen and (max-width: 1024.9px) {
+   h2 {
+      font-size: 2rem;
+   }
+
+   h6 {
+      font-size: 0.8rem;
+   }
+
    .btn {
       font-size: 0.75rem;
       font-weight: 500;
       line-height: 1.42;
-      border-radius: 9px;
+      border-radius: 12px;
    }
 
    header {
@@ -232,7 +240,6 @@
       margin-bottom: 77px;
       
       .section-title {
-         font-size: 1.875rem;
          line-height: 0.9;
          margin-bottom: 63px;
       }
@@ -343,6 +350,22 @@
             display: none;
             }   
          }
+      }
+   }
+
+   .join-the-community .community {
+      left: calc(50% - 210px);
+      top: calc(50% - 121px);
+
+      .btn {
+         font-size: 0.66rem;
+         padding: 13px;
+      }
+   }
+
+   .asked-questions {
+      .section-title {
+         font-size: 2.17rem;
       }
    }
 

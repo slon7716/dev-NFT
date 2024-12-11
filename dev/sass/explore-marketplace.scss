@@ -11,14 +11,17 @@
       margin-bottom: 65px;
    }
    
-   .explore-btns-row {
-      margin: 0 0 100px;
-      @include btns-row;
+   .btns-row {
+      margin-bottom: 100px;
    }
 
    .explore-all {
       bottom: -123px;
    }
+}
+
+.explore-btns-row {
+   @include btns-row;
 }
 
 .explore-product-row {

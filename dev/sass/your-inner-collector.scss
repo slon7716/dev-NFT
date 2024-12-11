@@ -35,9 +35,26 @@
          }
       }
    }
+   
+   .btn {
+      position: relative;
+      font-size: 0.93rem;
+      font-weight: 500;
+      line-height: 1.25;
+      padding: 19px 14px 18px 18px;
+
+      svg {
+         width: 22px;
+         height: 22px;
+         vertical-align: middle;
+         margin-left: 9px;
+      }
+   }
 }
 
 .widgets {
+   position: relative;
+
    &::before {
       content: "";
       position: absolute;
@@ -59,7 +76,7 @@
       box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.15);
       z-index: 2;
 
-      &__title h4 {
+      &__title h5 {
          font-size: 1.16rem;
       }
 
@@ -76,6 +93,7 @@
       right: 181px;
       bottom: 35px;
       padding: 26px 18px;
+      border: 1px solid $weekly-bg;
       border-radius: 14px;
       box-shadow: 6px 6px 31px 0 rgba(20, 20, 22, 0.15);
       
@@ -83,7 +101,8 @@
          justify-content: space-between;
          margin-bottom: 24px;
          
-         h5 {
+         h6 {
+            font-size: 1.158rem;
             line-height: 1.35;
          }
       }
@@ -159,7 +178,6 @@
          }
 
          .best-seller-user__data {
-
             .best-seller-user__name {
                font-size: 0.77rem;
                font-weight: 500;
@@ -195,11 +213,10 @@
 .rotation {
    width: 325px;
    position: absolute;
-   top: 75px;
+   bottom: 500px;
    right: 0;
    display: flex;
    justify-content: space-between;
-   max-width: 326px;
    background-color: #fff;
    box-shadow: 0 19px 28px 0 rgba(70, 70, 70, 0.15);
    border-radius: 14px;
@@ -212,6 +229,7 @@
          display: flex;
          position: relative;
          margin-right: 14px;
+         margin-top: 2px;
 
          .circle-wrapper {
             margin-right: 22px;
@@ -222,7 +240,7 @@
                background-color: black;
                border-radius: 50%;
                position: absolute;
-               top: 16px;
+               top: 17px;
             }
          }
       

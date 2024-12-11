@@ -1,17 +1,18 @@
 .weekly {
    position: relative;
-   background-color: $weekly-bg;
    margin-bottom: 224px;
    
    .container {
       position: relative;
       max-width: 1440px;
+      background-color: $weekly-bg;
       padding: 0;
 
       .section-title {
          line-height: 0.6;
-         color: $text-grey;    
-         margin: 57px 0 100px;
+         color: $text-grey;
+         padding-top: 57px;  
+         margin-bottom: 100px;
       }   
 
       .widget {

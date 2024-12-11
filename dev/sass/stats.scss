@@ -12,9 +12,12 @@
       margin-bottom: 45px;
    }
 
-   &-btns-row {
-      @include btns-row;
+   .btns-row {
       margin-bottom: 128px;
+
+      > :first-child {
+         display: none;
+      }
    }
 
    table {
@@ -96,8 +99,7 @@
          font-weight: 600;
 
          .icon {
-            vertical-align: middle;
-            /* Выравниваем иконку по вертикали */
+            vertical-align: middle; // Выравниваем иконку по вертикали
             margin-right: 4px;
          }
       }
@@ -108,6 +110,6 @@
    }
 
    .spinner {
-      @include spinner
+      @include spinner;
    }
 }

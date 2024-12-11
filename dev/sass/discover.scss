@@ -1,0 +1,35 @@
+.discover {
+   margin: 155px 0 226px;
+
+   .section-title {
+      margin-bottom: 44px;
+   }
+
+   .btns-row {
+      gap: 33px;
+      margin-bottom: 100px;
+
+      > :first-child {
+         display: none;
+      }
+   }
+
+   .product-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; // это свойство старше, чем gap
+      gap: 67px 32px; // минимальное расстояние между .product
+      margin-bottom: 176px;
+
+      .product {
+         max-width: 282px;
+         width: 282px;
+         height: 404px;
+      }
+   }
+
+   .spinner {
+      @include spinner;
+      margin: 0 auto;
+   }
+}

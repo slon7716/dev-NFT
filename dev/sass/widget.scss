@@ -1,5 +1,6 @@
 .widget {
    background-color: #fff;
+   border: 1px solid $weekly-bg;
    border-radius: 16px;
    padding: 24px 24px 21px;
    z-index: 2;
@@ -13,14 +14,13 @@
       padding-right: 36px;
       margin-bottom: 24px;
 
-      h4 {
-         line-height: 1.333;
+      h5 {
+         line-height: 1.35;
       }
 
       .layout-menu {
          position: absolute;
-         top: 19px;
-         right: 26px;
+         right: 24px;
          display: flex;
          flex-direction: column;
       
@@ -62,8 +62,8 @@
       
          &__item {
             .icon-svg {
-               width: 32px;
-               height: 32px;
+               width: 30px;
+               height: 30px;
       
                use {
                   stroke: $footer-color;
@@ -123,6 +123,21 @@
             }
          }
 
+         &__data {
+            .widget-user__name {
+               font-size: 0.96rem;
+               font-weight: 600;
+               line-height: 1.4;
+               margin-bottom: 8px;
+            }
+         
+            .widget-user__nickname {
+               font-size: 0.78rem;
+               line-height: 1.5;
+               color: $footer-color;
+            }
+         }
+
          &__volume {
             margin-left: auto;
 
@@ -145,39 +160,23 @@
    }
 }
 
-.widget-user__data {
-
-   .widget-user__name {
-      font-size: 0.96rem;
-      font-weight: 600;
-      line-height: 1.4;
-      margin-bottom: 8px;
-   }
-
-   .widget-user__nickname {
-      font-size: 0.78rem;
-      line-height: 1.5;
-      color: $footer-color;
-   }
-}
-
 .widget.grid {
    .widget-users-list {
       display: flex;
       flex-wrap: wrap;
       gap: 24px;
-   }
-   
-   .widget-users-list__item {
-      width: calc(50% - 12px);
-      margin: 0;
 
-      .widget-user__avatar {
+      &__item {
+         width: calc(50% - 12px);
          margin: 0;
-      }
-
-      &::before {
-         left: 72px;
+   
+         .widget-user__avatar {
+            margin: 0;
+         }
+   
+         &::before {
+            left: 72px;
+         }
       }
    }
 

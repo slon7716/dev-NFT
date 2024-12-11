@@ -208,6 +208,10 @@ img,
   @include explore-all;
 }
 
+.btns-row {
+  @include btns-row;
+}
+
 ::-webkit-scrollbar {
   width: 12px; // ширина вертикального скрола
   height: 12px; // ширина горизонтального скрола
