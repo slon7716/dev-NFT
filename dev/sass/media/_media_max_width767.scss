@@ -630,4 +630,73 @@
          }
       }
    }
+
+   .stats {
+      margin: 75px 0 125px;
+
+      .btns-row {
+         margin-bottom: 75px;
+      }
+
+      table {
+         min-width: 540px;
+      }
+
+      th {
+         padding-bottom: 17px;
+      }
+   
+      td {
+         padding: 16.5px 0;
+      }
+
+      .header-tab {
+         font-size: 0.87rem;
+   
+         .icon-svg {
+            width: 12px;
+            height: 12px;
+            margin-left: 5px;
+         }
+      }
+
+      .user {
+         border-bottom: 1px solid $light-grey;
+
+         .user-info {
+            img {
+               width: 44px;
+               height: 44px;
+               margin-right: 22px;
+            }
+
+            .user-data {
+               .user-name {
+                  font-size: 0.96rem;
+               }
+
+               .user-nickname {
+                  font-size: 0.78rem;
+               }
+            }
+         }
+
+         .volume,
+         .price,
+         .stats__percent,
+         .owners,
+         .items {
+            font-size: 0.84rem;
+         }
+   
+         .volume,
+         .price {
+            font-size: 0.96rem;
+   
+            .icon {
+               margin-right: 2px;
+            }
+         }
+      }
+   }
 }
