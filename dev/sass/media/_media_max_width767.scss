@@ -616,7 +616,7 @@
       }
 
       .product-box {
-         gap: 0;
+         gap: 35px 24px;
          margin-bottom: 106px;
 
          .product {
@@ -628,6 +628,182 @@
                display: inline-block;
             }
          }
+      }
+   }
+
+   .place-bid {
+      margin: 69px 0 125px;
+
+      .history-back {
+         display: none;
+      }
+
+      .product-card {
+         max-width: 310px;
+         max-height: 703px;
+         border-radius: 14px;
+         padding: 15px 15px 27px;
+         margin: 0 auto 85px ;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
+   
+         > img {
+            min-height: 280px;
+         }
+   
+         .card-info {
+            .product-card-title {
+               font-size: 0.98rem;
+               line-height: 1.45;
+               margin-bottom: 6px;
+            }
+   
+            .product-card-description {
+               max-width: 268px;
+               font-size: 0.82rem;
+               line-height: 1.54;
+               margin-bottom: 58px;
+            }
+   
+            .icons {
+               margin-bottom: 43px;
+   
+               img {
+                  width: 34px;
+                  height: 34px;
+                  margin-right: 9px;
+               }
+   
+               .created,
+               .owned {
+                  display: flex;
+                  
+                  .nick {
+                     .nickname {
+                        font-size: 0.82rem;
+                     }
+                  }
+               }
+   
+               .by {
+                  font-size: 0.57rem;
+               }
+            }
+   
+            .current-end {
+               margin-bottom: 46px;
+   
+               .current {
+                  .product-bid {
+                     font-size: 1.22rem;
+                     margin-top: 4px;
+   
+                     .icon-sm {
+                        display: inline-block;
+                     }
+                  }
+               }
+   
+               .end-in {
+                  .end {
+                     text-align: right;
+                     margin-bottom: 17px;
+                  }
+                  .date {
+                     font-size: 0.71rem;
+                  }
+               }
+   
+               .current-bid,
+               .end {
+                  font-size: 0.66rem;
+               }
+            }
+   
+            .btn {
+               font-size: 0.67rem;
+               padding: 15px;
+   
+               svg {
+                  width: 13px;
+                  height: 13px;
+                  margin-right: 9px;
+               }
+            }
+         }   
+      }
+
+      .from-creator {
+         .title {
+            font-size: 1.5625rem;
+            line-height: 1.12;
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 50px;
+         }
+      }
+
+      .creators-product {
+         flex-direction: column;
+         align-items: center;
+         gap: 35px;
+
+         .product {
+            max-width: 283px;
+            border-radius: 24px;
+            padding: 14px;
+
+            .product-img {
+               margin-bottom: 18px;
+               
+               img {
+                  width: 255px;
+                  height: 255px;
+               }
+            }
+   
+            .creators-nickname {
+               font-size: 1rem;
+               margin-bottom: 6px;
+               margin-right: 6px;
+   
+               img {
+                  width: 16px;
+               }
+            }
+   
+            .product-title {
+               font-size: 1.33rem;
+               line-height: 1.4;
+               margin-bottom: 12px;
+            }
+   
+            .blok {
+               .product-bid {
+                  font-size: 1.04rem;
+                  line-height: 1.5;
+      
+                  .icon-sm {
+                     display: block;
+                     margin-right: 2px;
+                  }
+               }
+      
+               .likes {
+                  font-size: 0.95rem;
+   
+                  img {
+                     width: 16px;
+                     height: 15px;
+                     margin-right: 5px;
+                  }
+               }
+            }   
+         }
+
       }
    }
 

@@ -109,13 +109,19 @@ function initializeButtonsInWidget(widgetSelector) {
 // Инициализация кнопок внутри виджета "Best Sellers"
 initializeButtonsInWidget('.best-sellers');
 
-const linkBack = document.querySelector('.history-back');
-function historyBack() {
-  linkBack.addEventListener('click', function () {
-    window.historyBack();
-  })
-}
-linkBack ? historyBack : null;
+document.querySelector('.history-back')?.addEventListener('click', (event) => {
+  window.history.back();
+});
+    // Классический вариант:
+// const linkBack = document.querySelector('.history-back');
+// if (linkBack) {
+//   function historyBack() {
+//     linkBack.addEventListener('click', function () {
+//       window.historyBack();
+//     })
+//   }
+// }
+// historyBack();
 
 if (document.querySelector('.widget')) {
   installWidget();

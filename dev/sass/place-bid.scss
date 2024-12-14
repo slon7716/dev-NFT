@@ -1,0 +1,216 @@
+.place-bid {
+   margin: 145px 0 160px;
+
+   .history-back {
+      display: inline-block;
+      font-size: 1.94rem;
+      font-weight: 600;
+      line-height: 0.9;
+      color: $widget-color;
+      margin-bottom: 55px;
+
+      img {
+         width: 37px;
+         height: 37px;
+         margin-right: 34px;
+      }
+   }
+
+   .product-card {
+      max-height: 636px;
+      background-color: #fff;
+      border-radius: 24px;
+      padding: 37px;
+      margin-bottom: 133px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
+
+      > img {
+         min-height: 562px;
+      }
+
+      .card-info {
+         .product-card-title {
+            font-size: 3.19rem;
+            line-height: 0.63;
+            margin-bottom: 30px;
+         }
+
+         .product-card-description {
+            max-width: 400px;
+            font-size: 1.19rem;
+            line-height: 1.35;
+            color: $text-grey;
+            margin-bottom: 71px;
+         }
+
+         .icons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 64px;
+
+            img {
+               width: 66px;
+               height: 66px;
+               margin-right: 17px;
+            }
+
+            .created,
+            .owned {
+               display: flex;
+               
+               .nick {
+                  display: flex;
+                  flex-direction: column;
+
+                  .nickname {
+                     font-size: 1.6rem;
+                     font-weight: 500;
+                     line-height: 1.53;
+                  }
+               }
+            }
+
+            .by {
+               font-size: 1.1rem;
+               color: $text-grey;
+               line-height: 1.53;
+            }
+         }
+
+         .current-end {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 55px;
+
+            .current {
+               .product-bid {
+                  font-size: 2.06rem;
+                  font-weight: 600;
+                  line-height: 1.49;
+                  margin-top: 6px;
+
+                  .icon-sm {
+                     display: none;
+                  }
+               }
+            }
+
+            .end-in {
+               .end {
+                  text-align: right;
+                  margin-bottom: 17px;
+               }
+               .date {
+                  font-size: 1.2rem;
+                  line-height: 1.57;
+                  color: #000;
+               }
+            }
+
+            .current-bid,
+            .end {
+               font-size: 1.12rem;
+               line-height: 1.23;
+               color: $text-grey;
+            }
+         }
+
+         .btn {
+            width: 100%;
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.53;
+            padding: 25px;
+
+            svg {
+               width: 22px;
+               height: 22px;
+               margin-right: 16px;
+               vertical-align: middle;
+            }
+         }
+      }
+   }
+
+   .from-creator {
+      .title {
+         font-size: 1.94rem;
+         font-weight: 600;
+         line-height: 0.9;
+         color: $light-grey;
+         margin-left: 9px;
+         margin-bottom: 44px;
+      }
+   }
+
+   .creators-product {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+
+      .product {
+         max-width: 216px;
+         border-radius: 18px;
+         padding: 14px;
+         box-shadow: 17px 12px 60px 0 rgba(97, 97, 97, 0.25);
+
+         .product-img {
+            margin-bottom: 7px;
+         }
+
+         .creators-nickname {
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.57;
+            margin-bottom: 7px;
+
+            span {
+               margin-right: 5px;
+            }
+
+            img {
+               width: 14px;
+            }
+         }
+
+         .product-title {
+            font-size: 1.09rem;
+            line-height: 1.57;
+            margin-bottom: 7px;
+         }
+
+         .blok {
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .product-bid {
+               font-size: 1.14rem;
+               font-weight: 500;
+               line-height: 1.44;
+   
+               .icon {
+                  margin-right: 5px;
+               }
+            }
+   
+            .likes {
+               font-size: 0.81rem;
+               font-weight: 600;
+               line-height: 1.44;
+               color: $text-grey;
+
+               img {
+                  margin-right: 5px;
+                  vertical-align: middle;
+               }
+            }
+         }
+      }
+   }
+}
