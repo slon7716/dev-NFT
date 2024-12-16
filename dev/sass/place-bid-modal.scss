@@ -1,0 +1,153 @@
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: transparent;
+   z-index: 5;
+   display: none;
+
+   &.show {
+      display: block;
+   }
+
+   &__body {
+      width: 439px;
+      height: 733px;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 21px;
+      padding: 40px 19px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .bid-info {
+         display: flex;
+         flex-direction: column;
+         gap: 18px;
+         margin-bottom: 45px;
+
+         .history {
+            margin-left: 9px;
+
+            .history-of-bid {
+               font-size: 1.27rem;
+               font-weight: 600;
+               line-height: 1.45;
+               margin-bottom: 3px;
+            }
+
+            .date {
+               font-size: 0.92rem;
+               line-height: 1.23;
+               color: $text-grey;
+            }
+         }
+
+         .position {
+            display: flex;
+            align-items: center;
+            border: 0.5px solid $background;
+            border-radius: 11px;
+            padding: 18px;
+            box-shadow: -5px 12px 25px 0 rgba(146, 146, 146, 0.25);
+
+            .images {
+               margin-right: 15px;
+               height: 64px;
+
+               .slide {
+                  display: block;
+                  position: relative;
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+               }
+   
+               .check-mark {
+                  width: 20px;
+                  height: 20px;
+                  margin: -125px 0 0 49px;
+                  position: relative;
+                  z-index: 1;
+               }
+            }
+
+            .info {
+               margin-right: 50px;
+
+               .name {
+                  font-size: 1.06rem;
+                  font-weight: 500;
+                  line-height: 1.54;
+               }
+   
+               .date {
+                  font-size: 0.92rem;
+                  line-height: 1.23;
+                  color: $text-grey;
+               }
+            }
+   
+            .product-bid {
+               font-size: 1.27rem;
+               font-weight: 500;
+               line-height: 1.48;
+            }
+         }   
+      }
+
+      .payment {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+
+         p {
+            font-size: 1.27rem;
+            font-weight: 600;
+            line-height: 1.48;
+            margin-left: 4px;
+         }
+
+         .btn {
+            width: 100%;
+            border-radius: 18px;
+         }
+
+         .btn-select {
+            height: 70px;
+            background-color: #fff;
+            border: 1px solid $widget-color;
+            padding: 0 250px 0 0;
+
+            select {
+               height: 69px;
+               width: 157px;
+               background-color: #000;
+               color: #fff;
+               border: none;
+               border-radius: 16px 0 0 18px;
+               padding: 0 46px;
+            }
+         }
+
+         .btn-primary {
+            font-size: 1.06rem;
+            font-weight: 600;
+            line-height: 1.54;
+            padding: 22px;
+   
+            svg {
+               width: 20px;
+               height: 20px;
+               margin-right: 11px;
+               vertical-align: middle;
+            }
+         }
+      }
+   }
+}
+

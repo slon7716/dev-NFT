@@ -23,4 +23,26 @@
          }   
       }
    }
+
+   .place-bid {
+      .product-card {
+         .card-info {
+            .product-card-title {
+               margin-bottom: 18px;
+            }
+
+            .product-card-description {
+               margin-bottom: 40px;
+            }
+
+            .icons {
+               margin-bottom: 38px;
+            }
+
+            .current-end {
+               margin-bottom: 30px;
+            }
+         }
+      }
+   }
 }

@@ -29,10 +29,13 @@
       box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
 
       > img {
-         min-height: 562px;
+         width: 100%;
+         max-width: 562px;
       }
 
       .card-info {
+         min-width: 465px;
+
          .product-card-title {
             font-size: 3.19rem;
             line-height: 0.63;
@@ -87,11 +90,13 @@
             margin-bottom: 55px;
 
             .current {
+               .current-bid {
+                  margin-bottom: 6px;
+               }
                .product-bid {
                   font-size: 2.06rem;
                   font-weight: 600;
                   line-height: 1.49;
-                  margin-top: 6px;
 
                   .icon-sm {
                      display: none;
@@ -206,6 +211,7 @@
                color: $text-grey;
 
                img {
+                  width: 13px;
                   margin-right: 5px;
                   vertical-align: middle;
                }

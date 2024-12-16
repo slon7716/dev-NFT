@@ -352,6 +352,10 @@
          }
       }
    }
+   
+   .collector {
+      min-width: 330px;
+   }
 
    .join-the-community .community {
       left: calc(50% - 210px);
@@ -390,10 +394,13 @@
          margin-bottom: 94px;
    
          > img {
-            min-height: 398px;
+            width: 100%;
+            max-width: 398px;
          }
    
          .card-info {
+            min-width: 331px;
+            
             .product-card-title {
                font-size: 2.27rem;
                margin-bottom: 20px;

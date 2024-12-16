@@ -3,12 +3,14 @@
    
    .container {
       position: relative;
+      display: flex;
    }
 }
 
 .collector {
+   min-width: 340px;
    border-top: 1px solid $light-grey;
-   padding: 116px 4px 0;
+   padding-top: 116px;
 
    .section-title {
       flex-direction: column;
@@ -31,6 +33,7 @@
          line-height: 2;
          
          img {
+            width: 20px;
             margin-right: 12px;
          }
       }
@@ -53,12 +56,14 @@
 }
 
 .widgets {
-   position: relative;
+   display: flex;
+   align-items: flex-start;
+   padding-top: 116px;
 
    &::before {
       content: "";
       position: absolute;
-      right: -138px;
+      right: -58px;
       bottom: 0;
       width: 402px;
       height: 174px;
@@ -66,13 +71,12 @@
    }
 
    .widget {
-      position: absolute;
-      right: 360px;
-      bottom: -30px;
+      position: relative;
       width: 322px;
       background-color: #fff;
       border-radius: 14px;
-      padding: 24px 22px 21px;
+      padding: 21px;
+      margin: auto -144px -55px 0;
       box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.15);
       z-index: 2;
 
@@ -87,19 +91,16 @@
    
    .best-sellers {
       width: 322px;
-      max-height: 510px;
       background-color: #fff;
-      position: absolute;
-      right: 181px;
-      bottom: 35px;
       padding: 26px 18px;
       border: 1px solid $weekly-bg;
       border-radius: 14px;
       box-shadow: 6px 6px 31px 0 rgba(20, 20, 22, 0.15);
+      z-index: 1;
       
       .section-title {
          justify-content: space-between;
-         margin-bottom: 24px;
+         margin-bottom: 23px;
          
          h6 {
             font-size: 1.158rem;
@@ -211,16 +212,15 @@
 }
 
 .rotation {
-   width: 325px;
-   position: absolute;
-   bottom: 500px;
-   right: 0;
+   width: 322px;
    display: flex;
    justify-content: space-between;
    background-color: #fff;
    box-shadow: 0 19px 28px 0 rgba(70, 70, 70, 0.15);
    border-radius: 14px;
    padding: 11px;
+   margin: -38px 0 0 -144px;
+   z-index: 1;
 
    .rotation-everything {
       display: flex;
@@ -290,5 +290,3 @@
       border-radius: 11px;
    }
 }
-
-
