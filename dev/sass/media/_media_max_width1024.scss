@@ -30,19 +30,20 @@
    }
 
    .mobile-container.show {
-      left: 0;
+      clip-path: inset(0 0 0 0);
    }
 
    .mobile-container {
       position: absolute;
       flex-direction: column;
       top: 106px;
-      left: 100%;
-      gap: 24px;
-      padding: 36px;
+      left: 0;
+      gap: 20px;
+      padding: 0 36px 20px;
       background-color: $header-color;
       z-index: 2;
-      transition: 0.7s;
+      clip-path: inset(0 100% 0 0);
+      transition: 0.8s;
 
       .header-nav {
          display: flex;
@@ -56,7 +57,7 @@
             padding: 0;
 
             .nav-item {
-               margin: 12px 0;
+               margin: 12px 0 10px;
 
                a {
                   color: #000;
@@ -71,6 +72,7 @@
 
       form.header-search {
          margin: initial;
+         margin-bottom: 12px;
 
          input[type='search'] {
 
@@ -83,7 +85,7 @@
             }
 
 
-            +.btn {
+            + .btn {
                max-width: 348px;
                width: 100%;
             }
@@ -325,7 +327,7 @@
          }
 
          .weekly-button-next {
-            margin-left: 29px;
+            margin-left: 18px;
          }
       }
    }
@@ -358,8 +360,9 @@
    }
 
    .join-the-community .community {
-      left: calc(50% - 210px);
-      top: calc(50% - 121px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
 
       .btn {
          font-size: 0.66rem;
@@ -403,24 +406,20 @@
             
             .product-card-title {
                font-size: 2.27rem;
-               margin-bottom: 20px;
             }
    
             .product-card-description {
                max-width: 285px;
                font-size: 0.85rem;
-               margin-bottom: 50px;
             }
    
             .icons {
-               margin-bottom: 45px;
-   
                img {
                   width: 46px;
                   height: 46px;
                   margin-right: 12px;
                }
-   
+
                .created,
                .owned {                 
                   .nick {   
@@ -435,9 +434,7 @@
                }
             }
    
-            .current-end {
-               margin-bottom: 39px;
-   
+            .current-end {   
                .current {
                   .product-bid {
                      font-size: 1.47rem;
@@ -533,6 +530,113 @@
       }
    }
 
+   .modal {
+      &__body {
+         width: 310px;
+         border: 1.5px solid #000;
+         border-radius: 15px;
+         padding: 30px 13px;
+
+         .bid-info {
+            gap: 13px;
+            margin-bottom: 32px;
+            
+            .date {
+               font-size: 0.65rem;
+            }
+
+            .history {
+               margin-left: 6px;
+   
+               .history-of-bid {
+                  font-size: 0.9rem;
+                  margin-bottom: 2px;
+               }
+            }
+
+            .position {
+               border-radius: 8px;
+               padding: 12px;
+               box-shadow: -4px 8px 15px 0 rgba(146, 146, 146, 0.25);
+   
+               .images {
+                  margin-right: 11px;
+                  height: 45px;
+   
+                  .slide {
+                     width: 45px;
+                     height: 45px;
+                  }
+      
+                  .check-mark {
+                     width: 15px;
+                     height: 15px;
+                     margin: -93px 0 0 34px;
+                  }
+               }
+   
+               .info {
+                  margin-right: 36px;
+   
+                  .name {
+                     font-size: 0.75rem;
+                  }
+               }
+      
+               .product-bid {
+                  font-size: 0.9rem;
+               }
+            }   
+         }
+
+         .payment {
+            gap: 9px;
+   
+            p {
+               font-size: 0.9rem;
+               margin-left: 3px;
+            }
+   
+            .btn {
+               border-radius: 13px;
+            }
+   
+            .btn-select {
+               height: 50px;
+               border: 1px solid $widget-color;
+   
+               select {
+                  height: 49px;
+                  width: 112px;
+                  font-size: 0.9rem;
+                  border-radius: 11px 0 0 13px;
+                  padding-left: 33px;
+
+                  option {
+                     font-size: 0.9rem;
+                     font-weight: 600;
+                  }
+               }
+            }
+   
+            .btn-primary {
+               font-size: 0.75rem;
+               padding: 16px;
+
+               &:hover {
+                  outline: 1px solid #000;
+               }
+      
+               svg {
+                  width: 14px;
+                  height: 14px;
+                  margin-right: 8px;
+               }
+            }
+         }
+      }
+   }
+
    .tabs {
       .icon-xs {
          display: none;
@@ -551,6 +655,12 @@
    .footer-top {
       flex-direction: column;
       padding-top: 52px;
+
+      a {
+         img {
+            width: 133px;
+         }
+      }
 
       .footer-nav {
          margin-top: 50px;

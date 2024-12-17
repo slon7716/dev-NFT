@@ -1,18 +1,37 @@
-const modalTrigger = document.querySelector('[data-target]');
-const modalWindow = document.querySelector('.modal');
+const modalTrigger = document.querySelectorAll('[data-target]');
+const modalWindow = document.querySelectorAll('.modal');
+const closeModal = document.querySelectorAll('.modal__close');
 
-modalTrigger.addEventListener('click', () => {
-   modalWindow.classList.add('show');
+modalTrigger.forEach(trigger => {
+   trigger.addEventListener('click', (event) => {
+      event.preventDefault(); // отменить стандартное поведение браузера
+      const modalID = trigger.getAttribute('data-target');
+      document.querySelector('#' + modalID).classList.add('show');
+   });
 });
 
-const closeModal = document.querySelector('.modal__close');
+const removeShowClass = () => {
+   modalWindow.forEach(modal => {
+      modal.classList.remove('show');
+   });
+};
 
-closeModal.addEventListener('click', () => {
-   modalWindow.classList.remove('show'); // Убираем класс 'show'
+closeModal.forEach(btn => {
+   btn.addEventListener('click', () => {
+      removeShowClass();
+   });
 });
-// Закрытие при клике на фон (за пределами содержимого окна)
-// modalWindow.addEventListener('click', (e) => {
-//    if (e.target === modalWindow) {
-//       modalWindow.classList.remove('show');
-//    }
-// });
+
+modalWindow.forEach(modal => {
+   modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+         modal.classList.remove('show');
+      }
+   });
+});
+// Закрытие модального окна по нажатию клавиши Escape
+document.addEventListener('keydown', (e) => {
+   if (e.key === 'Escape') { // Проверяем, была ли нажата клавиша Escape
+      removeShowClass(); // Закрываем модальное окно
+   }
+});

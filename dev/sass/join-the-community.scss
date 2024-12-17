@@ -19,8 +19,9 @@
    .community {
       position: absolute;
       text-align: center;
-      left: calc(50% - 295px);
-      top: calc(50% - 154px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
 
       .section-title {
          font-weight: 700;
