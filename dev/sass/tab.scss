@@ -14,7 +14,7 @@
    flex-direction: column;
    width: 100%;
    margin-left: auto;
-   margin-bottom: 172px;
+   margin-bottom: 130px;
 
    .icon-xs {
       display: inline-block;
@@ -34,7 +34,6 @@
       text-align: center;
       color: $text-grey;
       border-bottom: 3px solid transparent;
-      border-radius: 2px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -66,13 +65,15 @@
 
 .collection {
    flex-wrap: wrap;
-   gap: 30px;
+   justify-content: space-evenly;
+   gap: 46px 24px;
 
    .product {
       max-width: 204px;
       height: 292px;
       border-radius: 17px;
       padding: 10px 10px 15px;
+      box-shadow: 28px 9px 43px 0 rgba(199, 199, 199, 0.8);
    
       &-img {
          margin-bottom: 14px;
@@ -129,7 +130,6 @@
          display: flex;
          justify-content: space-between;
       }
-      
    }
 }
 
@@ -159,7 +159,7 @@
          line-height: 1.5;
 
          i {
-            padding-right: 6px;
+            margin-right: 6px;
          }
 
          img {
@@ -180,16 +180,17 @@
       .sale {
          font-size: 0.755rem;
          line-height: 1.5;
+         color: #10C352;
       }
 
       .price {
+         font-size: 1rem;
+         font-weight: 500;
+         line-height: 1.5;
          display: flex;
          align-items: center;
 
          .icon-etherium {
-            font-size: 1rem;
-            font-weight: 500;
-            line-height: 1.5;
             margin-right: 7px;
          }
       }
@@ -235,4 +236,3 @@
       }
    }
 }
-

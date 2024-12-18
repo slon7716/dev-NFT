@@ -125,21 +125,20 @@
          margin-bottom: 30px;
       }
 
-      .explore-product-row {
-         gap: 35px;
-         align-items: center;
-   
-         .mobile-four,
-         .desktop-four {
-            flex-direction: column;
-            gap: 35px;
-         }
-      }
-
       .btns-row {
          margin-bottom: 75px;
 
          > :first-child {
+            display: none;
+         }
+      }
+
+      .explore-product-row {
+         flex-direction: column;
+         align-items: center;
+         gap: 35px;
+
+         .product:nth-child(n+5) {
             display: none;
          }
       }
@@ -807,6 +806,29 @@
             }   
          }
 
+      }
+   }
+
+   .creators {
+      margin: 62px 0 125px 0;
+      .all-info {
+         flex-direction: column;
+         gap: 0;
+         max-width: initial;
+
+         .info {
+            max-width: 444px;
+            padding: 0 17px;
+         }
+
+         .tab {
+            max-width: 477px;
+            margin-top: 84px;
+
+            .product:nth-child(n+5) {
+               display: none;
+            }
+         }
       }
    }
 

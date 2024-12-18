@@ -15,13 +15,12 @@
      }
    }
 
-   .explore-product-row {
-      .mobile-four,
-      .desktop-four {
-         .product:nth-child(n+4) { // Скрыть все, начиная с 4-го элемента
+   .explore-marketplace {
+      .explore-product-row {
+         .product:nth-child(n+7) {
             display: none;
-         }   
-      }
+         }
+      }   
    }
 
    .place-bid {

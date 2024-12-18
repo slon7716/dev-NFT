@@ -15,25 +15,12 @@
       margin-bottom: 100px;
    }
 
-   .explore-all {
-      bottom: -123px;
-   }
-}
-
-.explore-btns-row {
-   @include btns-row;
-}
-
-.explore-product-row {
-   display: flex;
-   flex-direction: column;
-   gap: 68px;
-   
-   .mobile-four,
-   .desktop-four {
+   .explore-product-row {
       display: flex;
-      justify-content: space-between;
-
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 48px 12px;
+   
       .product {
          max-width: 282px;
          width: 282px;
@@ -43,6 +30,10 @@
             display: inline-block;   
          }
       }
+   }
+
+   .explore-all {
+      bottom: -123px;
    }
 }
 

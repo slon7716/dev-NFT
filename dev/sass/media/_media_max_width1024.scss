@@ -28,6 +28,10 @@
          background-color: $light-grey;
       }
    }
+   
+   .burger {
+      display: block;
+   }
 
    .mobile-container.show {
       clip-path: inset(0 0 0 0);
@@ -93,13 +97,9 @@
       }
    }
 
-   .burger {
-      display: block;
-   }
-
    .banner {
       padding: 0 0 102px;
-      margin-top: 70px;
+      margin-top: 74px;
 
       >.container {
          flex-direction: column;
@@ -295,11 +295,11 @@
          }
    
          .icon-sm {
-            display: none; // Скрываем .icon-sm на экранах менее 1024px
+            display: none;
          }
    
          .icon-xxs {
-            display: inline-block; // Показываем .icon-xxs на экранах менее 1024px
+            display: inline-block;
          }
       }
 
@@ -340,19 +340,6 @@
 
    .weekly .widget {
       display: none;
-   }
-
-   .explore-marketplace {
-      .explore-product-row {
-         .mobile-four,
-         .desktop-four {
-            justify-content: space-evenly;
-            
-            .product:nth-child(n+3) { /* Скрыть все, начиная с 3-го элемента */
-            display: none;
-            }   
-         }
-      }
    }
    
    .collector {
@@ -637,13 +624,260 @@
       }
    }
 
-   .tabs {
-      .icon-xs {
-         display: none;
+   .creators {
+      margin: 71px 0 128px 0;
+   
+      .cap {
+         height: 269px;
+         border-radius: 16px;
+         margin-bottom: 52px;
       }
+      
+      .foto {
+         width: 125px;
+         height: 125px;
+         margin: -103px 0 30px 50px;
+      }
+      
+      .all-info {
+         max-width: calc(100% - 53px);
+         
+         .info {
+            max-width: 279px;
+         }
+   
+         .tab {
+            max-width: 478px;
+            margin-top: -39px;
+         }
+      }
+   }
 
-      .icon-xxs {
-         display: inline-block;
+   .creator {
+      padding-bottom: 30px;
+      margin-bottom: 33px;
+      
+      .user {
+         min-width: 106px;
+         
+         .name {
+            font-size: 1.66rem;
+         }
+         
+         .handle {
+            font-size: 0.85rem;
+         }
+      }
+      
+      button {
+         width: 92px;
+         height: 35px;
+         font-size: 0.7rem;
+      }
+   }
+
+   .bio-foll {
+      margin-bottom: 25px;
+      
+      .follow {
+         margin-bottom: 88px;
+         
+         .ethirium,
+         .thousand,
+         .numeric {
+            font-size: 1.525rem;
+            padding-bottom: 0;
+         }
+            
+         .total-sales,
+         .followers,
+         .followings {
+            font-size: 0.51rem;
+         }
+      }
+      
+      .bio-text {
+         padding-bottom: 64px;
+         
+         .bio {
+            font-size: 1.19rem;
+            padding-bottom: 5px;
+         }
+         
+         .text {
+            font-size: 0.67rem;
+         }
+      }
+   }
+
+   .creator__social {
+      max-width: 194px;
+      
+      a {
+         width: 12px;
+         height: 12px;
+      }
+   }
+
+   .tab {
+      .spinner {
+         width: 28px;
+         height: 28px;
+         left: calc(50% - 14px);
+      }
+   }
+
+   .tabs {
+      margin-bottom: 93px;
+
+      &__nav {
+         height: 34px;
+         margin-bottom: 55px;
+      }
+      
+      &__button {
+         font-size: 0.8rem;
+   
+         svg {
+            width: 17px;
+            height: 15px;
+            margin-right: 4px;
+         }
+         
+         &.active {
+            border-bottom: 2px solid $widget-color;
+         }
+      }
+   }
+
+   .collection {
+      gap: 30px 20px;
+   
+      .product {
+         max-width: 146px;
+         height: 209px;
+         border-radius: 12px;
+         padding: 7px 7px 11px;
+         box-shadow: 20px 6px 31px 0 rgba(199, 199, 199, 0.8);
+      
+         &-img {
+            margin-bottom: 10px;
+         }
+      
+         &-title {
+            font-size: 0.7rem;
+            margin-bottom: 7px;
+         }
+      
+         &-bid-title {
+            font-size: 0.46rem;
+         }
+      
+         &-bid {
+            font-size: 0.54rem;
+      
+            i {
+               margin-right: 1px;
+            }
+         }
+      
+         .btn {
+            font-size: 0.46rem;
+            margin: -28px 0 0 auto;
+            padding: 8.5px 14.5px;
+         }
+
+         .icon-xxs {
+            width: 11px;
+            height: 11px;
+         }   
+      }
+   }
+
+   .activity {
+      gap: 20px;
+   
+      .user {
+         border-radius: 10px;
+         padding: 12px 12px 14px;
+         box-shadow: 0px 4px 46px 0 rgb(97, 97, 97, 0.25);
+
+         .icon-xs {
+            display: none;
+         }
+
+         .icon-xxs {
+            display: block;
+         }
+      }
+   }
+
+   .first-row {
+      padding-bottom: 15px;
+      border-bottom: 0.5px solid $text-grey;
+   
+      .user-info {
+         img {
+            width: 51px;
+            height: 51px;
+            border-radius: 10px;
+            margin-right: 10px;
+         }
+   
+         .user-name {
+            font-size: 0.84rem;
+         }
+   
+         .user-nickname {
+            font-size: 0.6rem;
+   
+            i {
+               margin-right: 4px;
+            }
+   
+            img {
+               width: 10px;
+               height: 10px;
+               margin-bottom: 1px;
+            }
+         }
+      }
+   
+      .sales {
+         padding-right: 20px;
+   
+         .sale {
+            font-size: 0.6rem;
+         }
+   
+         .price {
+            font-size: 0.8rem;
+
+            .icon-etherium {
+               margin-right: 4px;
+            }
+         }
+   
+         .time-ago {
+            font-size: 0.6rem;
+         }
+      }
+   }
+
+   .second-row {
+      padding-top: 14px;
+   
+      .usd-price,
+      .quantity,
+      .floor-price,
+      .traded {
+         .title {
+            font-size: 0.6rem;
+         }
+            
+         .numbers {
+            font-size: 0.8rem;
+         }
       }
    }
 
