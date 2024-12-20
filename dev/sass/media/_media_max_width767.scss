@@ -825,8 +825,10 @@
             max-width: 477px;
             margin-top: 84px;
 
-            .product:nth-child(n+5) {
-               display: none;
+            .product {
+               &:nth-child(n+5) {
+                  display: none;
+               }
             }
          }
       }
@@ -900,4 +902,8 @@
          }
       }
    }
+
+   @import '../media-files/header-767.scss';
+   @import '../media-files/wallet-767.scss';
+   @import '../media-files/footer-767.scss';
 }

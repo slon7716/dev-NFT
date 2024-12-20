@@ -1,0 +1,125 @@
+.wallet {
+   .choose-wallet,
+   .start-gallery {
+      height: 100vh;
+   }
+
+   header {
+      &::after {
+         display: none;
+      }
+   }
+
+   main {
+      .choose {
+         max-width: 281px;
+         max-height: 452px;
+         margin: 22px auto 106px;
+
+         .section-title {
+            font-size: 1.57rem;
+            margin-bottom: 76px;
+         }
+
+         .link {
+            border-radius: 7px;
+            box-shadow: 4px 7px 36px 0 rgba(15, 15, 15, 0.1);
+            padding: 17px 21px;
+            margin-bottom: 25px;
+            gap: 14px;
+
+            img {
+               width: 27px;
+               height: 27px;
+            }
+
+            .choosing {
+               font-size: 0.8rem;
+            }
+
+            span {
+               width: 5px;
+               height: 5px;
+               border-radius: 1px;
+            }
+         }
+
+         .btn {
+            font-size: 0.8rem;
+            padding: 17.5px;
+            margin-top: 33px;
+         }
+      }
+   }
+
+   footer {
+      margin-bottom: 34px;
+
+      .container {
+         padding: 0 34px;
+      }
+
+      .footer-top {
+         .footer-nav-item {
+            a {
+               font-size: 0.71rem;
+            }
+         }
+      }
+
+      .copywrite {
+         font-size: 0.71rem;
+      }
+   }
+   
+   .start-gallery {
+      .create-slide {
+         width: 278px;
+         height: 281px;
+         margin: 85px auto 46px;
+
+         img {
+            &:last-child {
+               filter: blur(20px);
+               opacity: 0.5;
+               margin-top: calc(-100% + 16px);
+            }
+         }
+      }
+
+      .section-title {
+         max-width: 308px;
+         margin: 0 auto 12px;
+      }
+
+      p {
+         font-size: 0.74rem;
+         max-width: 289px;
+      }
+
+      .wallet-slider-navigation {
+         width: 130px;
+         height: 54px;
+         margin-left: calc(50% - 65px);
+              
+         &::after {
+            height: 20px;
+        }
+      }
+     
+      .swiper-button-prev,
+      .swiper-button-next {
+         width: 60px;
+         height: 54px;
+         top: 22px;
+      }
+  
+      .swiper-button-prev {
+         left: 0;
+      }
+  
+      .swiper-button-next {
+         right: 0;
+      }
+   }
+}

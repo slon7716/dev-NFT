@@ -5,8 +5,8 @@ header {
 		display: flex;
 		align-items: center;
 
-		button {
-			white-space: nowrap;
+		> a {
+			min-width: 53px;
 		}
 	}
 }
@@ -16,13 +16,17 @@ header {
 	align-items: center;
 	width: 100%;
 
+	> a {
+		white-space: nowrap;
+	}
+	
 	.nav-list {
 		display: flex;
 		padding: 0 30px;
-
+		
 		.nav-item {
 			margin: 0 27px;
-
+			
 			a {
 				font-size: 1.125rem;
 				font-weight: 500;

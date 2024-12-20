@@ -1,0 +1,93 @@
+.wallet {
+   display: contents;
+
+   header {
+      .mobile-container {
+         display: flex;
+      }
+
+      .burger,
+      &::after {
+         display: block;
+      }
+   }
+
+   .start-gallery {
+      display: none;
+   }
+
+   main {
+      .choose {
+         max-width: 395px;
+         max-height: 632px;
+         margin: 80px auto 148px;
+
+         .section-title {
+            font-size: 1.76rem;
+            margin-bottom: 83px;
+         }
+
+         .link {
+            border-radius: 8px;
+            box-shadow: 5px 10px 50px 0 rgba(15, 15, 15, 0.1);
+            padding: 19px 23px;
+            margin-bottom: 28px;
+            gap: 15px;
+
+            img {
+               width: 31px;
+               height: 31px;
+            }
+
+            .choosing {
+               font-size: 0.9rem;
+            }
+
+            span {
+               width: 6px;
+               height: 6px;
+               border-radius: 1px;
+            }
+         }
+
+         .btn {
+            font-size: 0.9rem;
+            padding: 20px;
+            margin-top: 37px;
+         }
+      }
+   }
+
+   footer {
+      background-color: $widget-color;
+      margin-bottom: 36px;
+
+      .container {
+         display: block;
+         padding: 0 32px;
+      }
+
+      .footer-top {
+         border-bottom: 1px solid $footer-color;
+         padding: 52px 0 25px;
+
+         .logotype {
+            display: block;
+         }
+
+         .footer-nav-item {
+            &:nth-child(n+2) {
+               display: block;
+            }
+         }
+      }
+
+      .footer-bottom {
+         padding: 26px 0 36px;
+
+         .footer__social {
+            display: flex;
+         }
+      }
+   }
+}

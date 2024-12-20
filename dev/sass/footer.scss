@@ -20,10 +20,15 @@ footer {
 
         .footer-nav-item {
             a {
-                color: #fff;
+                color: $text-grey;
                 text-decoration: none;
                 font-size: 1.125rem;
                 font-weight: 500;
+                line-height: 1.5;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
