@@ -1,0 +1,38 @@
+.footer-top {
+   padding: 65px 0 18px;
+
+   .logotype {
+      min-width: 142px;
+   }
+}
+
+.footer-nav {
+   .footer-nav-list {
+      gap: 50px;
+
+      .footer-nav-item {
+         a {
+            font-size: 0.8rem;
+         }
+      }
+   }
+}
+
+.footer-bottom {
+   padding: 41px 0 57px;
+}
+
+.copywrite {
+   font-size: 0.76rem;
+   line-height: 1.48;
+   padding-left: 5px;
+}
+
+.footer__social {
+   gap: 38px;
+
+   a {
+      width: 16px;
+      height: 16px;
+   }
+}

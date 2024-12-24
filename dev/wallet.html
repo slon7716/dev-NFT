@@ -1,6 +1,6 @@
 @@include('templates/head.html')
 <div class="wallet">
-   <div class="choose-wallet">
+   <section class="choose-wallet">
       @@include('templates/header.html')
       <main>
          <div class="container">
@@ -25,37 +25,58 @@
             </div>
          </div>
       </main>
-      @@include('templates/footer.html')
-   </div>
-   <div class="start-gallery">
+      <div class="footer-info">
+         <div class="footer-nav-item"><a href="#">Privacy Policy</a></div>
+         <div class="copywrite">© 2023 EATLY All Rights Reserved.</div>
+      </div>
+   </section>
+   <section class="start-gallery">
       <div class="container">
-         <div class="create-slide">
-            <img src="assets/img/wallet-slide.png" alt="slide">
-            <img src="assets/img/wallet-slide.png" alt="slide">
+         <div class="slider-container">
+            <div class="swiper gallery">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide1.svg" />
+                     <img src="assets/img/slide1.svg" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide2.svg" />
+                     <img src="assets/img/slide2.svg" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide3.svg" />
+                     <img src="assets/img/slide3.svg" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide4.svg" />
+                     <img src="assets/img/slide4.svg" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide5.svg" />
+                     <img src="assets/img/slide5.svg" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/slide6.svg" />
+                     <img src="assets/img/slide6.svg" />
+                  </div>
+               </div>
+            </div>
+            <div class="wallet-slider-navigation">
+               <div class="swiper-button-prev">
+                  <svg class="icon-svg">
+                     <use href="#swiper-prev-arrow"></use>
+                  </svg>
+               </div>
+               <div class="swiper-button-next">
+                  <svg class="icon-svg">
+                     <use href="#swiper-next-arrow"></use>
+                  </svg>
+               </div>
+            </div>
          </div>
          <h2 class="section-title">Start Your Own NFT Gallery</h2>
          <p>CloseSea Is A Great Platform For Discover Largest NFTs And Other Stuff !!</p>
-         <div class="wallet-slider-navigation">
-            <div class="swiper-button-prev">
-                <svg class="icon-svg">
-                    <use href="#swiper-prev-arrow"></use>
-                </svg>
-            </div>
-            <div class="swiper-button-next">
-                <svg class="icon-svg">
-                    <use href="#swiper-next-arrow"></use>
-                </svg>
-            </div>
-        </div>
       </div>
-   </div>
+   </section>
+   @@include('templates/footer.html')
 </div>
-
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/widget.js"></script>
-<script src="assets/js/accordion.js"></script>
-<script src="assets/js/place-bid-modal.js"></script>
-<script src="assets/js/tab.js"></script>
-<script src="assets/js/custom.js"></script>
-
-</body>

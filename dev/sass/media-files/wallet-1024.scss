@@ -1,9 +1,4 @@
 .wallet {
-   .choose-wallet,
-   .start-gallery {
-      height: 100vh;
-   }
-
    header {
       &::after {
          display: none;
@@ -14,7 +9,7 @@
       .choose {
          max-width: 281px;
          max-height: 452px;
-         margin: 22px auto 106px;
+         margin: 22px auto 72px;
 
          .section-title {
             font-size: 1.57rem;
@@ -52,18 +47,12 @@
       }
    }
 
-   footer {
-      margin-bottom: 34px;
+   .footer-info {
+      padding: 34px;
 
-      .container {
-         padding: 0 34px;
-      }
-
-      .footer-top {
-         .footer-nav-item {
-            a {
-               font-size: 0.71rem;
-            }
+      .footer-nav-item {
+         a {
+            font-size: 0.71rem;
          }
       }
 
@@ -71,22 +60,8 @@
          font-size: 0.71rem;
       }
    }
-   
+
    .start-gallery {
-      .create-slide {
-         width: 278px;
-         height: 281px;
-         margin: 85px auto 46px;
-
-         img {
-            &:last-child {
-               filter: blur(20px);
-               opacity: 0.5;
-               margin-top: calc(-100% + 16px);
-            }
-         }
-      }
-
       .section-title {
          max-width: 308px;
          margin: 0 auto 12px;
@@ -96,30 +71,47 @@
          font-size: 0.74rem;
          max-width: 289px;
       }
+   }
 
-      .wallet-slider-navigation {
-         width: 130px;
-         height: 54px;
-         margin-left: calc(50% - 65px);
-              
-         &::after {
-            height: 20px;
-        }
+   .slider-container {
+      .swiper {
+         width: 338px;
+         height: 325px;
+         margin: 85px auto 0;
+   
+         .swiper-slide {
+            width: 278px;
+            margin: 0 30px;
+            transition: 0.9s;
+   
+            img {
+               &:last-child {
+                  width: 272px;
+                  filter: blur(15px);
+                  opacity: 0.5;
+                  margin-top: calc(-100% + 16px);
+               }
+            }
+         }
       }
-     
-      .swiper-button-prev,
-      .swiper-button-next {
-         width: 60px;
-         height: 54px;
-         top: 22px;
-      }
+   }
+
+   .wallet-slider-navigation {
+      width: 130px;
+      height: 54px;
+      margin-left: calc(50% - 65px);
+      bottom: -247px;
+           
+      &::after {
+         height: 20px;
+     }
+   }
   
-      .swiper-button-prev {
-         left: 0;
-      }
-  
-      .swiper-button-next {
-         right: 0;
-      }
+   .swiper-button-prev,
+   .swiper-button-next {
+      @include slider-nav-half;
+      width: 60px;
+      height: 54px;
+      top: 22px;
    }
 }

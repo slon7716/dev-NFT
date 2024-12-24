@@ -4,11 +4,11 @@ const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const navLinks = document.querySelectorAll('.header-nav a, .container > a');
 // Проверяем каждую ссылку
 navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
+  const linkHref = link.getAttribute('href');
 
-    if (linkHref === currentPage) {
-        link.classList.add('active'); // Добавляем класс активной ссылке
-    }
+  if (linkHref === currentPage) {
+    link.classList.add('active'); // Добавляем класс активной ссылке
+  }
 })
 
 const btnburger = document.querySelector('.burger');
@@ -27,7 +27,7 @@ const bannerSlider = new Swiper('.banner-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }
+  },
 });
 
 const carouselWeekly = new Swiper('.carousel-weekly', {
@@ -43,8 +43,18 @@ const carouselWeekly = new Swiper('.carousel-weekly', {
   breakpoints: {
     1025: {
       spaceBetween: 40,
-    }
-  }
+    },
+  },
+});
+
+var swiper = new Swiper(".gallery", {
+  speed: 700,
+  slidesPerView: 'auto',
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 // const widgetUserPercent = document.querySelectorAll('.widget-user__percent') // выбор всех элементов с классом .wiget-user__percent
@@ -85,11 +95,11 @@ percent.forEach(item => {
 // Функция для переключения состояния кнопки
 function toggleFollow(button) {
   if (button.classList.contains('unfollow')) {
-      button.classList.remove('unfollow');
-      button.textContent = 'Follow';
+    button.classList.remove('unfollow');
+    button.textContent = 'Follow';
   } else {
-      button.classList.add('unfollow');
-      button.textContent = 'Unfollow';
+    button.classList.add('unfollow');
+    button.textContent = 'Unfollow';
   }
 }
 // Функция для инициализации кнопок внутри конкретного виджета
@@ -112,7 +122,7 @@ initializeButtonsInWidget('.best-sellers');
 document.querySelector('.history-back')?.addEventListener('click', (event) => {
   window.history.back();
 });
-    // Классический вариант:
+// Классический вариант:
 // const linkBack = document.querySelector('.history-back');
 // if (linkBack) {
 //   function historyBack() {

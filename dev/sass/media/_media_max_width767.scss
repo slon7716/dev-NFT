@@ -805,11 +805,10 @@
                }
             }   
          }
-
       }
    }
 
-   .creators {
+   .collection-activity {
       margin: 62px 0 125px 0;
       .all-info {
          flex-direction: column;
@@ -817,12 +816,14 @@
          max-width: initial;
 
          .info {
-            max-width: 444px;
+            max-width: initial;
+            width: 100%;
             padding: 0 17px;
          }
 
          .tab {
-            max-width: 477px;
+            max-width: initial;
+            width: 100%;
             margin-top: 84px;
 
             .product {

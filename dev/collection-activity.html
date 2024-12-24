@@ -1,0 +1,64 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="collection-activity">
+   <div class="container">
+      <img class="cap" src="assets/img/cap.png" alt="slide">
+      <img class="foto" src="assets/img/foto.png" alt="foto">
+      <div class="all-info">
+         <div class="info">
+            <div class="creator">
+               <div class="user">
+                  <div class="name">Harry K.</div>
+                  <div class="handle">@Harryknft</div>
+               </div>
+               <button type="button" class="btn btn-primary">Follow +</button>
+            </div>
+            <div class="bio-foll">
+               <div class="follow">
+                  <div class="sales">
+                     <h4 class="ethirium">86 ETH</h4>
+                     <div class="total-sales">Total Sales</div>
+                  </div>
+                  <div class="thousands">
+                     <h4 class="thousand">12K</h4>
+                     <div class="followers">Followers</div>
+                  </div>
+                  <div class="following">
+                     <h4 class="numeric">587</h4>
+                     <div class="followings">followings</div>
+                  </div>
+               </div>
+               <div class="bio-text">
+                  <div class="bio">Bio</div>
+                  <div class="text">the artist who transforms the intangible into priceless assets with
+                     their incredible NFT creations. From stunning visuals to mind-bending concepts.</div>
+               </div>
+            </div>
+            <nav class="creator__social">
+               <a href="#">
+                  <svg>
+                     <use href="#instagram"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg>
+                     <use href="#linkedin"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg>
+                     <use href="#facebook"></use>
+                  </svg>
+               </a>
+               <a href="#">
+                  <svg>
+                     <use href="#X"></use>
+                  </svg>
+               </a>
+            </nav>
+         </div>
+         @@include('templates/tab.html')
+      </div>
+   </div>
+</main>
+@@include('templates/footer.html')

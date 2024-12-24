@@ -46,10 +46,9 @@
 
          .create-btns-row {
             display: flex;
+            gap: 31px;
             
-            > a {
-               margin-right: 31px;
-
+            a {
                &:hover {
                   outline: 2px solid;
                }

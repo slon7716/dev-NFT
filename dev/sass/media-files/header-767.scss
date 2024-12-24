@@ -2,6 +2,12 @@ header {
    position: relative;
    padding: 30px 0;
 
+   .container {
+      .logotype {
+         width: 142px;
+      }
+   }
+
    &::after {
       content: "";
       position: absolute;

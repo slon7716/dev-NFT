@@ -1,0 +1,49 @@
+.create-and-sell {
+   margin-bottom: 114px;
+   
+   .create-box {
+      border-radius: 22px;
+      padding: 22px 15px 11px;
+
+      .create-slide {
+         width: 278px;
+         height: 188px;
+
+         img {
+            &:first-child {
+               width: 262px;
+               margin-left: 10px;
+            }
+            
+            &:last-child {
+               filter: blur(10px);
+               margin-top: calc(-100% + 99px);
+               margin-left: 0;
+            }
+         }
+      }
+
+      .create {
+         padding: 10px 0 0 32px;
+
+         .title {
+            margin-bottom: 8px;
+         }
+      
+         .place {
+            font-size: 0.9rem;
+            margin-bottom: 36px;
+         }
+
+         .create-btns-row {
+            gap: 22px;
+            
+            .btn {
+               font-size: 0.95rem;
+               border-radius: 9px;
+               padding: 14px 19.5px;
+            }
+         }
+      }
+   }
+}

@@ -8,10 +8,9 @@
    }
 
    .btn {
-      font-size: 0.75rem;
-      font-weight: 500;
-      line-height: 1.42;
+      font-size: 0.72rem;
       border-radius: 12px;
+      padding: 12px 20px;
    }
 
    .banner {
@@ -541,7 +540,7 @@
       }
    }
 
-   .creators {
+   .collection-activity {
       margin: 71px 0 128px 0;
    
       .cap {
@@ -623,6 +622,7 @@
          
          .text {
             font-size: 0.67rem;
+            max-width: 279px;
          }
       }
    }
@@ -798,5 +798,9 @@
       }
    }
 
+   @import '../media-files/header-1024.scss';
+   @import '../media-files/create-and-sell-1024.scss';
+   @import '../media-files/creators-1024.scss';
    @import '../media-files/wallet-1024.scss';
+   @import '../media-files/footer-1024.scss';
 }

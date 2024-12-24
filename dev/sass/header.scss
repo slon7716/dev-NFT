@@ -5,8 +5,8 @@ header {
 		display: flex;
 		align-items: center;
 
-		> a {
-			min-width: 53px;
+		.logotype {
+			width: 56px;
 		}
 	}
 }
@@ -15,21 +15,19 @@ header {
 	display: flex;
 	align-items: center;
 	width: 100%;
-
-	> a {
-		white-space: nowrap;
-	}
 	
 	.nav-list {
 		display: flex;
-		padding: 0 30px;
+		justify-content: space-between;
+		padding: 0 45px;
 		
-		.nav-item {
-			margin: 0 27px;
+		.nav-item {		
+			margin: 0 12px;
 			
 			a {
-				font-size: 1.125rem;
+				font-size: 1.12rem;
 				font-weight: 500;
+				line-height: 1.5;
 				text-transform: uppercase;
 				color: $header-color;
 

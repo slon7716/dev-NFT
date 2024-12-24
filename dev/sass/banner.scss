@@ -109,6 +109,7 @@
             width: 129px;
             height: 124px;
             background: url(assets/img/twisted-arrow.svg);
+            transform: rotate(-3deg);
         }
     }
 
@@ -118,12 +119,12 @@
     }
 
     .swiper-slide {
-        transition: 0.9s;
+        transition: 0.7s;
 
         img {
-            transition: 0.9s;
             width: 100%;
             padding: 0 10px;
+            transition: 0.7s;
 
             &:first-child {
                 filter: blur(10px);
@@ -137,12 +138,18 @@
             }
         }
 
+        &.swiper-slide-active {
+            transition: 0.7s;
+        }
+
         &.swiper-slide-next {
             margin-top: 181px;
+            transition: 0.7s;
 
             img {
                 height: auto;
                 max-width: 319px;
+                transition: 0.7s;
 
                 &:last-child {
                     margin-top: calc(-100% + 40px);
@@ -150,9 +157,7 @@
             }
         }
     }
-}
 
-.banner {
     .banner-slider-navigation {
         @include slider-nav;
         margin-left: 112px;
