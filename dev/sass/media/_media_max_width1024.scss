@@ -433,113 +433,6 @@
       }
    }
 
-   .modal {
-      &__body {
-         width: 310px;
-         border: 1.5px solid #000;
-         border-radius: 15px;
-         padding: 30px 13px;
-
-         .bid-info {
-            gap: 13px;
-            margin-bottom: 32px;
-            
-            .date {
-               font-size: 0.65rem;
-            }
-
-            .history {
-               margin-left: 6px;
-   
-               .history-of-bid {
-                  font-size: 0.9rem;
-                  margin-bottom: 2px;
-               }
-            }
-
-            .position {
-               border-radius: 8px;
-               padding: 12px;
-               box-shadow: -4px 8px 15px 0 rgba(146, 146, 146, 0.25);
-   
-               .images {
-                  margin-right: 11px;
-                  height: 45px;
-   
-                  .slide {
-                     width: 45px;
-                     height: 45px;
-                  }
-      
-                  .check-mark {
-                     width: 15px;
-                     height: 15px;
-                     margin: -93px 0 0 34px;
-                  }
-               }
-   
-               .info {
-                  margin-right: 36px;
-   
-                  .name {
-                     font-size: 0.75rem;
-                  }
-               }
-      
-               .product-bid {
-                  font-size: 0.9rem;
-               }
-            }   
-         }
-
-         .payment {
-            gap: 9px;
-   
-            p {
-               font-size: 0.9rem;
-               margin-left: 3px;
-            }
-   
-            .btn {
-               border-radius: 13px;
-            }
-   
-            .btn-select {
-               height: 50px;
-               border: 1px solid $widget-color;
-   
-               select {
-                  height: 49px;
-                  width: 112px;
-                  font-size: 0.9rem;
-                  border-radius: 11px 0 0 13px;
-                  padding-left: 33px;
-
-                  option {
-                     font-size: 0.9rem;
-                     font-weight: 600;
-                  }
-               }
-            }
-   
-            .btn-primary {
-               font-size: 0.75rem;
-               padding: 16px;
-
-               &:hover {
-                  outline: 1px solid #000;
-               }
-      
-               svg {
-                  width: 14px;
-                  height: 14px;
-                  margin-right: 8px;
-               }
-            }
-         }
-      }
-   }
-
    .collection-activity {
       margin: 71px 0 128px 0;
    
@@ -800,6 +693,7 @@
 
    @import '../media-files/header-1024.scss';
    @import '../media-files/create-and-sell-1024.scss';
+   @import '../media-files/place-bid-modal-1024.scss';
    @import '../media-files/creators-1024.scss';
    @import '../media-files/wallet-1024.scss';
    @import '../media-files/footer-1024.scss';

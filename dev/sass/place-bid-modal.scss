@@ -117,16 +117,53 @@
             border: 1px solid $widget-color;
             padding: 0;
 
-            select {
-               height: 69px;
+            .nice-select {
+               bottom: 1px;
+               height: 70px;
                width: 157px;
                font-size: 1.27rem;
                font-weight: 600;
+               line-height: 1.48;
                background-color: #000;
                color: #fff;
                border: none;
-               border-radius: 16px 0 0 18px;
-               padding-left: 46px;
+               border-radius: 18px 0 0 18px;
+               padding: 20px 46px;
+
+               &:after {
+                  border-bottom: 2px solid #fff;
+                  border-right: 2px solid #fff;
+                  border-radius: 2px;
+                  width: 11px;
+                  height: 11px;
+                  margin-top: -7px;
+                  right: 35px;
+               }
+
+               .list {
+                  width: 157px;
+                  font-size: 1.27rem;
+                  font-weight: 600;
+                  line-height: 1.48;
+                  background-color: #000;
+                  color: #fff;
+                  border-radius: 12px;
+
+                  .option {
+                     text-align: center;
+                     border-bottom: 1px dashed $light-grey;
+
+                     &:last-child {
+                        border: none;
+                     }
+
+                     &.selected,
+                     &.focus,
+                     &:hover {
+                        background-color: $header-color;
+                     }
+                  }
+               }
             }
          }
 

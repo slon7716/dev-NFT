@@ -1,0 +1,162 @@
+.sell {
+   margin: 155px 0 210px;
+
+   .section-title {
+      line-height: 0.67;
+      margin-bottom: 153px;
+   }
+
+   fieldset {
+      display: flex;
+      flex-direction: column;
+      max-width: 702px;
+   }
+}
+
+.form-registration {
+   h5 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 20px;
+   }
+   
+   input {
+      width: 100%;
+      font-size: 0.84rem;
+      font-weight: 500;
+      line-height: 1.25;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 26px center;
+      background-size: 20px 20px;
+      margin-bottom: 35px;
+      border: none;
+      border-radius: 12px;
+      padding: 23px 26px;
+      
+      &::placeholder {
+         font-size: 0.84rem;
+         color: $text-grey;
+      }
+
+      &:hover {
+         outline: 1px solid $footer-color;
+      }
+
+      &:focus {
+         outline: 1.5px solid #000;
+      }
+   }
+
+   .description {
+      width: 100%;
+      height: 165px;
+      font-size: 0.84rem;
+      font-weight: 500;
+      line-height: 1.25;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 26px top 23px;
+      margin-bottom: 35px;
+      border: none;
+      border-radius: 12px;
+      padding: 23px 26px;
+      resize: none;
+   }
+
+   .nice-select {
+      width: 147px;
+      height: 63px;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: $text-grey;
+      background-color: $weekly-bg;
+      border-radius: 12px;
+      padding: 10px 26px;
+
+      .current {
+         font-weight: 600;
+      }
+
+      &:after {
+         border-bottom: 2px solid $text-grey;
+         border-right: 2px solid $text-grey;
+         border-radius: 2px;
+         width: 8px;
+         height: 8px;
+         margin-top: -6px;
+         right: 27px;
+      }
+
+      &:hover {
+         outline: 1px solid $footer-color;
+      }
+
+      &:focus {
+         color: #000;
+         font-weight: 600;
+         outline: 1.5px solid #000;
+      }
+
+      .list {
+         width: 147px;
+         outline: 1.5px solid $light-grey;
+         border-radius: 12px;
+
+         .option {
+            font-weight: 500;
+            color: $text-grey;
+            text-align: center;
+            border-bottom: 1px dashed $text-grey;
+
+            &:last-child {
+               border-bottom: none;
+            }
+
+            &.selected {
+               font-weight: 600;
+               color: $widget-color;
+            }
+
+            &:hover {
+               background-color: $weekly-bg;
+            }
+         }
+      }
+   }
+
+   .sizing {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+
+      .size {
+         width: 131px;
+
+         input {
+            padding: 23px 22px;
+            background: none;
+            background-color: $weekly-bg; 
+         }
+      }
+   }
+
+   .price-in-stock {
+      display: flex;
+      flex-direction: row;
+      gap: 39px;
+
+      .price-crypto {
+         width: 492px;
+         .joint {
+            display: flex;
+            flex-direction: row;
+         }      
+      }
+
+      .in-stock  {
+         width: 171px;
+      }
+   }
+
+   [data-display] {
+      display: none;
+   }
+}

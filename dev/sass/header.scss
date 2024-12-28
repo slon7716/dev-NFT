@@ -53,14 +53,19 @@ form.header-search {
 
 	input[type='search'] {
 		box-sizing: border-box;
-		font-size: 1rem;
-		line-height: 1.125;
 		width: 100%;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.125;
 		border: none;
 		border-radius: 15px;
 		padding: 20px 12px 20px 70px;
 		margin-left: auto;
 		background: url(assets/img/loupe.svg) 22px center no-repeat $weekly-bg;
+		
+		&::placeholder {
+			font-size: 1rem;
+		}
 
 		&:hover {
 			outline: 1px solid $header-color;

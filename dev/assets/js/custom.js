@@ -133,6 +133,10 @@ document.querySelector('.history-back')?.addEventListener('click', (event) => {
 // }
 // historyBack();
 
+$(document).ready(function(){
+  $('select').niceSelect();
+});
+
 if (document.querySelector('.widget')) {
   installWidget();
 }

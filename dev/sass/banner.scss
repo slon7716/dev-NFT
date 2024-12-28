@@ -122,7 +122,7 @@
         transition: 0.7s;
 
         img {
-            width: 100%;
+            max-width: 100%;
             padding: 0 10px;
             transition: 0.7s;
 
@@ -136,10 +136,6 @@
                 opacity: 0.99;
                 margin-top: calc(-100% - 63px);
             }
-        }
-
-        &.swiper-slide-active {
-            transition: 0.7s;
         }
 
         &.swiper-slide-next {
