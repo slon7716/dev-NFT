@@ -4,72 +4,89 @@
    <div class="container">
       <h2 class="section-title">Create Your NFT</h2>
       <form class="form-registration">
-         <fieldset>
-            <h5>Name</h5>
-            <input type="text" placeholder="ArtWork Name">
-            <h5>Description</h5>
-            <textarea class="description" placeholder="Enter Your Description"></textarea>
-         </fieldset>
-         <fieldset class="sizing">
-            <div class="royalty">
-               <h5>Royalty</h5>
-               <select name="royalty">
-                  <option value="royalty" data-display="Royalty"></option>
-                  <option value="10%">10%</option>
-                  <option value="25%">25%</option>
-                  <option value="50%">50%</option>
-                  <option value="75%">75%</option>
-                  <option value="100%">100%</option>
-               </select>
-            </div>
-            <div class="size">
-               <h5>Size</h5>
-               <input type="text" placeholder="Ex - 100 x 100">
-            </div>
-         </fieldset>
-         <fieldset>
-            <h5>Tags</h5>
-            <input type="text" placeholder="Beautiful Castle, Monkeys ETC">
-         </fieldset>
-         <fieldset class="price-in-stock">
-            <div class="price-crypto">
-               <h5>Price</h5>
-               <div class="joint">
-                  <select name="crypto">
-                     <option value="cryptocurrency">Eth</option>
-                     <option value="tether">Tet</option>
-                     <option value="cardano">Car</option>
-                     <option value="ripple">Rip</option>
+         <div class="left">
+            <fieldset>
+               <h5>Name</h5>
+               <input type="text" placeholder="ArtWork Name">
+               <h5>Description</h5>
+               <textarea class="description" placeholder="Enter Your Description"></textarea>
+            </fieldset>
+            <fieldset class="sizing">
+               <div class="royalty">
+                  <h5>Royalty</h5>
+                  <select>
+                     <option value="royalty" data-display="Royalty"></option>
+                     <option value="10%">10%</option>
+                     <option value="25%">25%</option>
+                     <option value="50%">50%</option>
+                     <option value="75%">75%</option>
+                     <option value="100%">100%</option>
                   </select>
-                  <input type="number" class="price" placeholder="0.00007 ETC"></input>
                </div>
+               <div class="size">
+                  <h5>Size</h5>
+                  <input type="text" placeholder="Ex - 100 x 100">
+               </div>
+            </fieldset>
+            <fieldset>
+               <h5>Tags</h5>
+               <input type="text" placeholder="Beautiful Castle, Monkeys ETC">
+            </fieldset>
+            <fieldset class="price-in-stock">
+               <div class="price-crypto">
+                  <h5>Price</h5>
+                  <div class="joint">
+                     <select name="crypto">
+                        <option value="cryptocurrency">Eth</option>
+                        <option value="tether">Tet</option>
+                        <option value="cardano">Car</option>
+                        <option value="ripple">Rip</option>
+                     </select>
+                     <input class="etc" type="text" placeholder="0.00007 ETC"></input>
+                  </div>
+               </div>
+               <div class="in-stock">
+                  <h5>In Stock</h5>
+                  <select name="stock">
+                     <option value="1">001</option>
+                     <option value="2">002</option>
+                     <option value="3">003</option>
+                     <option value="4">004</option>
+                     <option value="5">005</option>
+                     <option value="6">006</option>
+                     <option value="7">007</option>
+                     <option value="8">008</option>
+                     <option value="9">009</option>
+                     <option value="10">010</option>
+                  </select>
+               </div>
+            </fieldset>
+            <fieldset class="on-sale">
+               <h5>Put On Sale</h5>
+               <div class="toggle-checkbox">
+                  <input id="put" type="checkbox" name="sale">
+                  <label for="put">People Will Bids On Your NFT Project</label>
+               </div>
+               <h5>Direct Sale</h5>
+               <div class="toggle-checkbox">
+                  <input id="direct" type="checkbox" name="sale">
+                  <label for="direct">No Bids - Only Direct Salling</label>
+               </div>
+            </fieldset>
+            <button type="submit">Create</button>   
+         </div>
+         <div class="right">
+            <div id="drop-zone" class="control-input control-input--drop-zone">
+               <input id="file-input" type="file" style="display: none;">
+               <label for="file-input">
+                  <img src="assets/img/load.svg" alt="icon">
+                  <span>PNG, GIF, WEBP, MP4 or</span>
+                  <span>MP3. Max 1Gb.</span>
+                  <div data-for-dropzone></div>
+               </label>
             </div>
-            <div class="in-stock">
-               <h5>In Stock</h5>
-               <select name="stock">
-                  <option value="1">001</option>
-                  <option value="2">002</option>
-                  <option value="3">003</option>
-                  <option value="4">004</option>
-                  <option value="5">005</option>
-                  <option value="6">006</option>
-                  <option value="7">007</option>
-                  <option value="8">008</option>
-               </select>   
-            </div>
-         </fieldset>
-         <fieldset>
-            <h5>Put On Sale</h5>
-            <div class="radio-box">
-               <input id="put" type="radio" name="sale">
-               <label for="put">People Will Bids On Your NFT Project</label>
-            </div>
-            <h5>Direct Sale</h5>
-            <div class="radio-box">
-               <input id="direct" type="radio" name="sale">
-               <label for="direct">No Bids - Only Direct Salling</label>
-            </div>
-         </fieldset>
+            <button>Upload</button>
+         </div>
       </form>
    </div>
 </div>

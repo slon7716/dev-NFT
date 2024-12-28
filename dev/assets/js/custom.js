@@ -135,6 +135,13 @@ document.querySelector('.history-back')?.addEventListener('click', (event) => {
 
 $(document).ready(function(){
   $('select').niceSelect();
+// выбираем все nice-select элементы, и опции внутри них. вешаем на опции событие клика
+  $(".nice-select .list .option").on("click", function () {
+    // выбираем ближайший nice-select контейнер в кликнутой опции
+    const niceSelectContainer = $(this).closest(".nice-select");
+    // добавляем класс selected в него
+    niceSelectContainer.addClass("selected");
+  });
 });
 
 if (document.querySelector('.widget')) {

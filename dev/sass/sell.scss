@@ -1,19 +1,76 @@
 .sell {
    margin: 155px 0 210px;
-
+   
    .section-title {
       line-height: 0.67;
       margin-bottom: 153px;
    }
-
+   
    fieldset {
+      width: 100%;
       display: flex;
       flex-direction: column;
-      max-width: 702px;
    }
 }
 
 .form-registration {
+   display: flex;
+   justify-content: space-between;
+   gap: 24px;
+   color: #000;
+
+   .left {
+      flex: 1 1 702px;
+      max-width: 702px;
+   }
+
+   .right {
+      max-width: 468px;
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #drop-zone {
+         margin-bottom: 57px;
+
+         label {
+            width: 468px;
+            min-height: 413px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 31px;
+            padding: 24px;
+            box-shadow: 0 0 82px 5px rgba(15, 15, 15, 0.1);
+            transition: 0.4s;
+            cursor: pointer;
+
+            img {
+               width: 51px;
+               height: 51px;
+               margin-bottom: 13px;
+            }
+
+            span {
+               font-size: 0.96rem;
+               line-height: 1.67;
+               color: $footer-color;
+            }
+         }
+      }
+
+      button {
+         width: 327px;
+         font-size: 0.9375rem;
+         line-height: 1.53;
+         padding: 18px;
+      }
+   }
+
    h5 {
       font-size: 1.25rem;
       font-weight: 500;
@@ -62,17 +119,18 @@
    }
 
    .nice-select {
-      width: 147px;
       height: 63px;
       font-size: 0.84rem;
       font-weight: 500;
       color: $text-grey;
       background-color: $weekly-bg;
       border-radius: 12px;
-      padding: 10px 26px;
+      border: none;
+      padding: 11px 26px;
 
-      .current {
+      &.selected {
          font-weight: 600;
+         color: $widget-color;
       }
 
       &:after {
@@ -82,7 +140,7 @@
          width: 8px;
          height: 8px;
          margin-top: -6px;
-         right: 27px;
+         right: 29px;
       }
 
       &:hover {
@@ -127,6 +185,10 @@
       flex-direction: row;
       gap: 35px;
 
+      .nice-select {
+         width: 147px;
+      }
+
       .size {
          width: 131px;
 
@@ -141,22 +203,151 @@
    .price-in-stock {
       display: flex;
       flex-direction: row;
-      gap: 39px;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 70px;
 
       .price-crypto {
-         width: 492px;
+         max-width: 492px;
+         width: 100%;
+
          .joint {
             display: flex;
             flex-direction: row;
-         }      
+            gap: 1.5px;
+            border-radius: 12px;
+            background-color: $weekly-bg;
+            position: relative;
+
+            &::before {
+               content: "";
+               width: 1px;
+               height: 39px;
+               position: absolute;
+               top: 12px;
+               left: 96px;
+               background-color: $text-grey;
+            }
+            
+            &:hover {
+               outline: 1.5px solid #000;
+            }
+            
+            .nice-select {
+               width: 96px;
+               flex-shrink: 0;
+               border-radius: 12px 0 0 12px;
+
+               &:hover {
+                  outline: none;
+               }
+
+               .list {
+                  width: 96px;
+               }
+            }
+            
+            .etc {
+               border-radius: 0 12px 12px 0;
+               outline: none;
+               margin: 0;
+
+               &:focus {
+                  outline: 1.5px solid #000;
+               }
+            }
+         }
       }
 
       .in-stock  {
          width: 171px;
+         
+         .nice-select {
+            width: 171px;
+
+            .list {
+               width: 171px;
+            }
+         }
       }
    }
 
    [data-display] {
       display: none;
+   }
+
+   .on-sale {
+      margin-bottom: 110px;
+
+      h5 {
+         margin-bottom: 12px;
+      }
+   }
+
+   .toggle-checkbox {
+      position: relative;
+      margin-bottom: 40px;
+
+      [type='checkbox'] {
+         display: none;
+   
+         &:checked {
+            + label {
+               &::before {
+                  background: #000;
+                  transition: 0.4s;
+               }
+      
+               &::after {
+                  content: "";
+                  right: 6px;
+                  background-color: #fff;
+                  transition: 0.4s;
+               }
+            }
+         }
+      }
+
+      label {
+         font-size: 0.84rem;
+         line-height: 1.25;
+         color: $text-grey;
+
+         &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: calc(-50% + 3px);
+            width: 55px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: $light-grey;
+            transition: 0.4s;
+         }
+
+         &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 50%;
+            background-color: #000;
+            transition: 0.4s;
+         }
+      }
+   }
+
+   button {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.16;
+      color: #fff;
+      background-color: #000;
+      border-radius: 12px;
+      padding: 22px;
    }
 }
