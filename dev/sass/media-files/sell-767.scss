@@ -1,0 +1,221 @@
+.sell {
+   margin: 80px 0 125px;
+   
+   .section-title {
+      display: none;
+   }
+}
+
+.form-registration {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 91px;
+
+   .left {
+      width: 100%;
+   }
+
+   h5 {
+      font-size: 0.81rem;
+      margin-bottom: 13px;
+   }
+   
+   input {
+      font-size: 0.54rem;
+      font-weight: 400;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 14px center;
+      background-size: 13px 13px;
+      margin-bottom: 23px;
+      border-radius: 8px;
+      padding: 15px 14px;
+      
+      &::placeholder {
+         font-size: 0.54rem;
+      }
+   }
+
+   .description {
+      height: 106px;
+      font-size: 0.54rem;
+      font-weight: 400;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 14px top 18px;
+      background-size: 13px 13px;
+      border-radius: 8px;
+      padding: 18px 14px;
+      margin-bottom: 23px;
+   }
+
+   .nice-select {
+      height: 40px;
+      font-size: 0.54rem;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 0 17px;
+
+      &:after {
+         border-bottom: 1.5px solid $text-grey;
+         border-right: 1.5px solid $text-grey;
+         border-radius: 1px;
+         width: 5px;
+         height: 5px;
+         margin-top: -4px;
+         right: 19px;
+      }
+
+      .list {
+         border-radius: 8px;
+
+         .option {
+            line-height: 25px;
+            min-height: 25px;
+         }
+      }
+   }
+
+   .sizing {
+      gap: 23px;
+
+      .nice-select {
+         width: 95px;
+      }
+
+      .size {
+         width: 85px;
+
+         input {
+            padding: 15px 16px;
+         }
+      }
+   }
+
+   .price-in-stock {
+      margin-bottom: 46px;
+
+      .price-crypto {
+         max-width: 180px;
+         width: 100%;
+
+         .joint {
+            gap: 1.5px;
+            border-radius: 8px;
+
+            &::before {
+               height: 25px;
+               top: 8px;
+               left: 62px;
+            }
+            
+            .nice-select {
+               width: 62px;
+               border-radius: 8px 0 0 8px;
+
+               .list {
+                  width: 62px;
+               }
+            }
+            
+            .etc {
+               border-radius: 0 8px 8px 0;
+            }
+         }
+      }
+
+      .in-stock  {
+         width: 110px;
+      }
+   }
+
+   .on-sale {
+      margin-bottom: 76px;
+
+      h5 {
+         margin-bottom: 8px;
+      }
+
+      .put-on-sale {
+         margin-bottom: 26px;
+      }
+   }
+
+   .toggle-checkbox {
+      [type='checkbox'] {
+         &:checked {
+            + label {
+               &::after {
+                  right: 4px;
+               }
+            }
+         }
+      }
+
+      label {
+         font-size: 0.54rem;
+
+         &::before {
+            top: -14px;
+            width: 36px;
+            height: 20px;
+            border-radius: 20px;
+         }
+
+         &::after {
+            width: 13px;
+            height: 13px;
+            right: 20px;
+            top: -10.5px;
+         }
+      }
+   }
+
+   button {
+      font-size: 0.9rem;
+      line-height: 1.53;
+      border-radius: 15px;
+      padding: 19px;
+   }
+
+   .right {
+      order: -1;
+      width: 100%;
+      margin: 0;
+
+      #drop-zone {
+         width: 100%;
+         max-width: 375px;
+         margin-bottom: 61px;
+
+         label {
+            width: 100%;
+            max-width: 375px;
+            min-height: 375px;
+            border-radius: 23px;
+            box-shadow: 0 60px 60px 5px rgba(15, 15, 15, 0.1);
+
+            img {
+               width: 38px;
+               height: 38px;
+               margin-bottom: 10px;
+            }
+
+            span {
+               font-size: 0.72rem;
+            }
+
+            [data-for-dropzone] {
+               p {
+                  font-size: 0.75;
+                  color: #10C352;
+               }
+            }
+         }
+      }
+
+      button {
+         width: calc(100% - 86px);
+         font-size: 0.89rem;
+         padding: 19px;
+      }
+   }
+}

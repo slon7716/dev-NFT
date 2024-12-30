@@ -61,61 +61,6 @@
       }
    }
 
-   .top-collection {
-      margin-bottom: 169px;
-
-      .section-title {
-         line-height: 1.5;
-         margin-bottom: 40px;
-      }
-
-      table {
-         min-width: 540px;
-      }
-
-      .header-tab {
-         font-size: 0.875rem;
-      }
-
-      td {
-         padding: 16px 0;
-      }
-
-      .user {
-         border-bottom: 1px solid $light-grey;
-
-         .user-info {
-            img {
-               width: 44px;
-               height: 44px;
-               margin-right: 22px;
-            }
-
-            .user-data {
-               .user-name {
-                  font-size: 0.9625rem;
-               }
-
-               .user-nickname {
-                  font-size: 0.7825rem;
-               }
-            }
-         }
-
-         .volume,
-         .price,
-         .owners,
-         .items {
-            font-size: 0.9625rem;
-         }
-
-         .top-collection__percent {
-            top: 13px;
-            font-size: 0.85rem;
-         }
-      }
-   }
-
    .explore-marketplace {
       margin-bottom: 242px;
 
@@ -148,308 +93,6 @@
       }
    }
 
-   .your-inner-collector {
-      .container {
-         flex-direction: column;
-      }
-   }
-
-   .collector {
-      text-align: center;
-      border: none;
-      padding: 0;
-      margin-bottom: 106px;
-      
-      .seller {
-         display: none;
-      }
-
-      .section-title {
-         line-height: 1.237;
-         text-align: center;
-         padding: 0;
-         margin-bottom: 426px;
-      }
-
-      .btn {
-         font-size: 0.7rem;
-         margin: 0 auto;
-         padding: 14px 12px 14px 15px;
-
-         svg {
-            width: 16px;
-            height: 16px;
-            margin-left: 6px;
-         }
-
-         &-primary:hover {
-            outline: 1px solid #000;
-         }
-      }
-   }
-
-   .widgets {
-      padding: 0;
-      justify-content: center;
-      margin-top: -491px;
-
-      &::before {
-         left: 56%;
-         bottom: -20px;
-         width: 192px;
-         height: 83px;
-         background: url(assets/img/banner-dot-mobile.svg);
-      }
-   
-      .widget{
-         width: 154px;
-         border: 0.5px solid $weekly-bg;
-         border-radius: 7px;
-         padding: 10px;
-         margin-right: -70px;
-   
-         &__title {
-            padding-right: 22px;
-            margin-bottom: 15px;
-
-            h5 {
-               font-size: 0.56rem;
-            }
-
-            .layout-menu {
-               right: 10px;
-            }
-            
-            .layout-case__button {
-               width: 22px;
-               height: 12px;
-
-               svg {
-                  margin-left: 5px;
-                  margin-bottom: 6px;
-               }
-            }
-            
-            .layout-case {
-               gap: 6px;
-               padding: 0;
-
-               &__item {
-                  .icon-svg {
-                     width: 16px;
-                     height: 16px;
-                  }
-               }
-            }      
-         }
-   
-         .widget-users-list {
-            max-height: 76px;
-            padding: 0;
-
-            &__item {
-               margin-bottom: 8px;
-               position: relative;
-         
-               &::before {
-                  top: 10px;
-                  left: 13px;
-                  width: 9px;
-                  height: 9px;
-                  font-size: 0.3rem;
-               }
-         
-               .widget-user {         
-                  &__avatar {
-                     width: 19px;
-                     height: 19px;
-                     margin-right: 10px;
-         
-                     img {
-                        width: 17px;
-                        height: 17px;
-                        border-radius: 50%;
-                     }
-                  }
-
-                  &__data {
-                     .widget-user__name {
-                        font-size: 0.4rem;
-                        font-weight: 500;
-                        margin-bottom: 3px;
-                     }
-                  
-                     .widget-user__nickname {
-                        font-size: 0.33rem;
-                     }
-                  }
-         
-                  &__volume {
-                     .widget-user__price {
-                        font-size: 0.4rem;
-                        margin-bottom: 3px;
-
-                        .icon-xs {
-                           width: 8px;
-                           height: 8px;
-                        }
-                     }
-         
-                     .widget-user__percent {
-                        font-size: 0.36rem;
-                     }
-                  }
-               }
-            }
-         }
-      }
-
-      .widget.grid {
-         .widget-users-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-      
-            &__item {
-               width: calc(50% - 6px);
-               margin: 0;
-         
-               .widget-user__avatar {
-                  margin: 0;
-               }
-         
-               &::before {
-                  left: 31px;
-               }
-            }
-         }
-      }
-
-      .best-sellers {
-         width: 154px;
-         padding: 12px 9px;
-         border: 0.5px solid $weekly-bg;
-         border-radius: 7px;
-         box-shadow: 4px 4px 21px 0 rgba(20, 20, 22, 0.15);
-         
-         .section-title {
-            align-items: center;
-            margin-bottom: 11px;
-
-            h6 {
-               font-size: 0.56rem;
-            }
-         }
-   
-         .layout-case__button {
-            width: 22px;
-            height: 13px;
-
-            svg {
-               margin-left: 5px;
-               margin-bottom: 5px;
-            }
-         }
-      } 
-   }
-
-   .best-seller-list {
-      gap: 7px;
-   
-      &__item {
-         &::before {
-            top: 0px;
-            left: 17px;
-            width: 10px;
-            height: 10px;
-            font-size: 0.3125rem;
-         }
-   
-         .best-seller-user {
-            &__avatar {
-               width: 23px;
-               height: 23px;
-               margin-right: 7px;
-            }
-
-            .best-seller-user__data {
-               .best-seller-user__name {
-                  font-size: 0.37rem;
-               }
-            
-               .best-seller-user__nickname {
-                  font-size: 0.3125rem;
-               }
-            }
-         }
-   
-         .btn {
-            font-size: 0.37rem;
-            padding: 3px 7px;
-            border-radius: 3.4px;
-            outline: 1px solid $light-grey;
-         }
-      }
-   }
-
-   .rotation {
-      width: 154px;
-      box-shadow: 0 9px 14px 0 rgba(70, 70, 70, 0.15);
-      border-radius: 7px;
-      padding: 5px;
-      margin: -17px 0 0 -70px;
-   
-      .rotation-everything {
-         .circle-avatar {
-            margin-right: 6px;
-   
-            .circle-wrapper {
-               margin-right: 10px;
-   
-               .circle {
-                  width: 4px;
-                  height: 4px;
-                  top: 8px;
-               }
-            }
-         
-            .user-avatar-round {
-              width: 19px;
-              height: 19px;
-            }
-   
-            .verified {
-               top: -2px;
-               right: -2px;
-               width: 8px;
-               height: 8px;
-            }
-         }
-      
-         .section-info {
-            .new-bid {
-               font-size: 0.4rem;
-            }
-   
-            .fluctuation,
-            .date {
-               font-size: 0.34rem;
-               font-weight: 600;
-            }
-
-            .date {
-               font-weight: inherit;
-            }
-         }
-      }
-         
-      .user-avatar-rectangular {
-         width: 29px;
-         height: 29px;
-         border-radius: 5px;
-      }
-   }
-
    .join-the-community {
       margin-bottom: 145px;
 
@@ -466,16 +109,16 @@
 
          .community-text {
             margin-bottom: 49px;
-            
+
             h6 {
                font-size: 0.5625rem;
             }
          }
-   
+
          .btn {
             padding: 12px 10.5px;
          }
-   
+
          .btn-primary {
             font-size: 0.5625rem;
          }
@@ -484,127 +127,11 @@
 
    .asked-questions {
       margin-bottom: 112px;
-   
+
       .section-title {
          font-size: 1.4775rem;
          line-height: 1.2;
          margin-bottom: 52px;
-      }
-   }
-
-   .accordion {
-      &-item {
-         border-bottom: 0.6px solid $text-grey;
-         padding: 15px 6px 8px 0;
-   
-         &__button {
-            font-size: 0.77rem;
-            font-weight: 600;
-            padding: 0 60px 0 0;
-   
-            &::after {
-               background: url(assets/img/icon-plus-sm.svg);
-               width: 16px;
-               height: 16px;
-               top: 7px;
-            }
-         }
-   
-         &__content {
-            font-size: 0.65rem;
-            padding: 12px;
-            display: none;
-   
-            ul {
-               list-style-type: square;
-               padding: 20px;
-            }
-            
-            ol {
-               list-style-type: upper-alpha;
-               padding: 20px;
-            }
-         }
-   
-         &.active {
-            .accordion-item__button { // стили только к кнопке внутри активного .accordion-item
-               background-color: $weekly-bg;
-            }
-   
-            .accordion-item__content { //стили только к контенту внутри активного .accordion-item
-               display: block;
-            }
-         }
-      }
-   }
-
-   .create-and-sell {
-      margin-bottom: 191px;
-
-      .create-box {
-         height: 211px;
-         flex-direction: column;
-         gap: 36px;
-         padding: 0;
-         border-radius: 15px;
-
-         .create-slide {
-            width: 267px;
-            height: 129px;
-            margin: 0 auto;
-   
-            img {
-               &:first-child {
-                  width: 253px;
-                  height: 129px;
-                  margin-left: 7px;
-               }
-               
-               &:last-child {
-                  width: 267px;
-                  height: 129px;
-                  margin-top: calc(-100% + 105px);
-                  margin-left: 0;
-               }
-            }
-         }
-
-         .create {
-            padding: 22px 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-   
-            .title {
-               font-size: 1.4rem;
-               margin-bottom: 6px;
-            }
-         
-            .place {
-               font-size: 0.625rem;
-               margin-bottom: 25px;
-            }
-   
-            .create-btns-row {
-               > a {
-                  margin-right: 15px;
-
-                  &:hover {
-                     outline: 1px solid;
-                  }
-               }
-               
-               .btn {
-                  font-size: 0.66rem;
-                  border-radius: 10px;
-                  padding: 10px 14.5px;
-                  
-                  &-primary {
-                     outline: 1px solid;
-                  }
-               }
-            }
-         }   
       }
    }
 
@@ -623,7 +150,7 @@
             &:nth-child(n+9) {
                display: none;
             }
-   
+
             .icon-sm {
                display: inline-block;
             }
@@ -631,191 +158,15 @@
       }
    }
 
-   .place-bid {
-      margin: 69px 0 125px;
-
-      .history-back {
-         display: none;
-      }
-
-      .product-card {
-         max-width: 310px;
-         max-height: 703px;
-         border-radius: 14px;
-         padding: 15px 15px 27px;
-         margin: 0 auto 85px ;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         gap: 20px;
-         box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
-   
-         > img {
-            min-height: 280px;
-         }
-   
-         .card-info {
-            min-width: initial;
-            
-            .product-card-title {
-               font-size: 0.98rem;
-               line-height: 1.45;
-               margin-bottom: 6px;
-            }
-   
-            .product-card-description {
-               max-width: 268px;
-               font-size: 0.82rem;
-               line-height: 1.54;
-               margin-bottom: 58px;
-            }
-   
-            .icons {
-               margin-bottom: 43px;
-   
-               img {
-                  width: 34px;
-                  height: 34px;
-                  margin-right: 9px;
-               }
-   
-               .created,
-               .owned {
-                  display: flex;
-                  
-                  .nick {
-                     .nickname {
-                        font-size: 0.82rem;
-                     }
-                  }
-               }
-   
-               .by {
-                  font-size: 0.57rem;
-               }
-            }
-   
-            .current-end {
-               margin-bottom: 46px;
-   
-               .current {
-                  .product-bid {
-                     font-size: 1.22rem;
-                     margin-top: 4px;
-   
-                     .icon-sm {
-                        display: inline-block;
-                     }
-                  }
-               }
-   
-               .end-in {
-                  .end {
-                     text-align: right;
-                     margin-bottom: 17px;
-                  }
-                  .date {
-                     font-size: 0.71rem;
-                  }
-               }
-   
-               .current-bid,
-               .end {
-                  font-size: 0.66rem;
-               }
-            }
-   
-            .btn {
-               font-size: 0.67rem;
-               padding: 15px;
-   
-               svg {
-                  width: 13px;
-                  height: 13px;
-                  margin-right: 9px;
-               }
-            }
-         }   
-      }
-
-      .from-creator {
-         .title {
-            font-size: 1.5625rem;
-            line-height: 1.12;
-            text-align: center;
-            margin-left: 0;
-            margin-bottom: 50px;
-         }
-      }
-
-      .creators-product {
-         flex-direction: column;
-         align-items: center;
-         gap: 35px;
-
-         .product {
-            max-width: 283px;
-            border-radius: 24px;
-            padding: 14px;
-
-            .product-img {
-               margin-bottom: 18px;
-               
-               img {
-                  width: 255px;
-                  height: 255px;
-               }
-            }
-   
-            .creators-nickname {
-               font-size: 1rem;
-               margin-bottom: 6px;
-               margin-right: 6px;
-   
-               img {
-                  width: 16px;
-               }
-            }
-   
-            .product-title {
-               font-size: 1.33rem;
-               line-height: 1.4;
-               margin-bottom: 12px;
-            }
-   
-            .blok {
-               .product-bid {
-                  font-size: 1.04rem;
-                  line-height: 1.5;
-      
-                  .icon-sm {
-                     display: block;
-                     margin-right: 2px;
-                  }
-               }
-      
-               .likes {
-                  font-size: 0.95rem;
-   
-                  img {
-                     width: 16px;
-                     height: 15px;
-                     margin-right: 5px;
-                  }
-               }
-            }   
-         }
-      }
-   }
-
    .collection-activity {
       margin: 62px 0 125px 0;
+
       .all-info {
          flex-direction: column;
          gap: 0;
          max-width: initial;
 
-         .info {
+         .info-about-creator {
             max-width: initial;
             width: 100%;
             padding: 0 17px;
@@ -835,76 +186,14 @@
       }
    }
 
-   .stats {
-      margin: 75px 0 125px;
-
-      .btns-row {
-         margin-bottom: 75px;
-      }
-
-      table {
-         min-width: 540px;
-      }
-
-      th {
-         padding-bottom: 17px;
-      }
-   
-      td {
-         padding: 16.5px 0;
-      }
-
-      .header-tab {
-         font-size: 0.87rem;
-   
-         .icon-svg {
-            width: 12px;
-            height: 12px;
-            margin-left: 5px;
-         }
-      }
-
-      .user {
-         border-bottom: 1px solid $light-grey;
-
-         .user-info {
-            img {
-               width: 44px;
-               height: 44px;
-               margin-right: 22px;
-            }
-
-            .user-data {
-               .user-name {
-                  font-size: 0.96rem;
-               }
-
-               .user-nickname {
-                  font-size: 0.78rem;
-               }
-            }
-         }
-
-         .volume,
-         .price,
-         .stats__percent,
-         .owners,
-         .items {
-            font-size: 0.84rem;
-         }
-   
-         .volume,
-         .price {
-            font-size: 0.96rem;
-   
-            .icon {
-               margin-right: 2px;
-            }
-         }
-      }
-   }
-
    @import '../media-files/header-767.scss';
+   @import '../media-files/top-collection-767.scss';
+   @import '../media-files/your-inner-collector-767.scss';
+   @import '../media-files/accordion-767.scss';
+   @import '../media-files/create-and-sell-767.scss';
+   @import '../media-files/place-bid-767.scss';
+   @import '../media-files/sell-767.scss';
+   @import '../media-files/stats-767.scss';
    @import '../media-files/wallet-767.scss';
    @import '../media-files/footer-767.scss';
 }

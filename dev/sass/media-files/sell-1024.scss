@@ -1,0 +1,194 @@
+.sell {
+   margin: 110px 0 150px;
+   
+   .section-title {
+      margin-bottom: 108px;
+   }
+}
+
+.form-registration {
+   h5 {
+      font-size: 0.89rem;
+      margin-bottom: 14px;
+   }
+   
+   input {
+      font-size: 0.6rem;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 20px center;
+      background-size: 15px 15px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      padding: 16px 20px;
+      
+      &::placeholder {
+         font-size: 0.6rem;
+      }
+   }
+
+   .description {
+      height: 117px;
+      font-size: 0.6rem;
+      background: $weekly-bg url(assets/img/pen.png) no-repeat right 19px top 20px;
+      background-size: 15px 15px;
+      border-radius: 8px;
+      padding: 20px 19px;
+      margin-bottom: 25px;
+   }
+
+   .nice-select {
+      height: 44px;
+      font-size: 0.6rem;
+      border-radius: 8px;
+      padding: 2px 18px;
+
+      &:after {
+         border-radius: 1px;
+         width: 5px;
+         height: 5px;
+         margin-top: -3px;
+         right: 20px;
+      }
+
+      .list {
+         border-radius: 8px;
+
+         .option {
+            line-height: 28px;
+            min-height: 28px;
+         }
+      }
+   }
+
+   .sizing {
+      gap: 25px;
+
+      .nice-select {
+         width: 105px;
+      }
+
+      .size {
+         width: 93px;
+
+         input {
+            padding: 16px;
+         }
+      }
+   }
+
+   .price-in-stock {
+      gap: 28px;
+      margin-bottom: 50px;
+
+      .price-crypto {
+         .joint {
+            border-radius: 8px;
+
+            &::before {
+               height: 28px;
+               top: 8px;
+               left: 68px;
+            }
+            
+            .nice-select {
+               width: 68px;
+               border-radius: 8px 0 0 8px;
+            }
+            
+            .etc {
+               border-radius: 0 8px 8px 0;
+            }
+         }
+      }
+
+      .in-stock  {
+         width: 122px;
+      }
+   }
+
+   .on-sale {
+      margin-bottom: 78px;
+
+      h5 {
+         margin-bottom: 4px;
+      }
+
+      .put-on-sale {
+         margin-bottom: 29px;
+      }
+   }
+
+   .toggle-checkbox {
+      [type='checkbox'] {
+         &:checked {
+            + label {
+               &::after {
+                  right: 4px;
+               }
+            }
+         }
+      }
+
+      label {
+         font-size: 0.6rem;
+
+         &::before {
+            top: -14px;
+            width: 39px;
+            height: 22px;
+            border-radius: 22px;
+         }
+
+         &::after {
+            width: 14px;
+            height: 14px;
+            right: 21px;
+            top: -10px;
+         }
+      }
+   }
+
+   button {
+      font-size: 0.71rem;
+      border-radius: 9px;
+      padding: 17px;
+   }
+
+   .right {
+      margin-top: 32px;
+
+      #drop-zone {
+         margin-bottom: 41px;
+
+         label {
+            max-width: 333px;
+            min-height: 294px;
+            border-radius: 22px;
+            padding: 58px 7px;
+            box-shadow: 0 0 60px 5px rgba(15, 15, 15, 0.1);
+
+            img {
+               width: 37px;
+               height: 37px;
+               margin-bottom: 9px;
+            }
+
+            span {
+               font-size: 0.69rem;
+            }
+
+            [data-for-dropzone] {
+               p {
+                  font-size: 0.75rem;
+               }
+            }
+         }
+      }
+
+      button {
+         width: 233px;
+         font-size: 0.67rem;
+         border-radius: 12px;
+         padding: 14px;
+      }
+   }
+}

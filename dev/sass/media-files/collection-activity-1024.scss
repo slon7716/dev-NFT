@@ -1,0 +1,95 @@
+.collection-activity {
+   margin: 71px 0 128px 0;
+
+   .cap {
+      height: 269px;
+      border-radius: 16px;
+      margin-bottom: 52px;
+   }
+
+   .foto {
+      width: 125px;
+      height: 125px;
+      margin: -103px 0 30px 50px;
+   }
+
+   .all-info {
+      max-width: calc(100% - 53px);
+
+      .tab {
+         max-width: 478px;
+         margin-top: -39px;
+      }
+   }
+}
+
+.info-about-creator {
+   max-width: 279px;
+
+   .creator {
+      padding-bottom: 30px;
+      margin-bottom: 33px;
+   
+      .user {
+         min-width: 106px;
+   
+         .name {
+            font-size: 1.66rem;
+         }
+   
+         .handle {
+            font-size: 0.85rem;
+         }
+      }
+   
+      button {
+         width: 92px;
+         height: 35px;
+         font-size: 0.7rem;
+      }
+   }
+   
+   .bio-foll {
+      margin-bottom: 25px;
+   
+      .follow {
+         margin-bottom: 88px;
+   
+         .ethirium,
+         .thousand,
+         .numeric {
+            font-size: 1.525rem;
+            padding-bottom: 0;
+         }
+   
+         .total-sales,
+         .followers,
+         .followings {
+            font-size: 0.51rem;
+         }
+      }
+   
+      .bio-text {
+         padding-bottom: 64px;
+   
+         .bio {
+            font-size: 1.19rem;
+            padding-bottom: 5px;
+         }
+   
+         .text {
+            font-size: 0.67rem;
+            max-width: 279px;
+         }
+      }
+   }
+
+   .creator__social {
+      max-width: 194px;
+
+      a {
+         width: 12px;
+         height: 12px;
+      }
+   }
+}

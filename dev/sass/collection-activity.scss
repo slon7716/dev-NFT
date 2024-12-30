@@ -1,6 +1,6 @@
 .collection-activity {
    margin: 100px 0 180px 0;
-   
+
    .cap {
       width: 100%;
       height: 355px;
@@ -9,25 +9,20 @@
       margin-bottom: 73px;
       position: relative;
    }
-   
+
    .foto {
       width: 165px;
       height: 165px;
       margin: -140px 0 30px 71px;
       position: relative;
    }
-   
+
    .all-info {
       display: flex;
       max-width: calc(100% - 75px);
       margin-left: auto;
       justify-content: space-between;
       gap: 36px;
-      
-      .info {
-         width: 100%;
-         max-width: 367px;
-      }
 
       .tab {
          max-width: 673px;
@@ -36,102 +31,107 @@
    }
 }
 
-.creator {
-   padding-bottom: 42px;
-   display: flex;
-   gap: 12px;
-   margin-bottom: 43px;
-   border-bottom: 1px solid $text-grey;
-   
-   .user {
-      min-width: 139px;
+.info-about-creator {
+   width: 100%;
+   max-width: 367px;
+
+   .creator {
+      padding-bottom: 42px;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 43px;
+      border-bottom: 1px solid $text-grey;
+
+      .user {
+         min-width: 139px;
+         display: flex;
+         flex-direction: column;
+         margin-right: auto;
+
+         .name {
+            font-size: 2.1875rem;
+            font-weight: 600;
+            line-height: 1.3;
+         }
+
+         .handle {
+            font-size: 1.125rem;
+            line-height: 1.3;
+            color: $text-grey;
+         }
+      }
+
+      button {
+         width: 121px;
+         height: 46px;
+         font-size: 0.925rem;
+         padding: initial;
+      }
+   }
+
+   .bio-foll {
+      margin-bottom: 33px;
       display: flex;
       flex-direction: column;
-      margin-right: auto;
-      
-      .name {
-         font-size: 2.1875rem;
-         font-weight: 600;
-         line-height: 1.3;
-      }
-      
-      .handle {
-         font-size: 1.125rem;
-         line-height: 1.3;
-         color: $text-grey;
-      }
-   }
-   
-   button {
-      width: 121px;
-      height: 46px;
-      font-size: 0.925rem;
-      padding: initial;
-   }
-}
+      border-bottom: 1px solid $text-grey;
 
-.bio-foll {
-   margin-bottom: 33px;
-   display: flex;
-   flex-direction: column;
-   border-bottom: 1px solid $text-grey;
-   
-   .follow {
-      width: 100%;
+      .follow {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         margin-right: auto;
+         margin-bottom: 116px;
+
+         .ethirium,
+         .thousand,
+         .numeric {
+            font-weight: 600;
+            line-height: 1.25;
+            margin-bottom: 5px;
+         }
+
+         .total-sales,
+         .followers,
+         .followings {
+            font-size: 0.7rem;
+            line-height: 1.5;
+            color: $text-grey;
+         }
+      }
+
+      .bio-text {
+         padding-bottom: 85px;
+
+         .bio {
+            font-size: 1.57rem;
+            font-weight: 700;
+            line-height: 1.6;
+            color: $light-grey;
+            padding-bottom: 8px;
+         }
+
+         .text {
+            font-size: 0.88rem;
+            line-height: 1.77;
+            color: $text-grey;
+         }
+      }
+   }
+
+   .creator__social {
+      max-width: 255px;
       display: flex;
       justify-content: space-between;
-      margin-right: auto;
-      margin-bottom: 116px;
-      
-      .ethirium,
-      .thousand,
-      .numeric {
-         font-weight: 600;
-         line-height: 1.25;
-         margin-bottom: 5px;
-      }
 
-      .total-sales,
-      .followers,
-      .followings {
-         font-size: 0.7rem;
-         line-height: 1.5;
-         color: $text-grey;
-      }
-   }
-   
-   .bio-text {
-      padding-bottom: 85px;
-      
-      .bio {
-         font-size: 1.57rem;
-         font-weight: 700;
-         line-height: 1.6;
-         color: $light-grey;
-         padding-bottom: 8px;
-      }
-      
-      .text {
-         font-size: 0.88rem;
-         line-height: 1.77;
-         color: $text-grey;
-      }
-   }
-}
+      a {
+         display: flex;
+         width: 16px;
+         height: 16px;
+         color: #000;
 
-.creator__social {
-   max-width: 255px;
-   display: flex;
-   justify-content: space-between;
-   
-   a {
-      display: flex;
-      width: 16px;
-      height: 16px;
-      color: #000;
-
-      &:hover {
-         color: $text-grey;
+         &:hover {
+            color: $text-grey;
+         }
       }
    }
 }

@@ -1,0 +1,45 @@
+.accordion {
+   &-item {
+      border-bottom: 0.6px solid $text-grey;
+      padding: 15px 6px 8px 0;
+
+      &__button {
+         font-size: 0.77rem;
+         font-weight: 600;
+         padding: 0 60px 0 0;
+
+         &::after {
+            background: url(assets/img/icon-plus-sm.svg);
+            width: 16px;
+            height: 16px;
+            top: 7px;
+         }
+      }
+
+      &__content {
+         font-size: 0.65rem;
+         padding: 12px;
+         display: none;
+
+         ul {
+            list-style-type: square;
+            padding: 20px;
+         }
+
+         ol {
+            list-style-type: upper-alpha;
+            padding: 20px;
+         }
+      }
+
+      &.active {
+         .accordion-item__button {
+            background-color: $weekly-bg;
+         }
+
+         .accordion-item__content {
+            display: block;
+         }
+      }
+   }
+}

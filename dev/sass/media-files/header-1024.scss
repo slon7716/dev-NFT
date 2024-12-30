@@ -30,5 +30,9 @@ form.header-search {
 		padding: 14px 12px 14px 48px;
 		background: url(assets/img/loupe.svg) 16px center no-repeat $weekly-bg;
       background-size: 15px 15px;
+
+		&::placeholder {
+			font-size: 0.7rem;
+		}
 	}
 }

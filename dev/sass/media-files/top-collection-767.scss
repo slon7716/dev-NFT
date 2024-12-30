@@ -1,0 +1,54 @@
+.top-collection {
+   margin-bottom: 169px;
+
+   .section-title {
+      line-height: 1.5;
+      margin-bottom: 40px;
+   }
+
+   table {
+      min-width: 540px;
+   }
+
+   .header-tab {
+      font-size: 0.875rem;
+   }
+
+   td {
+      padding: 16px 0;
+   }
+
+   .user {
+      border-bottom: 1px solid $light-grey;
+
+      .user-info {
+         img {
+            width: 44px;
+            height: 44px;
+            margin-right: 22px;
+         }
+
+         .user-data {
+            .user-name {
+               font-size: 0.9625rem;
+            }
+
+            .user-nickname {
+               font-size: 0.7825rem;
+            }
+         }
+      }
+
+      .volume,
+      .price,
+      .owners,
+      .items {
+         font-size: 0.9625rem;
+      }
+
+      .top-collection__percent {
+         top: 13px;
+         font-size: 0.85rem;
+      }
+   }
+}

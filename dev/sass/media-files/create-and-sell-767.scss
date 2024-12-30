@@ -1,0 +1,69 @@
+.create-and-sell {
+   margin-bottom: 191px;
+
+   .create-box {
+      height: 211px;
+      flex-direction: column;
+      gap: 36px;
+      padding: 0;
+      border-radius: 15px;
+
+      .create-slide {
+         width: 267px;
+         height: 129px;
+         margin: 0 auto;
+
+         img {
+            &:first-child {
+               width: 253px;
+               height: 129px;
+               margin-left: 7px;
+            }
+
+            &:last-child {
+               width: 267px;
+               height: 129px;
+               margin-top: calc(-100% + 105px);
+               margin-left: 0;
+            }
+         }
+      }
+
+      .create {
+         padding: 22px 0 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         .title {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+         }
+
+         .place {
+            font-size: 0.625rem;
+            margin-bottom: 25px;
+         }
+
+         .create-btns-row {
+            >a {
+               margin-right: 15px;
+
+               &:hover {
+                  outline: 1px solid;
+               }
+            }
+
+            .btn {
+               font-size: 0.66rem;
+               border-radius: 10px;
+               padding: 10px 14.5px;
+
+               &-primary {
+                  outline: 1px solid;
+               }
+            }
+         }
+      }
+   }
+}

@@ -8,13 +8,6 @@
       background-color: $weekly-bg;
       padding: 0;
 
-      .section-title {
-         line-height: 0.6;
-         color: $text-grey;
-         padding-top: 57px;  
-         margin-bottom: 100px;
-      }   
-
       .widget {
          position: absolute;
          right: 60px;
@@ -22,6 +15,12 @@
          width: 365px;
       }
    }
+
+   .section-title {
+      color: $text-grey;
+      padding-top: 57px;  
+      margin-bottom: 100px;
+   }   
 }
 
 .weekly {
@@ -30,6 +29,10 @@
    
       .swiper-slide {
          width: 281px;
+
+         .product {
+            box-shadow: 20px 30px 24px 0 rgb(199, 199, 199, 0.8);
+         }
       }
    }
    

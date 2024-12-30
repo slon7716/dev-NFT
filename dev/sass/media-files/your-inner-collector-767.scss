@@ -1,0 +1,302 @@
+.your-inner-collector {
+   .container {
+      flex-direction: column;
+   }
+}
+
+.collector {
+   text-align: center;
+   border: none;
+   padding: 0;
+   margin-bottom: 106px;
+
+   .seller {
+      display: none;
+   }
+
+   .section-title {
+      line-height: 1.237;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 426px;
+   }
+
+   .btn {
+      font-size: 0.7rem;
+      margin: 0 auto;
+      padding: 14px 12px 14px 15px;
+
+      svg {
+         width: 16px;
+         height: 16px;
+         margin-left: 6px;
+      }
+
+      &-primary:hover {
+         outline: 1px solid #000;
+      }
+   }
+}
+
+.widgets {
+   padding: 0;
+   justify-content: center;
+   margin-top: -491px;
+
+   &::before {
+      left: 56%;
+      bottom: -20px;
+      width: 192px;
+      height: 83px;
+      background: url(assets/img/banner-dot-mobile.svg);
+   }
+
+   .widget {
+      width: 154px;
+      border: 0.5px solid $weekly-bg;
+      border-radius: 7px;
+      padding: 10px;
+      margin-right: -70px;
+
+      &__title {
+         padding-right: 22px;
+         margin-bottom: 15px;
+
+         h5 {
+            font-size: 0.56rem;
+         }
+
+         .layout-menu {
+            right: 10px;
+         }
+
+         .layout-case__button {
+            width: 22px;
+            height: 12px;
+
+            svg {
+               margin-bottom: 8px;
+               width: 14px;
+               height: 10px;
+            }
+         }
+
+         .layout-case {
+            gap: 6px;
+            padding: 0;
+
+            &__item {
+               .icon-svg {
+                  width: 16px;
+                  height: 16px;
+               }
+            }
+         }
+      }
+
+      .widget-users-list {
+         max-height: 76px;
+         padding: 0;
+
+         &__item {
+            margin-bottom: 8px;
+            position: relative;
+
+            &::before {
+               top: 10px;
+               left: 13px;
+               width: 9px;
+               height: 9px;
+               font-size: 0.3rem;
+            }
+
+            .widget-user {
+               &__avatar {
+                  width: 19px;
+                  height: 19px;
+                  margin-right: 10px;
+
+                  img {
+                     width: 17px;
+                     height: 17px;
+                     border-radius: 50%;
+                  }
+               }
+
+               &__data {
+                  .widget-user__name {
+                     font-size: 0.4rem;
+                     font-weight: 500;
+                     margin-bottom: 3px;
+                  }
+
+                  .widget-user__nickname {
+                     font-size: 0.33rem;
+                  }
+               }
+
+               &__volume {
+                  .widget-user__price {
+                     font-size: 0.4rem;
+                     margin-bottom: 3px;
+
+                     .icon-xs {
+                        width: 8px;
+                        height: 8px;
+                     }
+                  }
+
+                  .widget-user__percent {
+                     font-size: 0.36rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .widget.grid {
+      .widget-users-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 12px;
+
+         &__item {
+            width: calc(50% - 6px);
+            margin: 0;
+
+            .widget-user__avatar {
+               margin: 0;
+            }
+
+            &::before {
+               left: 31px;
+            }
+         }
+      }
+   }
+
+   .best-sellers {
+      width: 154px;
+      padding: 12px 9px;
+      border: 0.5px solid $weekly-bg;
+      border-radius: 7px;
+      box-shadow: 4px 4px 21px 0 rgba(20, 20, 22, 0.15);
+
+      .section-title {
+         align-items: center;
+         margin-bottom: 11px;
+
+         h6 {
+            font-size: 0.56rem;
+         }
+      }
+
+      .layout-case__button {
+         width: 22px;
+         height: 13px;
+
+         svg {
+            margin-left: 5px;
+            margin-bottom: 5px;
+         }
+      }
+   }
+}
+
+.best-seller-list {
+   gap: 7px;
+
+   &__item {
+      &::before {
+         top: 0px;
+         left: 17px;
+         width: 10px;
+         height: 10px;
+         font-size: 0.3125rem;
+      }
+
+      .best-seller-user {
+         &__avatar {
+            width: 23px;
+            height: 23px;
+            margin-right: 7px;
+         }
+
+         .best-seller-user__data {
+            .best-seller-user__name {
+               font-size: 0.37rem;
+            }
+
+            .best-seller-user__nickname {
+               font-size: 0.3125rem;
+            }
+         }
+      }
+
+      .btn {
+         font-size: 0.37rem;
+         padding: 3px 7px;
+         border-radius: 3.4px;
+         outline: 1px solid $light-grey;
+      }
+   }
+}
+
+.rotation {
+   width: 154px;
+   box-shadow: 0 9px 14px 0 rgba(70, 70, 70, 0.15);
+   border-radius: 7px;
+   padding: 5px;
+   margin: -17px 0 0 -70px;
+
+   .rotation-everything {
+      .circle-avatar {
+         margin-right: 6px;
+
+         .circle-wrapper {
+            margin-right: 10px;
+
+            .circle {
+               width: 4px;
+               height: 4px;
+               top: 8px;
+            }
+         }
+
+         .user-avatar-round {
+            width: 19px;
+            height: 19px;
+         }
+
+         .verified {
+            top: -2px;
+            right: -2px;
+            width: 8px;
+            height: 8px;
+         }
+      }
+
+      .section-info {
+         .new-bid {
+            font-size: 0.4rem;
+         }
+
+         .fluctuation,
+         .date {
+            font-size: 0.34rem;
+            font-weight: 600;
+         }
+
+         .date {
+            font-weight: inherit;
+         }
+      }
+   }
+
+   .user-avatar-rectangular {
+      width: 29px;
+      height: 29px;
+      border-radius: 5px;
+   }
+}

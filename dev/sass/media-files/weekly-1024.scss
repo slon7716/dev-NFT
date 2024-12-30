@@ -1,0 +1,103 @@
+.weekly {
+   margin-bottom: 77px;
+   
+   .section-title {
+      line-height: 0.9;
+      margin-bottom: 63px;
+   }
+
+   .swiper-wrapper {
+      padding-bottom: 60px;
+   }
+
+   .product {
+      max-width: 178px;
+      border-radius: 17px;
+      padding: 10px 10px 15px;
+
+      &-img {
+         margin-bottom: 13px;
+
+         .product-timer {
+            font-size: 0.625rem;
+            padding: 5px 6.5px;
+         }
+      }
+
+      &-title {
+         font-size: 0.9375rem;
+         line-height: 1.4;
+         margin-bottom: 10px;
+      }
+
+      &-bid-title {
+         font-size: 0.625rem;
+         margin-bottom: 3px;
+      }
+
+      &-bid {
+         font-size: 0.75rem;
+         font-weight: 400;
+         line-height: 1.417;
+
+         i {
+            margin-right: 2px;
+         }
+      }
+
+      .btn {
+         font-size: 0.625rem;
+         font-weight: 700;
+         line-height: 1.5;
+         margin: -35px 0 0 auto;
+         padding: 11px 18px;
+         border: none;
+      }
+
+      .icon-sm {
+         display: none;
+      }
+
+      .icon-xxs {
+         display: inline-block;
+      }
+   }
+
+   &-slider-navigation {
+      width: 102px;
+      height: 42px;
+      border-radius: 11px;
+      box-shadow: 0 26px 21px 0px rgba(15, 15, 15, 0.15);
+      margin-left: calc(50% - 51px);
+
+      &::after {
+         width: 1.5px;
+         height: 16px;
+         border-radius: 1.5px;
+      }
+
+      .weekly-button-prev,
+      .weekly-button-next {
+         padding: 13px;
+
+         svg {
+            width: 16px;
+            height: 16px;
+         }
+      }
+
+      .weekly-button-next {
+         margin-left: 18px;
+      }
+   }
+
+   .carousel-weekly {
+      .swiper-slide {
+         width: 198px;
+      }
+   }
+
+   .widget {
+      display: none;
+   }
+}

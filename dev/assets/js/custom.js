@@ -20,9 +20,9 @@ const toggleMobileMenu = () => {
 btnburger.addEventListener('click', toggleMobileMenu);
 
 const bannerSlider = new Swiper('.banner-slider', {
-  speed: 700,
+  speed: 900,
   slidesPerView: 2,
-  spaceBetween: 20,
+  spaceBetween: 40,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',

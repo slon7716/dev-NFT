@@ -2,7 +2,6 @@
    margin: 155px 0 210px;
    
    .section-title {
-      line-height: 0.67;
       margin-bottom: 153px;
    }
    
@@ -22,53 +21,6 @@
    .left {
       flex: 1 1 702px;
       max-width: 702px;
-   }
-
-   .right {
-      max-width: 468px;
-      margin-top: 45px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      #drop-zone {
-         margin-bottom: 57px;
-
-         label {
-            width: 468px;
-            min-height: 413px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-color: #fff;
-            border-radius: 31px;
-            padding: 24px;
-            box-shadow: 0 0 82px 5px rgba(15, 15, 15, 0.1);
-            transition: 0.4s;
-            cursor: pointer;
-
-            img {
-               width: 51px;
-               height: 51px;
-               margin-bottom: 13px;
-            }
-
-            span {
-               font-size: 0.96rem;
-               line-height: 1.67;
-               color: $footer-color;
-            }
-         }
-      }
-
-      button {
-         width: 327px;
-         font-size: 0.9375rem;
-         line-height: 1.53;
-         padding: 18px;
-      }
    }
 
    h5 {
@@ -111,10 +63,10 @@
       font-weight: 500;
       line-height: 1.25;
       background: $weekly-bg url(assets/img/pen.png) no-repeat right 26px top 23px;
-      margin-bottom: 35px;
       border: none;
       border-radius: 12px;
       padding: 23px 26px;
+      margin-bottom: 35px;
       resize: none;
    }
 
@@ -154,7 +106,7 @@
       }
 
       .list {
-         width: 147px;
+         width: 100%;
          outline: 1.5px solid $light-grey;
          border-radius: 12px;
 
@@ -162,7 +114,7 @@
             font-weight: 500;
             color: $text-grey;
             text-align: center;
-            border-bottom: 1px dashed $text-grey;
+            border-bottom: 1.5px dashed $light-grey;
 
             &:last-child {
                border-bottom: none;
@@ -204,7 +156,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      gap: 12px;
+      gap: 35px;
       margin-bottom: 70px;
 
       .price-crypto {
@@ -241,10 +193,6 @@
                &:hover {
                   outline: none;
                }
-
-               .list {
-                  width: 96px;
-               }
             }
             
             .etc {
@@ -263,11 +211,7 @@
          width: 171px;
          
          .nice-select {
-            width: 171px;
-
-            .list {
-               width: 171px;
-            }
+            width: 100%;
          }
       }
    }
@@ -282,11 +226,14 @@
       h5 {
          margin-bottom: 12px;
       }
+
+      .put-on-sale {
+         margin-bottom: 40px;
+      }
    }
 
    .toggle-checkbox {
       position: relative;
-      margin-bottom: 40px;
 
       [type='checkbox'] {
          display: none;
@@ -299,7 +246,6 @@
                }
       
                &::after {
-                  content: "";
                   right: 6px;
                   background-color: #fff;
                   transition: 0.4s;
@@ -317,7 +263,7 @@
             content: "";
             position: absolute;
             right: 0;
-            top: calc(-50% + 3px);
+            top: -25px;
             width: 55px;
             height: 30px;
             border-radius: 30px;
@@ -331,8 +277,7 @@
             height: 20px;
             position: absolute;
             right: 30px;
-            top: 50%;
-            transform: translate(0, -50%);
+            top: -20px;
             border-radius: 50%;
             background-color: #000;
             transition: 0.4s;
@@ -348,6 +293,61 @@
       color: #fff;
       background-color: #000;
       border-radius: 12px;
-      padding: 22px;
+      border: none;
+      padding: 24px;
+   }
+
+   .right {
+      margin-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      #drop-zone {
+         margin-bottom: 57px;
+
+         label {
+            width: 468px;
+            min-height: 413px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 31px;
+            padding: 82px 9px;
+            box-shadow: 0 0 82px 5px rgba(15, 15, 15, 0.1);
+            transition: 0.4s;
+            cursor: pointer;
+
+            img {
+               width: 51px;
+               height: 51px;
+               margin-bottom: 13px;
+            }
+
+            span {
+               font-size: 0.96rem;
+               line-height: 1.67;
+               color: $footer-color;
+            }
+
+            [data-for-dropzone] {
+               p {
+                  font-weight: 600;
+                  color: #10C352;
+               }
+            }
+         }
+      }
+
+      button {
+         width: 327px;
+         font-size: 0.9375rem;
+         line-height: 1.53;
+         border-radius: 16px;
+         padding: 20px;
+      }
    }
 }
