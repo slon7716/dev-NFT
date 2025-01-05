@@ -131,8 +131,8 @@
                padding: 20px 46px;
 
                &:after {
-                  border-bottom: 2px solid #fff;
-                  border-right: 2px solid #fff;
+                  border-bottom: 2.5px solid #fff;
+                  border-right: 2.5px solid #fff;
                   border-radius: 2px;
                   width: 11px;
                   height: 11px;
@@ -150,6 +150,7 @@
                   border-radius: 12px;
 
                   .option {
+                     line-height: 60px;
                      text-align: center;
                      border-bottom: 1px dashed $light-grey;
 
