@@ -58,10 +58,6 @@
       }
 
       &.active {
-         .accordion-item__button { // стили только к кнопке внутри активного .accordion-item
-            background-color: $weekly-bg;
-         }
-
          .accordion-item__content { //стили только к контенту внутри активного .accordion-item
             display: block;
          }
