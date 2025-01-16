@@ -57,27 +57,11 @@ var swiper = new Swiper(".gallery", {
   },
 });
 
-// const widgetUserPercent = document.querySelectorAll('.widget-user__percent') // выбор всех элементов с классом .wiget-user__percent
-// widgetUserPercent.forEach(item => {
-//   let string = item.textContent // Получаем текстовое содержимое элемента
-//   let stringComa = /,/g; // Замена запятых на точки
-//   let stringPercent = /%/gi; // Удаление знака процента
-//   let refactoringString = string.replace(stringComa, '.').replace(stringPercent, '');
-//   let val = Number(refactoringString); // Преобразуем обработанную строку в число
-//   if (val > 0) {
-//     item.classList.add('percent_totop');
-//   } else if (val < 0) {
-//     item.classList.add('percent_tobottom');
-//   } else {
-//     item.classList.add('percent_zero');
-//   }
-// })
-
 const percent = document.querySelectorAll('[class*="__percent"]'); // выбор всех элементов где есть __percent
 percent.forEach(item => {
   let string = item.textContent // Получаем текстовое содержимое элемента
-  let stringComa = /,/g; // Замена запятых на точки
-  let stringPercent = /%/gi; // Удаление знака процента
+  let stringComa = /,/g; // Поиск запятых на точки
+  let stringPercent = /%/gi; // Поиск знака процента
   let refactoringString = string
     .replace(stringComa, '.') // Заменяем , на .
     .replace(stringPercent, '') // Удаляем знак %
