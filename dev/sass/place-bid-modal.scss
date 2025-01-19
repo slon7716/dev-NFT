@@ -159,9 +159,12 @@
                      }
 
                      &.selected,
-                     &.focus,
                      &:hover {
                         background-color: $header-color;
+                     }
+
+                     &.focus {
+                        background-color: $footer-color;
                      }
                   }
                }
@@ -184,4 +187,3 @@
       }
    }
 }
-

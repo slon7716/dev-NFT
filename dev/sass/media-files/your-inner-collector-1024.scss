@@ -1,0 +1,165 @@
+.your-inner-collector {
+   margin-bottom: 175px;
+}
+
+.collector {
+   padding-top: 82px;
+
+   .section-title {
+      margin-bottom: 32px;
+   }
+
+   .seller {
+      gap: 8px;
+      margin-bottom: 50px;
+
+      li {
+         font-size: 0.71rem;
+         
+         img {
+            width: 14px;
+            margin-right: 8px;
+         }
+      }
+   }
+   
+   .btn {
+      font-size: 0.66rem;
+      padding: 13px 10px 13px 15px;
+
+      svg {
+         width: 16px;
+         height: 16px;
+         margin-left: 4px;
+      }
+   }
+}
+
+.widgets {
+   padding-top: 80px;
+
+   &::before {
+      width: 284px;
+      height: 123px;
+      background: url(assets/img/banner-dot-mobile.svg);
+   }
+   
+   .best-sellers {
+      width: 229px;
+      padding: 18px 15px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 31px 0 rgba(20, 20, 22, 0.15);
+      
+      .section-title {
+         margin-bottom: 16px;
+         
+         h6 {
+            font-size: 0.83rem;
+         }
+      }
+
+      .layout-case__button {
+         width: 22px;
+         height: 18px;
+      }
+   }
+}
+
+.best-seller-list {
+   gap: 11px;
+   padding: 2px 2px 0 0;
+
+   &__item {
+
+      &::before {
+         top: -2px;
+         left: 22px;
+         width: 15px;
+         height: 15px;
+         font-size: 0.47rem;
+      }
+
+      .best-seller-user {
+         &__avatar {
+            width: 39px;
+            height: 39px;
+            margin-right: 10px;
+
+            img {
+               width: 35px;
+               height: 35px;
+            }
+         }
+
+         .best-seller-user__data {
+            .best-seller-user__name {
+               font-size: 0.55rem;
+            }
+         
+            .best-seller-user__nickname {
+               font-size: 0.47rem;
+            }
+         }
+      }
+
+      .btn {
+         font-size: 0.55rem;
+         padding: 5px 6px;
+         border-radius: 5px;
+         outline: 1.5px solid $light-grey;
+      }
+   }
+}
+
+.rotation {
+   width: 232px;
+   box-shadow: 0 14px 20px 0 rgba(70, 70, 70, 0.15);
+   border-radius: 9px;
+   padding: 8px;
+   margin: -28px 0 0 -104px;
+
+   .rotation-everything {
+      .circle-avatar {
+         margin-right: 10px;
+
+         .circle-wrapper {
+            margin-right: 16px;
+
+            .circle {
+               width: 5px;
+               height: 5px;
+               top: 13.5px;
+            }
+         }
+      
+         .user-avatar-round {
+           width: 28px;
+           height: 28px;
+         }
+
+         .verified {
+            top: -2px;
+            right: -2px;
+            width: 12px;
+            height: 12px;
+         }
+      }
+   
+      .section-info {
+         .new-bid {
+            font-size: 0.6rem;
+         }
+
+         .fluctuation,
+         .date {
+            font-size: 0.51rem;
+         }
+      }
+   }
+   
+   .user-avatar-rectangular {
+      width: 43px;
+      height: 43px;
+      border-radius: 7px;
+   }
+}

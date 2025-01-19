@@ -20,16 +20,36 @@
 
       .layout-menu {
          position: absolute;
-         right: 24px;
+         right: 21px;
          display: flex;
          flex-direction: column;
       
          .layout-case {
             display: none;
          }
-      
-         &.show .layout-case {
-            display: flex;
+
+         &.show {
+            .layout-case {
+               display: flex;
+               gap: 12px;
+               padding: 0;
+               margin-top: -10px;
+   
+               &__item {
+                  .icon-svg {
+                     width: 30px;
+                     height: 30px;
+            
+                     use {
+                        stroke: $footer-color;
+                     }
+                  }
+            
+                  &.active .icon-svg use {
+                     stroke: #000;
+                  }
+               }
+            }
          }
       }
       
@@ -50,37 +70,12 @@
             height: 18px;
          }
       }
-      
-      .layout-case {
-         display: none;
-         gap: 12px;
-         padding: 0;
-      
-         &.show {
-            display: flex;
-         }
-      
-         &__item {
-            .icon-svg {
-               width: 30px;
-               height: 30px;
-      
-               use {
-                  stroke: $footer-color;
-               }
-            }
-      
-            &.active .icon-svg use {
-               stroke: #000;
-            }
-         }
-      }
    }
 }
 
 .widget-users-list {
    max-height: 213px;
-   padding: 0 12px 0 0;
+   padding-right: 12px;
    overflow: auto;
    counter-reset: widgetcount;
 
@@ -114,7 +109,7 @@
             align-items: center;
             width: 49px;
             height: 49px;
-            margin-right: 15px;
+            margin-right: 18px;
 
             img {
                width: 45px;

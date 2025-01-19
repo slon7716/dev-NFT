@@ -1,0 +1,147 @@
+.widgets {
+   .widget {
+      width: 229px;
+      border-radius: 10px;
+      padding: 15px;
+      margin: auto -104px -28px 0;
+      box-shadow: 6px 6px 31px 0 rgba(20, 20, 22, 0.15);
+
+      &__title {
+         padding-right: 32px;
+         margin-bottom: 17px;
+
+         h5 {
+            font-size: 0.83rem;
+         }
+      }
+
+      .layout-menu {
+         right: 15px;
+
+         &.show {
+            .layout-case {
+               margin-top: -4px;
+               gap: 8px;
+      
+               &__item {
+                  .icon-svg {
+                     width: 20px;
+                     height: 20px;
+                  }
+               }
+            }
+         }
+      }
+      
+      .layout-case__button {
+         width: 32px;
+         height: 18px;
+      
+         svg {
+            width: 18px;
+         }
+      }
+   }
+
+   .widget-users-list {
+      max-height: 88px;
+      padding-right: 6px;
+   
+      &__item {
+         margin-bottom: 21px;
+   
+         &::before {
+            content: counter(widgetcount) "";
+            top: 19px;
+            left: 21px;
+            width: 13px;
+            height: 13px;
+            font-size: 0.46rem;
+         }
+   
+         .widget-user {
+            &__avatar {
+               width: 30px;
+               height: 30px;
+               margin-right: 13px;
+   
+               img {
+                  width: 28px;
+                  height: 28px;
+               }
+            }
+   
+            &__data {
+               .widget-user__name {
+                  font-size: 0.6rem;
+                  margin-bottom: 4px;
+               }
+            
+               .widget-user__nickname {
+                  font-size: 0.5rem;
+               }
+            }
+   
+            &__volume {   
+               .widget-user__price {
+                  font-size: 0.6rem;
+                  margin-bottom: 4px;
+
+                  .icon-etherium {
+                     width: 11px;
+                     height: 11px;
+                  }
+               }
+   
+               .widget-user__percent {
+                  font-size: 0.53rem;
+               }
+            }
+         }
+      }
+   }
+   
+   .widget.grid {
+      .widget-users-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 24px;
+   
+         &__item {
+            width: calc(50% - 12px);
+            margin: 0;
+      
+            .widget-user__avatar {
+               margin: 0;
+            }
+      
+            &::before {
+               left: 72px;
+            }
+         }
+      }
+   
+      .widget-user {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+   
+         .widget-user__data {
+            margin-bottom: 8px;
+         }
+   
+         .widget-user__name {
+            margin: 0;
+         }
+      }
+   
+      .widget-user__volume {
+         margin: 0;
+   
+         .widget-user__percent {
+            text-align: center;
+         }
+      }
+   }
+}

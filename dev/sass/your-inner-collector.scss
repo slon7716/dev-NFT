@@ -2,13 +2,14 @@
    margin-bottom: 246px;
    
    .container {
+      border-top: 1px solid $light-grey;
       position: relative;
       display: flex;
+      justify-content: space-between;
    }
 }
 
 .collector {
-   border-top: 1px solid $light-grey;
    padding-top: 116px;
 
    .section-title {
@@ -45,13 +46,13 @@
       font-size: 0.93rem;
       font-weight: 500;
       line-height: 1.25;
-      padding: 19px 14px 18px 18px;
+      padding: 19px 14px 18px 21px;
 
       svg {
          width: 22px;
          height: 22px;
          vertical-align: middle;
-         margin-left: 9px;
+         margin-left: 8px;
       }
    }
 }
@@ -59,7 +60,7 @@
 .widgets {
    display: flex;
    align-items: flex-start;
-   padding-top: 116px;
+   padding-top: 113px;
 
    &::before {
       content: "";
@@ -78,23 +79,25 @@
       border-color: $weekly-bg;
       border-radius: 14px;
       padding: 21px;
-      margin: auto -144px -53px 0;
+      margin: auto -144px -51px 0;
       box-shadow: 9px 9px 44px 0 rgba(20, 20, 22, 0.15);
       z-index: 2;
 
-      &__title h5 {
-         font-size: 1.16rem;
+      &__title {
+         h5 {
+            font-size: 1.16rem;
+         }
       }
-
-      .widget-users-list {
-         max-height: 142px;
-      }
+   }
+   
+   .widget-users-list {
+      max-height: 142px;
    }
    
    .best-sellers {
       width: 322px;
       background-color: #fff;
-      padding: 26px 18px;
+      padding: 26px 20px 26px 17px;
       border: 1px solid $weekly-bg;
       border-radius: 14px;
       box-shadow: 6px 6px 31px 0 rgba(20, 20, 22, 0.15);
@@ -112,7 +115,7 @@
 
       .layout-case__button {
          width: 32px;
-         height: 20px;
+         height: 25px;
          border: none;
          background-color: inherit;
          color: #929292;
@@ -134,12 +137,11 @@
    display: flex;
    flex-direction: column;
    gap: 15px;
-   padding: 2px 0;
+   padding: 3px 3px 0;
    overflow: auto;
    counter-reset: widgetcount;
 
    &__item {
-      padding: 0 2px;
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -149,8 +151,8 @@
          counter-increment: widgetcount;
          content: counter(widgetcount) "";
          position: absolute;
-         top: -2px;
-         left: 40px;
+         top: -3px;
+         left: 38px;
          width: 21px;
          height: 21px;
          display: flex;
@@ -176,6 +178,8 @@
             margin-right: 11px;
 
             img {
+               width: 49px;
+               height: 49px;
                border-radius: 50%;
             }
          }
@@ -221,7 +225,7 @@
    box-shadow: 0 19px 28px 0 rgba(70, 70, 70, 0.15);
    border-radius: 14px;
    padding: 11px;
-   margin: -38px 0 0 -144px;
+   margin: -36px 0 0 -144px;
    z-index: 1;
 
    .rotation-everything {

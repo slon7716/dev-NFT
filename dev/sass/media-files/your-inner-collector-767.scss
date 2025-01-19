@@ -39,6 +39,7 @@
 }
 
 .widgets {
+   border: none;
    padding: 0;
    justify-content: center;
    margin-top: -491px;
@@ -49,131 +50,6 @@
       width: 192px;
       height: 83px;
       background: url(assets/img/banner-dot-mobile.svg);
-   }
-
-   .widget {
-      width: 154px;
-      border: 0.5px solid $weekly-bg;
-      border-radius: 7px;
-      padding: 10px;
-      margin-right: -70px;
-
-      &__title {
-         padding-right: 22px;
-         margin-bottom: 15px;
-
-         h5 {
-            font-size: 0.56rem;
-         }
-
-         .layout-menu {
-            right: 10px;
-         }
-
-         .layout-case__button {
-            width: 22px;
-            height: 12px;
-
-            svg {
-               margin-bottom: 8px;
-               width: 14px;
-               height: 10px;
-            }
-         }
-
-         .layout-case {
-            gap: 6px;
-            padding: 0;
-
-            &__item {
-               .icon-svg {
-                  width: 16px;
-                  height: 16px;
-               }
-            }
-         }
-      }
-
-      .widget-users-list {
-         max-height: 76px;
-         padding: 0;
-
-         &__item {
-            margin-bottom: 8px;
-            position: relative;
-
-            &::before {
-               top: 10px;
-               left: 13px;
-               width: 9px;
-               height: 9px;
-               font-size: 0.3rem;
-            }
-
-            .widget-user {
-               &__avatar {
-                  width: 19px;
-                  height: 19px;
-                  margin-right: 10px;
-
-                  img {
-                     width: 17px;
-                     height: 17px;
-                     border-radius: 50%;
-                  }
-               }
-
-               &__data {
-                  .widget-user__name {
-                     font-size: 0.4rem;
-                     font-weight: 500;
-                     margin-bottom: 3px;
-                  }
-
-                  .widget-user__nickname {
-                     font-size: 0.33rem;
-                  }
-               }
-
-               &__volume {
-                  .widget-user__price {
-                     font-size: 0.4rem;
-                     margin-bottom: 3px;
-
-                     .icon-xs {
-                        width: 8px;
-                        height: 8px;
-                     }
-                  }
-
-                  .widget-user__percent {
-                     font-size: 0.36rem;
-                  }
-               }
-            }
-         }
-      }
-   }
-
-   .widget.grid {
-      .widget-users-list {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 12px;
-
-         &__item {
-            width: calc(50% - 6px);
-            margin: 0;
-
-            .widget-user__avatar {
-               margin: 0;
-            }
-
-            &::before {
-               left: 31px;
-            }
-         }
-      }
    }
 
    .best-sellers {
@@ -209,11 +85,12 @@
 
    &__item {
       &::before {
-         top: 0px;
-         left: 17px;
          width: 10px;
          height: 10px;
+         top: -2px;
+         left: 15px;
          font-size: 0.3125rem;
+         padding: 1px 0 0 1px;
       }
 
       .best-seller-user {
@@ -221,6 +98,11 @@
             width: 23px;
             height: 23px;
             margin-right: 7px;
+
+            img {
+               width: 23px;
+               height: 23px;
+            }
          }
 
          .best-seller-user__data {
