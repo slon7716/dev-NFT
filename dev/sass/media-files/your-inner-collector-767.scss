@@ -54,14 +54,13 @@
 
    .best-sellers {
       width: 154px;
-      padding: 12px 9px;
+      padding: 12px 10px;
       border: 0.5px solid $weekly-bg;
       border-radius: 7px;
       box-shadow: 4px 4px 21px 0 rgba(20, 20, 22, 0.15);
 
       .section-title {
-         align-items: center;
-         margin-bottom: 11px;
+         margin-bottom: 10px;
 
          h6 {
             font-size: 0.56rem;
@@ -81,8 +80,6 @@
 }
 
 .best-seller-list {
-   gap: 7px;
-
    &__item {
       &::before {
          width: 10px;
@@ -166,7 +163,7 @@
 
          .fluctuation,
          .date {
-            font-size: 0.34rem;
+            font-size: 0.36rem;
             font-weight: 600;
          }
 

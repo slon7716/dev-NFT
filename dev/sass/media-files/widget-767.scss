@@ -4,7 +4,7 @@
       border: 0.5px solid $weekly-bg;
       border-radius: 7px;
       padding: 10px;
-      margin-right: -70px;
+      margin: auto -70px -31px 0px;
    
       &__title {
          padding-right: 22px;
@@ -46,7 +46,7 @@
       }
    
       .widget-users-list {
-         max-height: 76px;
+         max-height: 55px;
          padding-right: 6px;
    
          &__item {
