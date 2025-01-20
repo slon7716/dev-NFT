@@ -1,0 +1,27 @@
+.collection-activity {
+   margin: 62px 0 125px 0;
+
+   .all-info {
+      flex-direction: column;
+      gap: 0;
+      max-width: initial;
+
+      .info-about-creator {
+         max-width: initial;
+         width: 100%;
+         padding: 0 17px;
+      }
+
+      .tab {
+         max-width: initial;
+         width: 100%;
+         margin-top: 84px;
+
+         .product {
+            &:nth-child(n+5) {
+               display: none;
+            }
+         }
+      }
+   }
+}

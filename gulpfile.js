@@ -2,6 +2,7 @@
 const dirs = {
     source: 'dev',  // папка с исходниками (путь от корня проекта)
     build: 'build', // папка с результатом работы (путь от корня проекта)
+    docs: 'docs'    // папка с результатом работы (путь от корня проекта)
 };
 
 // Определим необходимые инструменты
@@ -42,7 +43,8 @@ gulp.task('sass', function(){
     .pipe(browserSync.stream())
     .pipe(rename('style.min.css')) // переименовываем
     .pipe(cleanCSS()) // сжимаем
-    .pipe(gulp.dest(dirs.build + '/')); // записываем CSS-файл (путь из константы)
+        .pipe(gulp.dest(dirs.build + '/')) // записываем CSS-файл (путь из константы)
+        .pipe(gulp.dest(dirs.docs + '/')); // записываем CSS-файл (путь из константы)
 });
 
 // ЗАДАЧА: Сборка HTML

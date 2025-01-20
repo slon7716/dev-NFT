@@ -91,7 +91,6 @@
                &__volume {
                   .widget-user__price {
                      font-size: 0.4rem;
-                     margin-bottom: 3px;
    
                      .icon-xs {
                         width: 8px;
@@ -112,7 +111,6 @@
       .widget-users-list {
          display: flex;
          flex-wrap: wrap;
-         gap: 12px;
          padding: 0;
    
          &__item {

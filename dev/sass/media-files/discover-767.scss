@@ -1,0 +1,22 @@
+.discover {
+   margin: 75px 0 143px;
+
+   .section-title {
+      margin-bottom: 30px;
+   }
+
+   .product-box {
+      gap: 35px 24px;
+      margin-bottom: 106px;
+
+      .product {
+         &:nth-child(n+9) {
+            display: none;
+         }
+
+         .icon-sm {
+            display: inline-block;
+         }
+      }
+   }
+}

@@ -1,12 +1,12 @@
 .your-inner-collector {
    .container {
+      border: none;
       flex-direction: column;
    }
 }
 
 .collector {
    text-align: center;
-   border: none;
    padding: 0;
    margin-bottom: 106px;
 
@@ -23,8 +23,9 @@
 
    .btn {
       font-size: 0.7rem;
-      margin: 0 auto;
+      border-radius: 9px;
       padding: 14px 12px 14px 15px;
+      margin: 0 auto;
 
       svg {
          width: 16px;
@@ -39,7 +40,6 @@
 }
 
 .widgets {
-   border: none;
    padding: 0;
    justify-content: center;
    margin-top: -491px;
